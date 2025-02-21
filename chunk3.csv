@@ -1,0 +1,3738 @@
+Unnamed: 0.1,Unnamed: 0,Date,Country,Status,AQI Value
+9595,13254,2024-06-13,Andorra,Good,10
+9596,13255,2024-06-13,Argentina,Moderate,82
+9597,13256,2024-06-13,Armenia,Good,43
+9598,13257,2024-06-13,Australia,Moderate,58
+9599,13258,2024-06-13,Austria,Good,19
+9600,13259,2024-06-13,Azerbaijan,Good,49
+9601,13261,2024-06-13,Bangladesh,Unhealthy for Sensitive Groups,121
+9602,13262,2024-06-13,Belarus,Good,13
+9603,13263,2024-06-13,Belgium,Good,48
+9604,13267,2024-06-13,Bosnia and Herzegovina,Good,23
+9605,13268,2024-06-13,Brazil,Unhealthy for Sensitive Groups,144
+9606,13269,2024-06-13,Brunei,Good,16
+9607,13270,2024-06-13,Bulgaria,Good,34
+9608,13273,2024-06-13,Canada,Moderate,53
+9609,13274,2024-06-13,Cape Verde,Moderate,55
+9610,13277,2024-06-13,Chile,Moderate,81
+9611,13278,2024-06-13,China,Unhealthy,151
+9612,13279,2024-06-13,Colombia,Moderate,51
+9613,13281,2024-06-13,Croatia,Good,20
+9614,13282,2024-06-13,Cyprus,Moderate,57
+9615,13283,2024-06-13,Czech Republic,Moderate,51
+9616,13284,2024-06-13,Denmark,Good,12
+9617,13285,2024-06-13,Dominican Republic,Good,23
+9618,13286,2024-06-13,Ecuador,Good,40
+9619,13289,2024-06-13,Estonia,Good,17
+9620,13290,2024-06-13,Ethiopia,Unhealthy for Sensitive Groups,117
+9621,13291,2024-06-13,Finland,Good,26
+9622,13292,2024-06-13,France,Good,49
+9623,13293,2024-06-13,French Guiana,Good,11
+9624,13294,2024-06-13,Georgia,Good,43
+9625,13295,2024-06-13,Germany,Good,38
+9626,13296,2024-06-13,Ghana,Good,44
+9627,13298,2024-06-13,Greece,Moderate,69
+9628,13300,2024-06-13,Guadeloupe,Good,22
+9629,13301,2024-06-13,Guatemala,Moderate,58
+9630,13303,2024-06-13,Hong Kong,Good,46
+9631,13305,2024-06-13,Iceland,Good,9
+9632,13306,2024-06-13,India,Very Unhealthy,208
+9633,13307,2024-06-13,Indonesia,Unhealthy for Sensitive Groups,126
+9634,13310,2024-06-13,Ireland,Good,27
+9635,13311,2024-06-13,Israel,Moderate,81
+9636,13312,2024-06-13,Italy,Good,50
+9637,13314,2024-06-13,Japan,Moderate,79
+9638,13316,2024-06-13,Jordan,Good,38
+9639,13317,2024-06-13,Kazakhstan,Good,40
+9640,13318,2024-06-13,Kenya,Unhealthy for Sensitive Groups,109
+9641,13320,2024-06-13,Kuwait,Unhealthy for Sensitive Groups,121
+9642,13321,2024-06-13,Kyrgyzstan,Good,14
+9643,13322,2024-06-13,Laos,Good,29
+9644,13323,2024-06-13,Latvia,Good,11
+9645,13325,2024-06-13,Liechtenstein,Good,16
+9646,13326,2024-06-13,Lithuania,Good,39
+9647,13328,2024-06-13,Macao,Good,50
+9648,13329,2024-06-13,Macedonia,Good,45
+9649,13330,2024-06-13,Madagascar,Moderate,95
+9650,13331,2024-06-13,Malaysia,Moderate,84
+9651,13332,2024-06-13,Malta,Good,41
+9652,13333,2024-06-13,Martinique,Good,37
+9653,13334,2024-06-13,Mexico,Moderate,97
+9654,13335,2024-06-13,Moldova,Good,2
+9655,13336,2024-06-13,Monaco,Good,27
+9656,13337,2024-06-13,Mongolia,Moderate,61
+9657,13338,2024-06-13,Montenegro,Good,25
+9658,13339,2024-06-13,Myanmar,Good,35
+9659,13340,2024-06-13,Nepal,Unhealthy for Sensitive Groups,116
+9660,13341,2024-06-13,Netherlands,Good,46
+9661,13343,2024-06-13,New Zealand,Good,37
+9662,13344,2024-06-13,Nigeria,Moderate,86
+9663,13345,2024-06-13,Norway,Good,21
+9664,13346,2024-06-13,Pakistan,Moderate,92
+9665,13347,2024-06-13,Palestinian Territory,Moderate,53
+9666,13348,2024-06-13,Peru,Moderate,88
+9667,13349,2024-06-13,Philippines,Unhealthy for Sensitive Groups,113
+9668,13350,2024-06-13,Poland,Moderate,58
+9669,13351,2024-06-13,Portugal,Good,28
+9670,13353,2024-06-13,Reunion,Good,17
+9671,13354,2024-06-13,Romania,Good,43
+9672,13355,2024-06-13,Russia,Moderate,100
+9673,13356,2024-06-13,San Marino,Good,42
+9674,13358,2024-06-13,Serbia,Moderate,67
+9675,13359,2024-06-13,Singapore,Moderate,58
+9676,13360,2024-06-13,Slovakia,Good,28
+9677,13361,2024-06-13,Slovenia,Good,13
+9678,13362,2024-06-13,South Africa,Unhealthy for Sensitive Groups,150
+9679,13363,2024-06-13,South Korea,Unhealthy for Sensitive Groups,113
+9680,13364,2024-06-13,Spain,Moderate,60
+9681,13365,2024-06-13,Sri Lanka,Good,31
+9682,13366,2024-06-13,Sweden,Good,30
+9683,13367,2024-06-13,Switzerland,Good,30
+9684,13368,2024-06-13,Taiwan,Good,37
+9685,13369,2024-06-13,Tajikistan,Moderate,61
+9686,13370,2024-06-13,Thailand,Moderate,78
+9687,13372,2024-06-13,Trinidad and Tobago,Good,39
+9688,13373,2024-06-13,Turkey,Unhealthy for Sensitive Groups,118
+9689,13375,2024-06-13,Uganda,Unhealthy,162
+9690,13376,2024-06-13,Ukraine,Good,17
+9691,13377,2024-06-13,United Arab Emirates,Unhealthy,152
+9692,13378,2024-06-13,United Kingdom of Great Britain and Northern Ireland,Moderate,71
+9693,13379,2024-06-13,United States of America,Unhealthy for Sensitive Groups,113
+9694,13381,2024-06-13,Vatican,Good,38
+9695,13383,2024-06-13,Vietnam,Moderate,52
+9696,13387,2024-06-20,Andorra,Good,45
+9697,13388,2024-06-20,Argentina,Good,50
+9698,13389,2024-06-20,Armenia,Good,43
+9699,13390,2024-06-20,Australia,Moderate,73
+9700,13391,2024-06-20,Austria,Good,50
+9701,13392,2024-06-20,Azerbaijan,Good,41
+9702,13394,2024-06-20,Bangladesh,Moderate,97
+9703,13395,2024-06-20,Belarus,Good,10
+9704,13396,2024-06-20,Belgium,Good,47
+9705,13400,2024-06-20,Bosnia and Herzegovina,Good,43
+9706,13401,2024-06-20,Brazil,Unhealthy for Sensitive Groups,144
+9707,13402,2024-06-20,Brunei,Good,12
+9708,13403,2024-06-20,Bulgaria,Good,47
+9709,13405,2024-06-20,Canada,Moderate,91
+9710,13406,2024-06-20,Cape Verde,Very Unhealthy,278
+9711,13409,2024-06-20,Chile,Unhealthy,157
+9712,13410,2024-06-20,China,Unhealthy for Sensitive Groups,146
+9713,13411,2024-06-20,Colombia,Moderate,63
+9714,13413,2024-06-20,Croatia,Good,35
+9715,13414,2024-06-20,Cyprus,Moderate,64
+9716,13415,2024-06-20,Czech Republic,Moderate,52
+9717,13416,2024-06-20,Denmark,Good,21
+9718,13417,2024-06-20,Dominican Republic,Good,37
+9719,13418,2024-06-20,Ecuador,Good,44
+9720,13421,2024-06-20,Estonia,Good,19
+9721,13422,2024-06-20,Ethiopia,Moderate,97
+9722,13423,2024-06-20,Finland,Good,20
+9723,13424,2024-06-20,France,Unhealthy for Sensitive Groups,128
+9724,13425,2024-06-20,French Guiana,Good,13
+9725,13426,2024-06-20,Georgia,Good,38
+9726,13427,2024-06-20,Germany,Hazardous,382
+9727,13428,2024-06-20,Ghana,Moderate,70
+9728,13430,2024-06-20,Greece,Moderate,65
+9729,13432,2024-06-20,Guadeloupe,Good,11
+9730,13433,2024-06-20,Guatemala,Moderate,65
+9731,13435,2024-06-20,Hong Kong,Good,29
+9732,13437,2024-06-20,Iceland,Good,35
+9733,13438,2024-06-20,India,Hazardous,517
+9734,13439,2024-06-20,Indonesia,Unhealthy for Sensitive Groups,140
+9735,13442,2024-06-20,Ireland,Good,25
+9736,13443,2024-06-20,Israel,Moderate,63
+9737,13444,2024-06-20,Italy,Moderate,100
+9738,13445,2024-06-20,Japan,Moderate,86
+9739,13447,2024-06-20,Jordan,Good,23
+9740,13448,2024-06-20,Kazakhstan,Moderate,62
+9741,13449,2024-06-20,Kenya,Moderate,75
+9742,13451,2024-06-20,Kuwait,Unhealthy for Sensitive Groups,103
+9743,13452,2024-06-20,Kyrgyzstan,Good,29
+9744,13453,2024-06-20,Laos,Good,41
+9745,13454,2024-06-20,Latvia,Good,15
+9746,13456,2024-06-20,Liechtenstein,Good,40
+9747,13457,2024-06-20,Lithuania,Good,31
+9748,13459,2024-06-20,Macao,Good,28
+9749,13460,2024-06-20,Macedonia,Moderate,55
+9750,13461,2024-06-20,Madagascar,Moderate,57
+9751,13462,2024-06-20,Malaysia,Moderate,65
+9752,13463,2024-06-20,Malta,Moderate,74
+9753,13464,2024-06-20,Martinique,Good,15
+9754,13465,2024-06-20,Mexico,Unhealthy for Sensitive Groups,134
+9755,13466,2024-06-20,Moldova,Good,1
+9756,13467,2024-06-20,Monaco,Moderate,68
+9757,13468,2024-06-20,Mongolia,Moderate,53
+9758,13469,2024-06-20,Montenegro,Good,38
+9759,13470,2024-06-20,Myanmar,Good,42
+9760,13471,2024-06-20,Nepal,Moderate,68
+9761,13472,2024-06-20,Netherlands,Good,35
+9762,13474,2024-06-20,New Zealand,Good,18
+9763,13475,2024-06-20,Nigeria,Moderate,79
+9764,13476,2024-06-20,Norway,Good,19
+9765,13477,2024-06-20,Pakistan,Moderate,90
+9766,13478,2024-06-20,Palestinian Territory,Good,48
+9767,13479,2024-06-20,Peru,Moderate,90
+9768,13480,2024-06-20,Philippines,Moderate,58
+9769,13481,2024-06-20,Poland,Moderate,54
+9770,13482,2024-06-20,Portugal,Good,35
+9771,13484,2024-06-20,Reunion,Good,7
+9772,13485,2024-06-20,Romania,Moderate,56
+9773,13486,2024-06-20,Russia,Moderate,69
+9774,13487,2024-06-20,San Marino,Good,48
+9775,13489,2024-06-20,Serbia,Moderate,64
+9776,13490,2024-06-20,Singapore,Moderate,52
+9777,13491,2024-06-20,Slovakia,Moderate,53
+9778,13492,2024-06-20,Slovenia,Good,41
+9779,13493,2024-06-20,South Africa,Unhealthy,152
+9780,13494,2024-06-20,South Korea,Unhealthy for Sensitive Groups,106
+9781,13495,2024-06-20,Spain,Moderate,60
+9782,13496,2024-06-20,Sri Lanka,Good,28
+9783,13497,2024-06-20,Sweden,Good,29
+9784,13498,2024-06-20,Switzerland,Good,43
+9785,13499,2024-06-20,Taiwan,Good,45
+9786,13500,2024-06-20,Tajikistan,Moderate,64
+9787,13501,2024-06-20,Thailand,Moderate,67
+9788,13503,2024-06-20,Trinidad and Tobago,Good,25
+9789,13504,2024-06-20,Turkey,Moderate,78
+9790,13506,2024-06-20,Uganda,Unhealthy for Sensitive Groups,119
+9791,13507,2024-06-20,Ukraine,Good,36
+9792,13508,2024-06-20,United Arab Emirates,Unhealthy for Sensitive Groups,130
+9793,13509,2024-06-20,United Kingdom of Great Britain and Northern Ireland,Moderate,92
+9794,13510,2024-06-20,United States of America,Hazardous,359
+9795,13512,2024-06-20,Vatican,Moderate,57
+9796,13514,2024-06-20,Vietnam,Moderate,59
+9797,13518,2024-06-27,Andorra,Good,43
+9798,13519,2024-06-27,Argentina,Moderate,58
+9799,13520,2024-06-27,Armenia,Good,18
+9800,13521,2024-06-27,Australia,Moderate,52
+9801,13522,2024-06-27,Austria,Moderate,56
+9802,13523,2024-06-27,Azerbaijan,Good,19
+9803,13525,2024-06-27,Bangladesh,Unhealthy for Sensitive Groups,102
+9804,13526,2024-06-27,Belarus,Good,43
+9805,13527,2024-06-27,Belgium,Unhealthy for Sensitive Groups,136
+9806,13531,2024-06-27,Bosnia and Herzegovina,Good,44
+9807,13532,2024-06-27,Brazil,Unhealthy for Sensitive Groups,120
+9808,13533,2024-06-27,Brunei,Good,10
+9809,13534,2024-06-27,Bulgaria,Good,31
+9810,13537,2024-06-27,Canada,Moderate,52
+9811,13538,2024-06-27,Cape Verde,Good,42
+9812,13541,2024-06-27,Chile,Unhealthy,170
+9813,13542,2024-06-27,China,Unhealthy for Sensitive Groups,136
+9814,13543,2024-06-27,Colombia,Moderate,57
+9815,13545,2024-06-27,Croatia,Good,38
+9816,13546,2024-06-27,Cyprus,Moderate,73
+9817,13547,2024-06-27,Czech Republic,Moderate,67
+9818,13548,2024-06-27,Denmark,Good,36
+9819,13549,2024-06-27,Dominican Republic,Good,47
+9820,13550,2024-06-27,Ecuador,Good,43
+9821,13553,2024-06-27,Estonia,Good,21
+9822,13554,2024-06-27,Ethiopia,Moderate,99
+9823,13555,2024-06-27,Finland,Good,44
+9824,13556,2024-06-27,France,Moderate,89
+9825,13557,2024-06-27,French Guiana,Good,9
+9826,13558,2024-06-27,Georgia,Good,28
+9827,13559,2024-06-27,Germany,Moderate,82
+9828,13560,2024-06-27,Ghana,Moderate,89
+9829,13562,2024-06-27,Greece,Moderate,55
+9830,13564,2024-06-27,Guadeloupe,Good,15
+9831,13565,2024-06-27,Guatemala,Moderate,51
+9832,13567,2024-06-27,Hong Kong,Good,21
+9833,13569,2024-06-27,Iceland,Good,15
+9834,13570,2024-06-27,India,Very Unhealthy,278
+9835,13571,2024-06-27,Indonesia,Unhealthy for Sensitive Groups,129
+9836,13574,2024-06-27,Ireland,Good,21
+9837,13575,2024-06-27,Israel,Moderate,59
+9838,13576,2024-06-27,Italy,Moderate,71
+9839,13577,2024-06-27,Japan,Moderate,95
+9840,13579,2024-06-27,Jordan,Good,23
+9841,13580,2024-06-27,Kazakhstan,Moderate,61
+9842,13581,2024-06-27,Kenya,Moderate,94
+9843,13583,2024-06-27,Kuwait,Moderate,69
+9844,13584,2024-06-27,Kyrgyzstan,Good,19
+9845,13585,2024-06-27,Laos,Good,17
+9846,13586,2024-06-27,Latvia,Good,39
+9847,13588,2024-06-27,Liechtenstein,Good,9
+9848,13589,2024-06-27,Lithuania,Good,36
+9849,13591,2024-06-27,Macao,Good,30
+9850,13592,2024-06-27,Macedonia,Good,42
+9851,13593,2024-06-27,Madagascar,Good,21
+9852,13594,2024-06-27,Malaysia,Moderate,70
+9853,13595,2024-06-27,Malta,Good,24
+9854,13596,2024-06-27,Martinique,Good,48
+9855,13597,2024-06-27,Mexico,Moderate,93
+9856,13598,2024-06-27,Moldova,Good,2
+9857,13599,2024-06-27,Monaco,Good,25
+9858,13600,2024-06-27,Mongolia,Moderate,54
+9859,13601,2024-06-27,Montenegro,Good,28
+9860,13602,2024-06-27,Myanmar,Good,32
+9861,13603,2024-06-27,Nepal,Moderate,66
+9862,13604,2024-06-27,Netherlands,Unhealthy for Sensitive Groups,124
+9863,13606,2024-06-27,New Zealand,Good,22
+9864,13607,2024-06-27,Nigeria,Moderate,76
+9865,13608,2024-06-27,Norway,Good,34
+9866,13609,2024-06-27,Pakistan,Unhealthy for Sensitive Groups,105
+9867,13610,2024-06-27,Palestinian Territory,Moderate,65
+9868,13611,2024-06-27,Peru,Unhealthy for Sensitive Groups,104
+9869,13612,2024-06-27,Philippines,Good,21
+9870,13613,2024-06-27,Poland,Moderate,67
+9871,13614,2024-06-27,Portugal,Good,34
+9872,13616,2024-06-27,Reunion,Good,10
+9873,13617,2024-06-27,Romania,Good,30
+9874,13618,2024-06-27,Russia,Good,49
+9875,13619,2024-06-27,San Marino,Good,41
+9876,13621,2024-06-27,Serbia,Good,48
+9877,13622,2024-06-27,Singapore,Moderate,55
+9878,13623,2024-06-27,Slovakia,Moderate,58
+9879,13624,2024-06-27,Slovenia,Good,21
+9880,13625,2024-06-27,South Africa,Unhealthy for Sensitive Groups,118
+9881,13626,2024-06-27,South Korea,Moderate,88
+9882,13627,2024-06-27,Spain,Moderate,67
+9883,13628,2024-06-27,Sri Lanka,Moderate,85
+9884,13629,2024-06-27,Sweden,Good,46
+9885,13630,2024-06-27,Switzerland,Good,31
+9886,13631,2024-06-27,Taiwan,Good,38
+9887,13632,2024-06-27,Tajikistan,Moderate,78
+9888,13633,2024-06-27,Thailand,Moderate,92
+9889,13634,2024-06-27,Trinidad and Tobago,Good,37
+9890,13635,2024-06-27,Turkey,Moderate,78
+9891,13637,2024-06-27,Uganda,Unhealthy for Sensitive Groups,134
+9892,13638,2024-06-27,Ukraine,Good,36
+9893,13639,2024-06-27,United Arab Emirates,Unhealthy for Sensitive Groups,116
+9894,13640,2024-06-27,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,147
+9895,13641,2024-06-27,United States of America,Unhealthy for Sensitive Groups,111
+9896,13643,2024-06-27,Vatican,Good,21
+9897,13645,2024-06-27,Vietnam,Moderate,67
+9898,13649,2024-07-04,Andorra,Good,9
+9899,13650,2024-07-04,Argentina,Moderate,69
+9900,13651,2024-07-04,Armenia,Good,43
+9901,13652,2024-07-04,Australia,Unhealthy for Sensitive Groups,108
+9902,13653,2024-07-04,Austria,Good,15
+9903,13654,2024-07-04,Azerbaijan,Moderate,55
+9904,13656,2024-07-04,Bangladesh,Unhealthy for Sensitive Groups,103
+9905,13657,2024-07-04,Belarus,Good,12
+9906,13658,2024-07-04,Belgium,Good,46
+9907,13662,2024-07-04,Bosnia and Herzegovina,Good,27
+9908,13663,2024-07-04,Brazil,Unhealthy for Sensitive Groups,135
+9909,13664,2024-07-04,Brunei,Good,10
+9910,13665,2024-07-04,Bulgaria,Good,35
+9911,13668,2024-07-04,Canada,Moderate,73
+9912,13669,2024-07-04,Cape Verde,Good,46
+9913,13671,2024-07-04,Chile,Very Unhealthy,222
+9914,13672,2024-07-04,China,Unhealthy for Sensitive Groups,150
+9915,13673,2024-07-04,Colombia,Moderate,56
+9916,13675,2024-07-04,Croatia,Good,33
+9917,13676,2024-07-04,Cyprus,Good,46
+9918,13677,2024-07-04,Czech Republic,Good,44
+9919,13678,2024-07-04,Denmark,Good,10
+9920,13679,2024-07-04,Dominican Republic,Good,36
+9921,13680,2024-07-04,Ecuador,Good,35
+9922,13683,2024-07-04,Estonia,Good,13
+9923,13684,2024-07-04,Ethiopia,Moderate,91
+9924,13685,2024-07-04,Finland,Good,23
+9925,13686,2024-07-04,France,Good,41
+9926,13687,2024-07-04,French Guiana,Good,13
+9927,13688,2024-07-04,Georgia,Moderate,52
+9928,13689,2024-07-04,Germany,Moderate,66
+9929,13690,2024-07-04,Ghana,Moderate,91
+9930,13692,2024-07-04,Greece,Moderate,55
+9931,13694,2024-07-04,Guadeloupe,Good,19
+9932,13695,2024-07-04,Guatemala,Good,48
+9933,13697,2024-07-04,Hong Kong,Good,23
+9934,13699,2024-07-04,Iceland,Good,20
+9935,13700,2024-07-04,India,Hazardous,305
+9936,13701,2024-07-04,Indonesia,Unhealthy for Sensitive Groups,140
+9937,13704,2024-07-04,Ireland,Good,26
+9938,13705,2024-07-04,Israel,Moderate,57
+9939,13706,2024-07-04,Italy,Moderate,69
+9940,13707,2024-07-04,Japan,Unhealthy for Sensitive Groups,103
+9941,13708,2024-07-04,Jordan,Good,21
+9942,13709,2024-07-04,Kazakhstan,Good,42
+9943,13710,2024-07-04,Kenya,Moderate,74
+9944,13712,2024-07-04,Kuwait,Moderate,89
+9945,13713,2024-07-04,Kyrgyzstan,Moderate,65
+9946,13714,2024-07-04,Laos,Good,29
+9947,13715,2024-07-04,Latvia,Good,15
+9948,13717,2024-07-04,Liechtenstein,Good,6
+9949,13718,2024-07-04,Lithuania,Good,16
+9950,13720,2024-07-04,Macao,Good,28
+9951,13721,2024-07-04,Macedonia,Good,40
+9952,13722,2024-07-04,Madagascar,Good,34
+9953,13723,2024-07-04,Malaysia,Moderate,71
+9954,13724,2024-07-04,Malta,Good,39
+9955,13725,2024-07-04,Martinique,Moderate,51
+9956,13726,2024-07-04,Mexico,Moderate,75
+9957,13727,2024-07-04,Moldova,Good,2
+9958,13728,2024-07-04,Monaco,Good,29
+9959,13729,2024-07-04,Mongolia,Moderate,65
+9960,13730,2024-07-04,Montenegro,Good,29
+9961,13731,2024-07-04,Myanmar,Moderate,58
+9962,13732,2024-07-04,Nepal,Good,34
+9963,13733,2024-07-04,Netherlands,Moderate,59
+9964,13735,2024-07-04,New Zealand,Good,21
+9965,13736,2024-07-04,Nigeria,Moderate,69
+9966,13737,2024-07-04,Norway,Good,16
+9967,13738,2024-07-04,Pakistan,Moderate,67
+9968,13739,2024-07-04,Palestinian Territory,Moderate,73
+9969,13740,2024-07-04,Peru,Unhealthy for Sensitive Groups,117
+9970,13741,2024-07-04,Philippines,Moderate,80
+9971,13742,2024-07-04,Poland,Moderate,57
+9972,13743,2024-07-04,Portugal,Good,35
+9973,13745,2024-07-04,Reunion,Good,19
+9974,13746,2024-07-04,Romania,Good,31
+9975,13747,2024-07-04,Russia,Moderate,81
+9976,13748,2024-07-04,San Marino,Good,42
+9977,13750,2024-07-04,Serbia,Good,47
+9978,13751,2024-07-04,Singapore,Good,25
+9979,13752,2024-07-04,Slovakia,Good,41
+9980,13753,2024-07-04,Slovenia,Good,17
+9981,13754,2024-07-04,South Africa,Unhealthy for Sensitive Groups,123
+9982,13755,2024-07-04,South Korea,Moderate,100
+9983,13756,2024-07-04,Spain,Moderate,74
+9984,13757,2024-07-04,Sri Lanka,Moderate,67
+9985,13758,2024-07-04,Sweden,Good,28
+9986,13759,2024-07-04,Switzerland,Good,18
+9987,13760,2024-07-04,Taiwan,Good,43
+9988,13761,2024-07-04,Tajikistan,Moderate,91
+9989,13762,2024-07-04,Thailand,Moderate,77
+9990,13764,2024-07-04,Trinidad and Tobago,Good,26
+9991,13765,2024-07-04,Turkey,Moderate,81
+9992,13767,2024-07-04,Uganda,Unhealthy,175
+9993,13768,2024-07-04,Ukraine,Good,38
+9994,13769,2024-07-04,United Arab Emirates,Very Unhealthy,208
+9995,13770,2024-07-04,United Kingdom of Great Britain and Northern Ireland,Good,36
+9996,13771,2024-07-04,United States of America,Unhealthy,161
+9997,13773,2024-07-04,Vatican,Good,38
+9998,13775,2024-07-04,Vietnam,Good,50
+9999,13779,2024-07-11,Andorra,Good,33
+10000,13780,2024-07-11,Argentina,Good,31
+10001,13781,2024-07-11,Armenia,Good,49
+10002,13782,2024-07-11,Australia,Good,36
+10003,13783,2024-07-11,Austria,Moderate,60
+10004,13784,2024-07-11,Azerbaijan,Good,31
+10005,13786,2024-07-11,Bangladesh,Unhealthy for Sensitive Groups,111
+10006,13787,2024-07-11,Belarus,Good,35
+10007,13788,2024-07-11,Belgium,Good,30
+10008,13792,2024-07-11,Bosnia and Herzegovina,Moderate,56
+10009,13793,2024-07-11,Brazil,Unhealthy for Sensitive Groups,108
+10010,13794,2024-07-11,Brunei,Good,10
+10011,13795,2024-07-11,Bulgaria,Good,44
+10012,13796,2024-07-11,Canada,Moderate,78
+10013,13797,2024-07-11,Cape Verde,Very Unhealthy,276
+10014,13799,2024-07-11,Chile,Unhealthy,189
+10015,13800,2024-07-11,China,Unhealthy,166
+10016,13801,2024-07-11,Colombia,Good,48
+10017,13803,2024-07-11,Croatia,Moderate,70
+10018,13804,2024-07-11,Cyprus,Moderate,72
+10019,13805,2024-07-11,Czech Republic,Moderate,79
+10020,13806,2024-07-11,Denmark,Good,20
+10021,13807,2024-07-11,Dominican Republic,Good,21
+10022,13808,2024-07-11,Ecuador,Good,24
+10023,13811,2024-07-11,Estonia,Good,17
+10024,13812,2024-07-11,Ethiopia,Moderate,99
+10025,13813,2024-07-11,Finland,Good,26
+10026,13814,2024-07-11,France,Moderate,55
+10027,13815,2024-07-11,French Guiana,Good,12
+10028,13816,2024-07-11,Georgia,Moderate,54
+10029,13817,2024-07-11,Germany,Hazardous,342
+10030,13818,2024-07-11,Ghana,Unhealthy for Sensitive Groups,101
+10031,13820,2024-07-11,Greece,Moderate,74
+10032,13822,2024-07-11,Guadeloupe,Good,35
+10033,13823,2024-07-11,Guatemala,Moderate,52
+10034,13825,2024-07-11,Hong Kong,Good,17
+10035,13827,2024-07-11,Iceland,Good,16
+10036,13828,2024-07-11,India,Unhealthy,187
+10037,13829,2024-07-11,Indonesia,Unhealthy for Sensitive Groups,140
+10038,13832,2024-07-11,Ireland,Good,19
+10039,13833,2024-07-11,Israel,Moderate,77
+10040,13834,2024-07-11,Italy,Unhealthy for Sensitive Groups,102
+10041,13835,2024-07-11,Japan,Moderate,67
+10042,13836,2024-07-11,Jordan,Good,22
+10043,13837,2024-07-11,Kazakhstan,Good,42
+10044,13838,2024-07-11,Kenya,Unhealthy for Sensitive Groups,133
+10045,13840,2024-07-11,Kuwait,Unhealthy for Sensitive Groups,108
+10046,13841,2024-07-11,Kyrgyzstan,Very Unhealthy,256
+10047,13842,2024-07-11,Laos,Good,32
+10048,13843,2024-07-11,Latvia,Good,18
+10049,13845,2024-07-11,Liechtenstein,Good,12
+10050,13846,2024-07-11,Lithuania,Good,31
+10051,13848,2024-07-11,Macao,Good,17
+10052,13849,2024-07-11,Macedonia,Moderate,53
+10053,13850,2024-07-11,Madagascar,Moderate,61
+10054,13851,2024-07-11,Malaysia,Moderate,63
+10055,13852,2024-07-11,Malta,Moderate,72
+10056,13853,2024-07-11,Martinique,Good,33
+10057,13854,2024-07-11,Mexico,Moderate,100
+10058,13855,2024-07-11,Moldova,Good,12
+10059,13856,2024-07-11,Monaco,Good,35
+10060,13857,2024-07-11,Mongolia,Moderate,58
+10061,13858,2024-07-11,Montenegro,Good,45
+10062,13859,2024-07-11,Myanmar,Good,39
+10063,13860,2024-07-11,Nepal,Moderate,67
+10064,13861,2024-07-11,Netherlands,Good,32
+10065,13863,2024-07-11,New Zealand,Good,26
+10066,13864,2024-07-11,Nigeria,Moderate,74
+10067,13865,2024-07-11,Norway,Good,18
+10068,13866,2024-07-11,Pakistan,Moderate,90
+10069,13867,2024-07-11,Palestinian Territory,Moderate,74
+10070,13868,2024-07-11,Peru,Unhealthy for Sensitive Groups,102
+10071,13869,2024-07-11,Philippines,Moderate,72
+10072,13870,2024-07-11,Poland,Moderate,99
+10073,13871,2024-07-11,Portugal,Good,14
+10074,13873,2024-07-11,Reunion,Good,16
+10075,13874,2024-07-11,Romania,Moderate,54
+10076,13875,2024-07-11,Russia,Moderate,66
+10077,13876,2024-07-11,San Marino,Moderate,60
+10078,13878,2024-07-11,Serbia,Moderate,67
+10079,13879,2024-07-11,Singapore,Moderate,55
+10080,13880,2024-07-11,Slovakia,Moderate,63
+10081,13881,2024-07-11,Slovenia,Moderate,71
+10082,13882,2024-07-11,South Africa,Unhealthy for Sensitive Groups,136
+10083,13883,2024-07-11,South Korea,Unhealthy for Sensitive Groups,113
+10084,13884,2024-07-11,Spain,Moderate,78
+10085,13885,2024-07-11,Sri Lanka,Good,40
+10086,13886,2024-07-11,Sweden,Good,46
+10087,13887,2024-07-11,Switzerland,Good,40
+10088,13888,2024-07-11,Taiwan,Good,37
+10089,13889,2024-07-11,Tajikistan,Moderate,74
+10090,13890,2024-07-11,Thailand,Moderate,78
+10091,13892,2024-07-11,Trinidad and Tobago,Good,31
+10092,13893,2024-07-11,Turkey,Moderate,96
+10093,13895,2024-07-11,Uganda,Moderate,84
+10094,13896,2024-07-11,Ukraine,Good,49
+10095,13897,2024-07-11,United Arab Emirates,Unhealthy,159
+10096,13898,2024-07-11,United Kingdom of Great Britain and Northern Ireland,Moderate,70
+10097,13899,2024-07-11,United States of America,Hazardous,303
+10098,13901,2024-07-11,Vatican,Good,46
+10099,13903,2024-07-11,Vietnam,Moderate,57
+10100,13907,2024-07-18,Andorra,Good,48
+10101,13908,2024-07-18,Argentina,Moderate,54
+10102,13909,2024-07-18,Armenia,Good,39
+10103,13910,2024-07-18,Australia,Good,38
+10104,13911,2024-07-18,Austria,Good,27
+10105,13912,2024-07-18,Azerbaijan,Good,49
+10106,13914,2024-07-18,Bangladesh,Unhealthy for Sensitive Groups,116
+10107,13915,2024-07-18,Belarus,Good,20
+10108,13916,2024-07-18,Belgium,Moderate,80
+10109,13920,2024-07-18,Bosnia and Herzegovina,Moderate,54
+10110,13921,2024-07-18,Brazil,Unhealthy,152
+10111,13922,2024-07-18,Brunei,Good,18
+10112,13923,2024-07-18,Bulgaria,Moderate,52
+10113,13925,2024-07-18,Canada,Moderate,70
+10114,13926,2024-07-18,Cape Verde,Moderate,54
+10115,13928,2024-07-18,Chile,Very Unhealthy,213
+10116,13929,2024-07-18,China,Unhealthy for Sensitive Groups,134
+10117,13930,2024-07-18,Colombia,Moderate,55
+10118,13932,2024-07-18,Croatia,Good,30
+10119,13933,2024-07-18,Cyprus,Moderate,68
+10120,13934,2024-07-18,Czech Republic,Good,48
+10121,13935,2024-07-18,Denmark,Good,14
+10122,13936,2024-07-18,Dominican Republic,Good,25
+10123,13937,2024-07-18,Ecuador,Good,36
+10124,13940,2024-07-18,Estonia,Good,28
+10125,13941,2024-07-18,Ethiopia,Unhealthy,153
+10126,13942,2024-07-18,Finland,Good,31
+10127,13943,2024-07-18,France,Moderate,51
+10128,13944,2024-07-18,French Guiana,Good,10
+10129,13945,2024-07-18,Georgia,Moderate,51
+10130,13946,2024-07-18,Germany,Moderate,66
+10131,13947,2024-07-18,Ghana,Moderate,73
+10132,13949,2024-07-18,Greece,Moderate,75
+10133,13951,2024-07-18,Guadeloupe,Good,41
+10134,13952,2024-07-18,Guatemala,Moderate,51
+10135,13954,2024-07-18,Hong Kong,Good,34
+10136,13956,2024-07-18,Iceland,Good,28
+10137,13957,2024-07-18,India,Unhealthy,186
+10138,13958,2024-07-18,Indonesia,Unhealthy for Sensitive Groups,145
+10139,13961,2024-07-18,Ireland,Good,19
+10140,13962,2024-07-18,Israel,Moderate,70
+10141,13963,2024-07-18,Italy,Moderate,69
+10142,13964,2024-07-18,Japan,Moderate,95
+10143,13965,2024-07-18,Jordan,Good,27
+10144,13966,2024-07-18,Kazakhstan,Good,50
+10145,13967,2024-07-18,Kenya,Unhealthy for Sensitive Groups,111
+10146,13969,2024-07-18,Kuwait,Moderate,65
+10147,13970,2024-07-18,Kyrgyzstan,Good,16
+10148,13971,2024-07-18,Laos,Good,33
+10149,13972,2024-07-18,Latvia,Good,31
+10150,13974,2024-07-18,Liechtenstein,Good,9
+10151,13975,2024-07-18,Lithuania,Good,28
+10152,13977,2024-07-18,Macao,Good,39
+10153,13978,2024-07-18,Macedonia,Moderate,68
+10154,13979,2024-07-18,Madagascar,Moderate,72
+10155,13980,2024-07-18,Malaysia,Moderate,80
+10156,13981,2024-07-18,Malta,Moderate,75
+10157,13982,2024-07-18,Martinique,Good,23
+10158,13983,2024-07-18,Mexico,Unhealthy for Sensitive Groups,125
+10159,13984,2024-07-18,Moldova,Good,8
+10160,13985,2024-07-18,Monaco,Moderate,55
+10161,13986,2024-07-18,Mongolia,Moderate,51
+10162,13987,2024-07-18,Montenegro,Moderate,72
+10163,13988,2024-07-18,Myanmar,Good,29
+10164,13989,2024-07-18,Nepal,Good,33
+10165,13990,2024-07-18,Netherlands,Moderate,77
+10166,13992,2024-07-18,New Zealand,Good,28
+10167,13993,2024-07-18,Nigeria,Moderate,64
+10168,13994,2024-07-18,Norway,Good,17
+10169,13995,2024-07-18,Pakistan,Moderate,88
+10170,13996,2024-07-18,Palestinian Territory,Moderate,66
+10171,13997,2024-07-18,Peru,Unhealthy for Sensitive Groups,128
+10172,13998,2024-07-18,Philippines,Moderate,69
+10173,13999,2024-07-18,Poland,Good,49
+10174,14000,2024-07-18,Portugal,Good,33
+10175,14002,2024-07-18,Reunion,Good,12
+10176,14003,2024-07-18,Romania,Moderate,65
+10177,14004,2024-07-18,Russia,Moderate,71
+10178,14005,2024-07-18,San Marino,Moderate,70
+10179,14007,2024-07-18,Serbia,Moderate,77
+10180,14008,2024-07-18,Singapore,Moderate,60
+10181,14009,2024-07-18,Slovakia,Good,46
+10182,14010,2024-07-18,Slovenia,Good,26
+10183,14011,2024-07-18,South Africa,Unhealthy for Sensitive Groups,150
+10184,14012,2024-07-18,South Korea,Good,44
+10185,14013,2024-07-18,Spain,Moderate,63
+10186,14014,2024-07-18,Sri Lanka,Good,36
+10187,14015,2024-07-18,Sweden,Good,25
+10188,14016,2024-07-18,Switzerland,Good,25
+10189,14017,2024-07-18,Taiwan,Good,48
+10190,14018,2024-07-18,Tajikistan,Moderate,93
+10191,14019,2024-07-18,Thailand,Moderate,91
+10192,14021,2024-07-18,Trinidad and Tobago,Good,12
+10193,14022,2024-07-18,Turkey,Unhealthy,151
+10194,14024,2024-07-18,Uganda,Unhealthy,166
+10195,14025,2024-07-18,Ukraine,Moderate,62
+10196,14026,2024-07-18,United Arab Emirates,Unhealthy for Sensitive Groups,146
+10197,14027,2024-07-18,United Kingdom of Great Britain and Northern Ireland,Moderate,78
+10198,14028,2024-07-18,United States of America,Unhealthy for Sensitive Groups,127
+10199,14030,2024-07-18,Vatican,Moderate,59
+10200,14032,2024-07-18,Vietnam,Good,32
+10201,14036,2024-07-25,Andorra,Good,14
+10202,14037,2024-07-25,Argentina,Moderate,60
+10203,14038,2024-07-25,Armenia,Good,33
+10204,14039,2024-07-25,Australia,Moderate,65
+10205,14040,2024-07-25,Austria,Good,26
+10206,14041,2024-07-25,Azerbaijan,Good,24
+10207,14043,2024-07-25,Bangladesh,Moderate,96
+10208,14044,2024-07-25,Belarus,Good,29
+10209,14045,2024-07-25,Belgium,Moderate,53
+10210,14049,2024-07-25,Bosnia and Herzegovina,Good,28
+10211,14050,2024-07-25,Brazil,Unhealthy,151
+10212,14051,2024-07-25,Brunei,Good,15
+10213,14052,2024-07-25,Bulgaria,Good,44
+10214,14055,2024-07-25,Canada,Unhealthy for Sensitive Groups,147
+10215,14056,2024-07-25,Cape Verde,Moderate,52
+10216,14059,2024-07-25,Chile,Unhealthy,174
+10217,14060,2024-07-25,China,Unhealthy for Sensitive Groups,146
+10218,14061,2024-07-25,Colombia,Moderate,62
+10219,14063,2024-07-25,Croatia,Good,27
+10220,14064,2024-07-25,Cyprus,Moderate,71
+10221,14065,2024-07-25,Czech Republic,Good,47
+10222,14066,2024-07-25,Denmark,Good,21
+10223,14067,2024-07-25,Dominican Republic,Good,14
+10224,14068,2024-07-25,Ecuador,Good,45
+10225,14071,2024-07-25,Estonia,Good,14
+10226,14072,2024-07-25,Ethiopia,Moderate,91
+10227,14073,2024-07-25,Finland,Moderate,55
+10228,14074,2024-07-25,France,Good,49
+10229,14075,2024-07-25,French Guiana,Good,18
+10230,14076,2024-07-25,Georgia,Good,43
+10231,14077,2024-07-25,Germany,Moderate,53
+10232,14078,2024-07-25,Ghana,Moderate,70
+10233,14080,2024-07-25,Greece,Moderate,75
+10234,14082,2024-07-25,Guadeloupe,Good,43
+10235,14083,2024-07-25,Guatemala,Moderate,64
+10236,14085,2024-07-25,Hong Kong,Moderate,59
+10237,14087,2024-07-25,Iceland,Good,14
+10238,14088,2024-07-25,India,Unhealthy,190
+10239,14089,2024-07-25,Indonesia,Unhealthy for Sensitive Groups,147
+10240,14092,2024-07-25,Ireland,Good,15
+10241,14093,2024-07-25,Israel,Moderate,71
+10242,14094,2024-07-25,Italy,Moderate,65
+10243,14095,2024-07-25,Japan,Moderate,90
+10244,14096,2024-07-25,Jordan,Good,26
+10245,14097,2024-07-25,Kazakhstan,Moderate,61
+10246,14098,2024-07-25,Kenya,Unhealthy for Sensitive Groups,110
+10247,14100,2024-07-25,Kuwait,Moderate,74
+10248,14101,2024-07-25,Kyrgyzstan,Good,23
+10249,14102,2024-07-25,Laos,Good,22
+10250,14103,2024-07-25,Latvia,Moderate,79
+10251,14105,2024-07-25,Liechtenstein,Good,7
+10252,14106,2024-07-25,Lithuania,Good,42
+10253,14108,2024-07-25,Macao,Good,40
+10254,14109,2024-07-25,Macedonia,Moderate,54
+10255,14110,2024-07-25,Madagascar,Moderate,91
+10256,14111,2024-07-25,Malaysia,Moderate,87
+10257,14112,2024-07-25,Malta,Good,46
+10258,14113,2024-07-25,Martinique,Good,39
+10259,14114,2024-07-25,Mexico,Unhealthy for Sensitive Groups,112
+10260,14115,2024-07-25,Moldova,Good,14
+10261,14116,2024-07-25,Monaco,Good,48
+10262,14117,2024-07-25,Mongolia,Good,37
+10263,14118,2024-07-25,Montenegro,Good,36
+10264,14119,2024-07-25,Myanmar,Good,45
+10265,14120,2024-07-25,Nepal,Good,31
+10266,14121,2024-07-25,Netherlands,Good,45
+10267,14123,2024-07-25,New Zealand,Good,24
+10268,14124,2024-07-25,Nigeria,Moderate,82
+10269,14125,2024-07-25,Norway,Good,20
+10270,14126,2024-07-25,Pakistan,Moderate,95
+10271,14127,2024-07-25,Palestinian Territory,Moderate,77
+10272,14128,2024-07-25,Peru,Moderate,98
+10273,14129,2024-07-25,Philippines,Moderate,76
+10274,14130,2024-07-25,Poland,Moderate,64
+10275,14131,2024-07-25,Portugal,Good,35
+10276,14133,2024-07-25,Reunion,Good,14
+10277,14134,2024-07-25,Romania,Moderate,57
+10278,14135,2024-07-25,Russia,Moderate,58
+10279,14136,2024-07-25,San Marino,Good,50
+10280,14138,2024-07-25,Serbia,Moderate,58
+10281,14139,2024-07-25,Singapore,Moderate,82
+10282,14140,2024-07-25,Slovakia,Good,27
+10283,14141,2024-07-25,Slovenia,Good,21
+10284,14142,2024-07-25,South Africa,Unhealthy for Sensitive Groups,128
+10285,14143,2024-07-25,South Korea,Moderate,54
+10286,14144,2024-07-25,Spain,Moderate,69
+10287,14145,2024-07-25,Sri Lanka,Good,39
+10288,14146,2024-07-25,Sweden,Good,36
+10289,14147,2024-07-25,Switzerland,Good,26
+10290,14148,2024-07-25,Taiwan,Good,39
+10291,14149,2024-07-25,Tajikistan,Moderate,72
+10292,14150,2024-07-25,Thailand,Moderate,99
+10293,14151,2024-07-25,Trinidad and Tobago,Good,42
+10294,14152,2024-07-25,Turkey,Unhealthy for Sensitive Groups,101
+10295,14154,2024-07-25,Uganda,Unhealthy for Sensitive Groups,139
+10296,14155,2024-07-25,Ukraine,Good,30
+10297,14156,2024-07-25,United Arab Emirates,Moderate,96
+10298,14157,2024-07-25,United Kingdom of Great Britain and Northern Ireland,Good,47
+10299,14158,2024-07-25,United States of America,Unhealthy,153
+10300,14160,2024-07-25,Vatican,Moderate,55
+10301,14162,2024-07-25,Vietnam,Moderate,55
+10302,14166,2024-08-01,Andorra,Moderate,61
+10303,14167,2024-08-01,Argentina,Moderate,72
+10304,14168,2024-08-01,Armenia,Good,38
+10305,14169,2024-08-01,Australia,Moderate,77
+10306,14170,2024-08-01,Austria,Good,36
+10307,14171,2024-08-01,Azerbaijan,Good,28
+10308,14173,2024-08-01,Bangladesh,Moderate,78
+10309,14174,2024-08-01,Belarus,Good,19
+10310,14175,2024-08-01,Belgium,Unhealthy for Sensitive Groups,117
+10311,14179,2024-08-01,Bosnia and Herzegovina,Good,41
+10312,14180,2024-08-01,Brazil,Unhealthy for Sensitive Groups,134
+10313,14181,2024-08-01,Brunei,Good,13
+10314,14182,2024-08-01,Bulgaria,Good,32
+10315,14185,2024-08-01,Canada,Moderate,89
+10316,14186,2024-08-01,Cape Verde,Good,27
+10317,14188,2024-08-01,Chile,Unhealthy for Sensitive Groups,105
+10318,14189,2024-08-01,China,Unhealthy for Sensitive Groups,123
+10319,14190,2024-08-01,Colombia,Moderate,54
+10320,14192,2024-08-01,Croatia,Good,36
+10321,14193,2024-08-01,Cyprus,Moderate,53
+10322,14194,2024-08-01,Czech Republic,Moderate,85
+10323,14195,2024-08-01,Denmark,Good,17
+10324,14196,2024-08-01,Dominican Republic,Good,22
+10325,14197,2024-08-01,Ecuador,Good,44
+10326,14199,2024-08-01,Estonia,Good,18
+10327,14200,2024-08-01,Ethiopia,Moderate,74
+10328,14201,2024-08-01,Finland,Good,21
+10329,14202,2024-08-01,France,Moderate,75
+10330,14203,2024-08-01,French Guiana,Good,13
+10331,14204,2024-08-01,Georgia,Good,32
+10332,14205,2024-08-01,Germany,Moderate,95
+10333,14206,2024-08-01,Ghana,Moderate,68
+10334,14208,2024-08-01,Greece,Moderate,68
+10335,14210,2024-08-01,Guadeloupe,Good,24
+10336,14211,2024-08-01,Guatemala,Good,33
+10337,14213,2024-08-01,Hong Kong,Good,46
+10338,14215,2024-08-01,Iceland,Good,10
+10339,14216,2024-08-01,India,Unhealthy,156
+10340,14217,2024-08-01,Indonesia,Unhealthy,153
+10341,14220,2024-08-01,Ireland,Good,29
+10342,14221,2024-08-01,Israel,Moderate,70
+10343,14222,2024-08-01,Italy,Moderate,80
+10344,14223,2024-08-01,Japan,Moderate,96
+10345,14224,2024-08-01,Jordan,Good,21
+10346,14225,2024-08-01,Kazakhstan,Good,50
+10347,14226,2024-08-01,Kenya,Unhealthy for Sensitive Groups,127
+10348,14228,2024-08-01,Kuwait,Unhealthy for Sensitive Groups,102
+10349,14229,2024-08-01,Kyrgyzstan,Good,41
+10350,14230,2024-08-01,Laos,Good,31
+10351,14231,2024-08-01,Latvia,Good,42
+10352,14233,2024-08-01,Liechtenstein,Good,21
+10353,14234,2024-08-01,Lithuania,Good,43
+10354,14236,2024-08-01,Macao,Good,46
+10355,14237,2024-08-01,Macedonia,Moderate,64
+10356,14238,2024-08-01,Madagascar,Unhealthy,163
+10357,14239,2024-08-01,Malaysia,Moderate,65
+10358,14240,2024-08-01,Malta,Moderate,52
+10359,14241,2024-08-01,Martinique,Good,25
+10360,14242,2024-08-01,Mexico,Unhealthy for Sensitive Groups,101
+10361,14243,2024-08-01,Moldova,Good,10
+10362,14244,2024-08-01,Monaco,Moderate,58
+10363,14245,2024-08-01,Mongolia,Moderate,65
+10364,14246,2024-08-01,Montenegro,Moderate,63
+10365,14247,2024-08-01,Myanmar,Good,37
+10366,14248,2024-08-01,Nepal,Good,35
+10367,14249,2024-08-01,Netherlands,Moderate,74
+10368,14251,2024-08-01,New Zealand,Good,10
+10369,14252,2024-08-01,Nigeria,Good,43
+10370,14253,2024-08-01,Norway,Good,21
+10371,14254,2024-08-01,Pakistan,Good,48
+10372,14255,2024-08-01,Palestinian Territory,Moderate,68
+10373,14256,2024-08-01,Peru,Unhealthy for Sensitive Groups,101
+10374,14257,2024-08-01,Philippines,Moderate,72
+10375,14258,2024-08-01,Poland,Moderate,65
+10376,14259,2024-08-01,Portugal,Good,31
+10377,14261,2024-08-01,Reunion,Good,14
+10378,14262,2024-08-01,Romania,Good,39
+10379,14263,2024-08-01,Russia,Moderate,56
+10380,14264,2024-08-01,San Marino,Good,47
+10381,14266,2024-08-01,Serbia,Moderate,52
+10382,14267,2024-08-01,Singapore,Moderate,69
+10383,14268,2024-08-01,Slovakia,Good,45
+10384,14269,2024-08-01,Slovenia,Good,41
+10385,14270,2024-08-01,South Africa,Moderate,99
+10386,14271,2024-08-01,South Korea,Moderate,53
+10387,14272,2024-08-01,Spain,Moderate,80
+10388,14273,2024-08-01,Sri Lanka,Moderate,77
+10389,14274,2024-08-01,Sweden,Good,17
+10390,14275,2024-08-01,Switzerland,Good,37
+10391,14276,2024-08-01,Taiwan,Good,34
+10392,14277,2024-08-01,Tajikistan,Very Unhealthy,226
+10393,14278,2024-08-01,Thailand,Moderate,82
+10394,14280,2024-08-01,Trinidad and Tobago,Good,18
+10395,14281,2024-08-01,Turkey,Moderate,79
+10396,14283,2024-08-01,Uganda,Unhealthy for Sensitive Groups,115
+10397,14284,2024-08-01,Ukraine,Good,43
+10398,14285,2024-08-01,United Arab Emirates,Unhealthy,171
+10399,14286,2024-08-01,United Kingdom of Great Britain and Northern Ireland,Moderate,79
+10400,14287,2024-08-01,United States of America,Unhealthy for Sensitive Groups,148
+10401,14289,2024-08-01,Vatican,Moderate,63
+10402,14291,2024-08-01,Vietnam,Good,38
+10403,14295,2024-08-08,Andorra,Good,49
+10404,14296,2024-08-08,Argentina,Good,21
+10405,14297,2024-08-08,Armenia,Good,49
+10406,14298,2024-08-08,Australia,Moderate,58
+10407,14299,2024-08-08,Austria,Good,29
+10408,14300,2024-08-08,Azerbaijan,Good,32
+10409,14302,2024-08-08,Bangladesh,Moderate,87
+10410,14303,2024-08-08,Belarus,Good,28
+10411,14304,2024-08-08,Belgium,Good,29
+10412,14308,2024-08-08,Bosnia and Herzegovina,Good,33
+10413,14309,2024-08-08,Brazil,Unhealthy,176
+10414,14310,2024-08-08,Brunei,Good,10
+10415,14311,2024-08-08,Bulgaria,Good,35
+10416,14314,2024-08-08,Canada,Moderate,93
+10417,14315,2024-08-08,Cape Verde,Good,35
+10418,14317,2024-08-08,Chile,Hazardous,332
+10419,14318,2024-08-08,China,Unhealthy for Sensitive Groups,133
+10420,14319,2024-08-08,Colombia,Moderate,70
+10421,14321,2024-08-08,Croatia,Good,28
+10422,14322,2024-08-08,Cyprus,Moderate,55
+10423,14323,2024-08-08,Czech Republic,Moderate,59
+10424,14324,2024-08-08,Denmark,Good,23
+10425,14325,2024-08-08,Dominican Republic,Good,25
+10426,14326,2024-08-08,Ecuador,Good,46
+10427,14329,2024-08-08,Estonia,Good,15
+10428,14330,2024-08-08,Ethiopia,Moderate,74
+10429,14331,2024-08-08,Finland,Good,35
+10430,14332,2024-08-08,France,Moderate,51
+10431,14333,2024-08-08,French Guiana,Good,30
+10432,14334,2024-08-08,Georgia,Good,39
+10433,14335,2024-08-08,Germany,Moderate,70
+10434,14336,2024-08-08,Ghana,Good,34
+10435,14338,2024-08-08,Greece,Moderate,71
+10436,14340,2024-08-08,Guadeloupe,Good,21
+10437,14341,2024-08-08,Guatemala,Good,40
+10438,14343,2024-08-08,Hong Kong,Good,44
+10439,14345,2024-08-08,Iceland,Good,17
+10440,14346,2024-08-08,India,Unhealthy,160
+10441,14347,2024-08-08,Indonesia,Unhealthy,159
+10442,14350,2024-08-08,Ireland,Good,27
+10443,14351,2024-08-08,Israel,Moderate,81
+10444,14352,2024-08-08,Italy,Moderate,69
+10445,14353,2024-08-08,Japan,Moderate,92
+10446,14354,2024-08-08,Jordan,Good,31
+10447,14355,2024-08-08,Kazakhstan,Good,38
+10448,14356,2024-08-08,Kenya,Unhealthy for Sensitive Groups,110
+10449,14358,2024-08-08,Kuwait,Moderate,90
+10450,14359,2024-08-08,Kyrgyzstan,Good,17
+10451,14360,2024-08-08,Laos,Good,38
+10452,14361,2024-08-08,Latvia,Moderate,80
+10453,14363,2024-08-08,Liechtenstein,Good,8
+10454,14364,2024-08-08,Lithuania,Moderate,62
+10455,14366,2024-08-08,Macao,Good,46
+10456,14367,2024-08-08,Macedonia,Good,46
+10457,14368,2024-08-08,Madagascar,Moderate,82
+10458,14369,2024-08-08,Malaysia,Moderate,68
+10459,14370,2024-08-08,Malta,Good,47
+10460,14371,2024-08-08,Martinique,Good,20
+10461,14372,2024-08-08,Mexico,Unhealthy for Sensitive Groups,102
+10462,14373,2024-08-08,Moldova,Good,38
+10463,14374,2024-08-08,Monaco,Good,47
+10464,14375,2024-08-08,Mongolia,Moderate,55
+10465,14376,2024-08-08,Montenegro,Moderate,51
+10466,14377,2024-08-08,Myanmar,Good,29
+10467,14378,2024-08-08,Nepal,Good,28
+10468,14379,2024-08-08,Netherlands,Good,38
+10469,14381,2024-08-08,New Zealand,Good,25
+10470,14382,2024-08-08,Nigeria,Moderate,57
+10471,14383,2024-08-08,Norway,Good,26
+10472,14384,2024-08-08,Pakistan,Good,49
+10473,14385,2024-08-08,Palestinian Territory,Moderate,86
+10474,14386,2024-08-08,Peru,Moderate,94
+10475,14387,2024-08-08,Philippines,Good,32
+10476,14388,2024-08-08,Poland,Moderate,65
+10477,14389,2024-08-08,Portugal,Good,29
+10478,14391,2024-08-08,Reunion,Good,15
+10479,14392,2024-08-08,Romania,Good,38
+10480,14393,2024-08-08,Russia,Moderate,63
+10481,14394,2024-08-08,San Marino,Good,49
+10482,14396,2024-08-08,Serbia,Good,38
+10483,14397,2024-08-08,Singapore,Good,44
+10484,14398,2024-08-08,Slovakia,Good,47
+10485,14399,2024-08-08,Slovenia,Good,25
+10486,14400,2024-08-08,South Africa,Unhealthy for Sensitive Groups,127
+10487,14401,2024-08-08,South Korea,Moderate,89
+10488,14402,2024-08-08,Spain,Moderate,66
+10489,14403,2024-08-08,Sri Lanka,Good,50
+10490,14404,2024-08-08,Sweden,Good,39
+10491,14405,2024-08-08,Switzerland,Good,26
+10492,14406,2024-08-08,Taiwan,Moderate,67
+10493,14407,2024-08-08,Tajikistan,Unhealthy for Sensitive Groups,109
+10494,14408,2024-08-08,Thailand,Moderate,74
+10495,14410,2024-08-08,Trinidad and Tobago,Good,19
+10496,14411,2024-08-08,Turkey,Moderate,79
+10497,14413,2024-08-08,Uganda,Unhealthy,167
+10498,14414,2024-08-08,Ukraine,Good,41
+10499,14415,2024-08-08,United Arab Emirates,Unhealthy for Sensitive Groups,109
+10500,14416,2024-08-08,United Kingdom of Great Britain and Northern Ireland,Good,48
+10501,14417,2024-08-08,United States of America,Unhealthy for Sensitive Groups,142
+10502,14419,2024-08-08,Vatican,Moderate,61
+10503,14421,2024-08-08,Vietnam,Good,47
+10504,14425,2024-08-15,Andorra,Good,11
+10505,14426,2024-08-15,Argentina,Moderate,62
+10506,14427,2024-08-15,Armenia,Good,37
+10507,14428,2024-08-15,Australia,Moderate,52
+10508,14429,2024-08-15,Austria,Good,47
+10509,14430,2024-08-15,Azerbaijan,Good,40
+10510,14432,2024-08-15,Bangladesh,Unhealthy for Sensitive Groups,132
+10511,14433,2024-08-15,Belarus,Good,29
+10512,14434,2024-08-15,Belgium,Moderate,89
+10513,14438,2024-08-15,Bosnia and Herzegovina,Moderate,65
+10514,14439,2024-08-15,Brazil,Very Unhealthy,215
+10515,14440,2024-08-15,Brunei,Good,13
+10516,14441,2024-08-15,Bulgaria,Good,34
+10517,14444,2024-08-15,Canada,Very Unhealthy,236
+10518,14445,2024-08-15,Cape Verde,Good,48
+10519,14447,2024-08-15,Chile,Very Unhealthy,262
+10520,14448,2024-08-15,China,Unhealthy for Sensitive Groups,148
+10521,14449,2024-08-15,Colombia,Moderate,81
+10522,14451,2024-08-15,Croatia,Moderate,60
+10523,14452,2024-08-15,Cyprus,Moderate,54
+10524,14453,2024-08-15,Czech Republic,Moderate,74
+10525,14454,2024-08-15,Denmark,Good,19
+10526,14455,2024-08-15,Dominican Republic,Good,15
+10527,14456,2024-08-15,Ecuador,Good,45
+10528,14459,2024-08-15,Estonia,Good,11
+10529,14460,2024-08-15,Ethiopia,Moderate,89
+10530,14461,2024-08-15,Finland,Good,41
+10531,14462,2024-08-15,France,Good,49
+10532,14463,2024-08-15,French Guiana,Good,16
+10533,14464,2024-08-15,Georgia,Good,39
+10534,14465,2024-08-15,Germany,Unhealthy,151
+10535,14466,2024-08-15,Ghana,Moderate,54
+10536,14468,2024-08-15,Greece,Moderate,56
+10537,14470,2024-08-15,Guadeloupe,Good,18
+10538,14471,2024-08-15,Guatemala,Moderate,84
+10539,14473,2024-08-15,Hong Kong,Good,46
+10540,14475,2024-08-15,Iceland,Good,12
+10541,14476,2024-08-15,India,Unhealthy,165
+10542,14477,2024-08-15,Indonesia,Unhealthy for Sensitive Groups,149
+10543,14480,2024-08-15,Ireland,Good,21
+10544,14481,2024-08-15,Israel,Moderate,68
+10545,14482,2024-08-15,Italy,Moderate,64
+10546,14483,2024-08-15,Japan,Moderate,88
+10547,14484,2024-08-15,Jordan,Good,21
+10548,14485,2024-08-15,Kazakhstan,Good,42
+10549,14486,2024-08-15,Kenya,Moderate,70
+10550,14488,2024-08-15,Kuwait,Unhealthy for Sensitive Groups,105
+10551,14489,2024-08-15,Kyrgyzstan,Good,37
+10552,14490,2024-08-15,Laos,Good,18
+10553,14491,2024-08-15,Latvia,Good,41
+10554,14493,2024-08-15,Liechtenstein,Good,9
+10555,14494,2024-08-15,Lithuania,Good,38
+10556,14496,2024-08-15,Macao,Good,30
+10557,14497,2024-08-15,Macedonia,Moderate,66
+10558,14498,2024-08-15,Madagascar,Moderate,87
+10559,14499,2024-08-15,Malaysia,Moderate,69
+10560,14500,2024-08-15,Malta,Good,40
+10561,14501,2024-08-15,Martinique,Good,20
+10562,14502,2024-08-15,Mexico,Moderate,93
+10563,14503,2024-08-15,Moldova,Good,29
+10564,14504,2024-08-15,Monaco,Good,40
+10565,14505,2024-08-15,Mongolia,Good,50
+10566,14506,2024-08-15,Montenegro,Moderate,60
+10567,14507,2024-08-15,Myanmar,Good,14
+10568,14508,2024-08-15,Nepal,Good,30
+10569,14509,2024-08-15,Netherlands,Unhealthy for Sensitive Groups,133
+10570,14511,2024-08-15,New Zealand,Good,23
+10571,14512,2024-08-15,Nigeria,Moderate,54
+10572,14513,2024-08-15,Norway,Good,34
+10573,14514,2024-08-15,Pakistan,Moderate,96
+10574,14515,2024-08-15,Palestinian Territory,Moderate,76
+10575,14516,2024-08-15,Peru,Unhealthy for Sensitive Groups,134
+10576,14517,2024-08-15,Philippines,Moderate,63
+10577,14518,2024-08-15,Poland,Moderate,56
+10578,14519,2024-08-15,Portugal,Good,29
+10579,14521,2024-08-15,Reunion,Good,18
+10580,14522,2024-08-15,Romania,Good,32
+10581,14523,2024-08-15,Russia,Good,49
+10582,14524,2024-08-15,San Marino,Good,48
+10583,14526,2024-08-15,Serbia,Moderate,62
+10584,14527,2024-08-15,Singapore,Moderate,57
+10585,14528,2024-08-15,Slovakia,Moderate,59
+10586,14529,2024-08-15,Slovenia,Moderate,51
+10587,14530,2024-08-15,South Africa,Moderate,86
+10588,14531,2024-08-15,South Korea,Moderate,71
+10589,14532,2024-08-15,Spain,Moderate,56
+10590,14533,2024-08-15,Sri Lanka,Good,45
+10591,14534,2024-08-15,Sweden,Good,24
+10592,14535,2024-08-15,Switzerland,Good,32
+10593,14536,2024-08-15,Taiwan,Good,45
+10594,14537,2024-08-15,Tajikistan,Unhealthy for Sensitive Groups,107
+10595,14538,2024-08-15,Thailand,Moderate,74
+10596,14540,2024-08-15,Trinidad and Tobago,Good,18
+10597,14541,2024-08-15,Turkey,Moderate,77
+10598,14543,2024-08-15,Uganda,Unhealthy for Sensitive Groups,127
+10599,14544,2024-08-15,Ukraine,Good,37
+10600,14545,2024-08-15,United Arab Emirates,Unhealthy for Sensitive Groups,103
+10601,14546,2024-08-15,United Kingdom of Great Britain and Northern Ireland,Moderate,61
+10602,14547,2024-08-15,United States of America,Unhealthy for Sensitive Groups,143
+10603,14549,2024-08-15,Vatican,Good,46
+10604,14551,2024-08-15,Vietnam,Good,49
+10605,14555,2024-08-22,Andorra,Moderate,77
+10606,14556,2024-08-22,Argentina,Good,30
+10607,14557,2024-08-22,Armenia,Good,42
+10608,14558,2024-08-22,Australia,Good,39
+10609,14559,2024-08-22,Austria,Good,27
+10610,14560,2024-08-22,Azerbaijan,Good,43
+10611,14562,2024-08-22,Bangladesh,Unhealthy for Sensitive Groups,141
+10612,14563,2024-08-22,Belarus,Good,44
+10613,14564,2024-08-22,Belgium,Good,27
+10614,14568,2024-08-22,Bosnia and Herzegovina,Moderate,56
+10615,14569,2024-08-22,Brazil,Unhealthy,168
+10616,14570,2024-08-22,Brunei,Good,10
+10617,14571,2024-08-22,Bulgaria,Good,48
+10618,14574,2024-08-22,Canada,Moderate,71
+10619,14575,2024-08-22,Cape Verde,Good,42
+10620,14577,2024-08-22,Chile,Unhealthy for Sensitive Groups,142
+10621,14578,2024-08-22,China,Unhealthy for Sensitive Groups,134
+10622,14579,2024-08-22,Colombia,Moderate,71
+10623,14581,2024-08-22,Croatia,Moderate,53
+10624,14582,2024-08-22,Cyprus,Moderate,55
+10625,14583,2024-08-22,Czech Republic,Good,49
+10626,14584,2024-08-22,Denmark,Good,14
+10627,14585,2024-08-22,Dominican Republic,Good,23
+10628,14586,2024-08-22,Ecuador,Moderate,51
+10629,14589,2024-08-22,Estonia,Good,19
+10630,14590,2024-08-22,Ethiopia,Good,46
+10631,14591,2024-08-22,Finland,Good,27
+10632,14592,2024-08-22,France,Good,46
+10633,14593,2024-08-22,French Guiana,Good,26
+10634,14594,2024-08-22,Georgia,Moderate,54
+10635,14595,2024-08-22,Germany,Good,43
+10636,14596,2024-08-22,Ghana,Moderate,56
+10637,14598,2024-08-22,Greece,Moderate,72
+10638,14600,2024-08-22,Guadeloupe,Good,16
+10639,14601,2024-08-22,Guatemala,Moderate,65
+10640,14603,2024-08-22,Hong Kong,Good,43
+10641,14605,2024-08-22,Iceland,Good,18
+10642,14606,2024-08-22,India,Unhealthy,170
+10643,14607,2024-08-22,Indonesia,Unhealthy,155
+10644,14610,2024-08-22,Ireland,Good,26
+10645,14611,2024-08-22,Israel,Moderate,70
+10646,14612,2024-08-22,Italy,Moderate,72
+10647,14613,2024-08-22,Japan,Moderate,77
+10648,14614,2024-08-22,Jordan,Good,25
+10649,14615,2024-08-22,Kazakhstan,Good,49
+10650,14616,2024-08-22,Kenya,Moderate,84
+10651,14618,2024-08-22,Kuwait,Unhealthy for Sensitive Groups,138
+10652,14619,2024-08-22,Kyrgyzstan,Good,30
+10653,14620,2024-08-22,Laos,Good,18
+10654,14621,2024-08-22,Latvia,Good,26
+10655,14623,2024-08-22,Liechtenstein,Good,13
+10656,14624,2024-08-22,Lithuania,Good,16
+10657,14626,2024-08-22,Macao,Good,34
+10658,14627,2024-08-22,Macedonia,Good,49
+10659,14628,2024-08-22,Madagascar,Moderate,65
+10660,14629,2024-08-22,Malaysia,Moderate,71
+10661,14630,2024-08-22,Malta,Good,32
+10662,14631,2024-08-22,Martinique,Good,15
+10663,14632,2024-08-22,Mexico,Unhealthy for Sensitive Groups,102
+10664,14633,2024-08-22,Moldova,Good,12
+10665,14634,2024-08-22,Monaco,Good,50
+10666,14635,2024-08-22,Mongolia,Moderate,57
+10667,14636,2024-08-22,Montenegro,Moderate,51
+10668,14637,2024-08-22,Myanmar,Good,18
+10669,14638,2024-08-22,Nepal,Good,23
+10670,14639,2024-08-22,Netherlands,Good,40
+10671,14641,2024-08-22,New Zealand,Good,29
+10672,14642,2024-08-22,Nigeria,Moderate,74
+10673,14643,2024-08-22,Norway,Good,14
+10674,14644,2024-08-22,Pakistan,Unhealthy for Sensitive Groups,102
+10675,14645,2024-08-22,Palestinian Territory,Moderate,74
+10676,14646,2024-08-22,Peru,Unhealthy for Sensitive Groups,116
+10677,14647,2024-08-22,Philippines,Moderate,66
+10678,14648,2024-08-22,Poland,Good,48
+10679,14649,2024-08-22,Portugal,Good,36
+10680,14651,2024-08-22,Reunion,Good,21
+10681,14652,2024-08-22,Romania,Good,49
+10682,14653,2024-08-22,Russia,Good,45
+10683,14654,2024-08-22,San Marino,Good,34
+10684,14655,2024-08-22,Serbia,Moderate,63
+10685,14656,2024-08-22,Singapore,Moderate,66
+10686,14657,2024-08-22,Slovakia,Good,43
+10687,14658,2024-08-22,Slovenia,Moderate,52
+10688,14659,2024-08-22,South Africa,Unhealthy for Sensitive Groups,131
+10689,14660,2024-08-22,South Korea,Good,46
+10690,14661,2024-08-22,Spain,Moderate,100
+10691,14662,2024-08-22,Sri Lanka,Moderate,60
+10692,14663,2024-08-22,Sweden,Good,30
+10693,14664,2024-08-22,Switzerland,Good,25
+10694,14665,2024-08-22,Taiwan,Good,49
+10695,14666,2024-08-22,Tajikistan,Moderate,76
+10696,14667,2024-08-22,Thailand,Moderate,81
+10697,14669,2024-08-22,Trinidad and Tobago,Good,34
+10698,14670,2024-08-22,Turkey,Moderate,80
+10699,14672,2024-08-22,Uganda,Unhealthy for Sensitive Groups,128
+10700,14673,2024-08-22,Ukraine,Moderate,61
+10701,14674,2024-08-22,United Arab Emirates,Moderate,82
+10702,14675,2024-08-22,United Kingdom of Great Britain and Northern Ireland,Good,33
+10703,14676,2024-08-22,United States of America,Unhealthy for Sensitive Groups,119
+10704,14678,2024-08-22,Vatican,Good,34
+10705,14680,2024-08-22,Vietnam,Moderate,71
+10706,14684,2024-08-29,Andorra,Good,35
+10707,14685,2024-08-29,Argentina,Good,35
+10708,14686,2024-08-29,Armenia,Good,41
+10709,14687,2024-08-29,Australia,Moderate,60
+10710,14688,2024-08-29,Austria,Moderate,59
+10711,14689,2024-08-29,Azerbaijan,Moderate,55
+10712,14690,2024-08-29,Bangladesh,Unhealthy for Sensitive Groups,140
+10713,14691,2024-08-29,Belarus,Moderate,54
+10714,14692,2024-08-29,Belgium,Moderate,77
+10715,14696,2024-08-29,Bosnia and Herzegovina,Moderate,61
+10716,14697,2024-08-29,Brazil,Very Unhealthy,248
+10717,14698,2024-08-29,Brunei,Good,13
+10718,14699,2024-08-29,Bulgaria,Good,44
+10719,14702,2024-08-29,Canada,Good,47
+10720,14703,2024-08-29,Cape Verde,Good,46
+10721,14705,2024-08-29,Chile,Unhealthy,180
+10722,14706,2024-08-29,China,Unhealthy for Sensitive Groups,111
+10723,14707,2024-08-29,Colombia,Moderate,70
+10724,14709,2024-08-29,Croatia,Moderate,63
+10725,14710,2024-08-29,Cyprus,Moderate,67
+10726,14711,2024-08-29,Czech Republic,Moderate,77
+10727,14712,2024-08-29,Denmark,Moderate,68
+10728,14713,2024-08-29,Dominican Republic,Good,34
+10729,14714,2024-08-29,Ecuador,Good,42
+10730,14717,2024-08-29,Estonia,Good,27
+10731,14718,2024-08-29,Ethiopia,Moderate,89
+10732,14719,2024-08-29,Finland,Good,46
+10733,14720,2024-08-29,France,Moderate,67
+10734,14721,2024-08-29,French Guiana,Good,40
+10735,14722,2024-08-29,Georgia,Moderate,53
+10736,14723,2024-08-29,Germany,Moderate,81
+10737,14724,2024-08-29,Ghana,Good,45
+10738,14726,2024-08-29,Greece,Moderate,84
+10739,14728,2024-08-29,Guadeloupe,Good,12
+10740,14729,2024-08-29,Guatemala,Good,50
+10741,14731,2024-08-29,Hong Kong,Moderate,69
+10742,14733,2024-08-29,Iceland,Good,11
+10743,14734,2024-08-29,India,Unhealthy,170
+10744,14735,2024-08-29,Indonesia,Unhealthy for Sensitive Groups,149
+10745,14738,2024-08-29,Ireland,Good,25
+10746,14739,2024-08-29,Israel,Moderate,67
+10747,14740,2024-08-29,Italy,Moderate,76
+10748,14741,2024-08-29,Japan,Moderate,66
+10749,14742,2024-08-29,Jordan,Good,21
+10750,14743,2024-08-29,Kazakhstan,Moderate,74
+10751,14744,2024-08-29,Kenya,Good,34
+10752,14746,2024-08-29,Kuwait,Moderate,95
+10753,14747,2024-08-29,Kyrgyzstan,Good,17
+10754,14748,2024-08-29,Laos,Good,24
+10755,14749,2024-08-29,Latvia,Good,50
+10756,14751,2024-08-29,Liechtenstein,Good,15
+10757,14752,2024-08-29,Lithuania,Moderate,57
+10758,14754,2024-08-29,Macao,Unhealthy for Sensitive Groups,102
+10759,14755,2024-08-29,Macedonia,Moderate,58
+10760,14756,2024-08-29,Madagascar,Good,21
+10761,14757,2024-08-29,Malaysia,Moderate,65
+10762,14758,2024-08-29,Malta,Good,34
+10763,14759,2024-08-29,Martinique,Good,25
+10764,14760,2024-08-29,Mexico,Unhealthy for Sensitive Groups,102
+10765,14761,2024-08-29,Moldova,Good,10
+10766,14762,2024-08-29,Monaco,Moderate,54
+10767,14763,2024-08-29,Mongolia,Moderate,74
+10768,14764,2024-08-29,Montenegro,Moderate,54
+10769,14765,2024-08-29,Myanmar,Good,22
+10770,14766,2024-08-29,Nepal,Good,44
+10771,14767,2024-08-29,Netherlands,Moderate,79
+10772,14769,2024-08-29,New Zealand,Good,31
+10773,14770,2024-08-29,Nigeria,Moderate,74
+10774,14771,2024-08-29,Norway,Good,50
+10775,14772,2024-08-29,Pakistan,Moderate,61
+10776,14773,2024-08-29,Palestinian Territory,Moderate,81
+10777,14774,2024-08-29,Peru,Unhealthy for Sensitive Groups,130
+10778,14775,2024-08-29,Philippines,Moderate,52
+10779,14776,2024-08-29,Poland,Moderate,80
+10780,14777,2024-08-29,Portugal,Good,13
+10781,14779,2024-08-29,Reunion,Good,17
+10782,14780,2024-08-29,Romania,Good,49
+10783,14781,2024-08-29,Russia,Moderate,77
+10784,14782,2024-08-29,San Marino,Good,47
+10785,14784,2024-08-29,Serbia,Moderate,71
+10786,14785,2024-08-29,Singapore,Unhealthy for Sensitive Groups,105
+10787,14786,2024-08-29,Slovakia,Moderate,67
+10788,14787,2024-08-29,Slovenia,Moderate,53
+10789,14788,2024-08-29,South Africa,Moderate,59
+10790,14789,2024-08-29,South Korea,Good,45
+10791,14790,2024-08-29,Spain,Moderate,73
+10792,14791,2024-08-29,Sri Lanka,Good,39
+10793,14792,2024-08-29,Sweden,Moderate,60
+10794,14793,2024-08-29,Switzerland,Moderate,52
+10795,14794,2024-08-29,Taiwan,Moderate,65
+10796,14795,2024-08-29,Tajikistan,Good,44
+10797,14796,2024-08-29,Thailand,Moderate,63
+10798,14797,2024-08-29,Trinidad and Tobago,Good,17
+10799,14798,2024-08-29,Turkey,Moderate,75
+10800,14800,2024-08-29,Uganda,Unhealthy for Sensitive Groups,126
+10801,14801,2024-08-29,Ukraine,Moderate,51
+10802,14802,2024-08-29,United Arab Emirates,Unhealthy for Sensitive Groups,144
+10803,14803,2024-08-29,United Kingdom of Great Britain and Northern Ireland,Moderate,51
+10804,14804,2024-08-29,United States of America,Unhealthy for Sensitive Groups,115
+10805,14806,2024-08-29,Vatican,Good,46
+10806,14808,2024-08-29,Vietnam,Good,49
+10807,14812,2024-09-05,Andorra,Good,6
+10808,14813,2024-09-05,Argentina,Good,40
+10809,14814,2024-09-05,Armenia,Good,47
+10810,14815,2024-09-05,Australia,Good,46
+10811,14816,2024-09-05,Austria,Moderate,61
+10812,14817,2024-09-05,Azerbaijan,Good,42
+10813,14818,2024-09-05,Bangladesh,Unhealthy for Sensitive Groups,134
+10814,14819,2024-09-05,Belarus,Moderate,53
+10815,14820,2024-09-05,Belgium,Unhealthy for Sensitive Groups,102
+10816,14824,2024-09-05,Bosnia and Herzegovina,Moderate,63
+10817,14825,2024-09-05,Brazil,Unhealthy,188
+10818,14826,2024-09-05,Brunei,Good,13
+10819,14827,2024-09-05,Bulgaria,Moderate,57
+10820,14830,2024-09-05,Canada,Good,50
+10821,14831,2024-09-05,Cape Verde,Good,42
+10822,14833,2024-09-05,Chile,Very Unhealthy,206
+10823,14834,2024-09-05,China,Unhealthy for Sensitive Groups,137
+10824,14835,2024-09-05,Colombia,Moderate,86
+10825,14837,2024-09-05,Croatia,Good,28
+10826,14838,2024-09-05,Cyprus,Moderate,67
+10827,14839,2024-09-05,Czech Republic,Moderate,87
+10828,14840,2024-09-05,Denmark,Moderate,68
+10829,14841,2024-09-05,Dominican Republic,Good,21
+10830,14842,2024-09-05,Ecuador,Moderate,78
+10831,14845,2024-09-05,Estonia,Good,40
+10832,14846,2024-09-05,Ethiopia,Unhealthy for Sensitive Groups,102
+10833,14847,2024-09-05,Finland,Moderate,60
+10834,14848,2024-09-05,France,Moderate,62
+10835,14849,2024-09-05,French Guiana,Good,35
+10836,14850,2024-09-05,Georgia,Moderate,64
+10837,14851,2024-09-05,Germany,Unhealthy for Sensitive Groups,143
+10838,14852,2024-09-05,Ghana,Good,50
+10839,14854,2024-09-05,Greece,Moderate,79
+10840,14856,2024-09-05,Guadeloupe,Good,20
+10841,14857,2024-09-05,Guatemala,Moderate,51
+10842,14859,2024-09-05,Hong Kong,Moderate,57
+10843,14861,2024-09-05,Iceland,Good,19
+10844,14862,2024-09-05,India,Unhealthy,154
+10845,14863,2024-09-05,Indonesia,Unhealthy for Sensitive Groups,120
+10846,14866,2024-09-05,Ireland,Good,22
+10847,14867,2024-09-05,Israel,Moderate,60
+10848,14868,2024-09-05,Italy,Moderate,77
+10849,14869,2024-09-05,Japan,Moderate,94
+10850,14870,2024-09-05,Jordan,Good,22
+10851,14871,2024-09-05,Kazakhstan,Good,46
+10852,14872,2024-09-05,Kenya,Moderate,71
+10853,14874,2024-09-05,Kuwait,Unhealthy for Sensitive Groups,101
+10854,14875,2024-09-05,Kyrgyzstan,Good,29
+10855,14876,2024-09-05,Laos,Good,38
+10856,14877,2024-09-05,Latvia,Good,50
+10857,14879,2024-09-05,Liechtenstein,Good,43
+10858,14880,2024-09-05,Lithuania,Moderate,64
+10859,14882,2024-09-05,Macao,Moderate,63
+10860,14883,2024-09-05,Macedonia,Moderate,81
+10861,14884,2024-09-05,Madagascar,Good,21
+10862,14885,2024-09-05,Malaysia,Moderate,73
+10863,14886,2024-09-05,Malta,Good,39
+10864,14887,2024-09-05,Martinique,Good,18
+10865,14888,2024-09-05,Mexico,Moderate,86
+10866,14889,2024-09-05,Moldova,Good,10
+10867,14890,2024-09-05,Monaco,Good,15
+10868,14891,2024-09-05,Mongolia,Good,36
+10869,14892,2024-09-05,Montenegro,Good,30
+10870,14893,2024-09-05,Myanmar,Good,25
+10871,14894,2024-09-05,Nepal,Moderate,56
+10872,14895,2024-09-05,Netherlands,Moderate,92
+10873,14897,2024-09-05,New Zealand,Good,14
+10874,14898,2024-09-05,Nigeria,Moderate,62
+10875,14899,2024-09-05,Norway,Good,44
+10876,14900,2024-09-05,Pakistan,Unhealthy for Sensitive Groups,109
+10877,14901,2024-09-05,Palestinian Territory,Moderate,67
+10878,14902,2024-09-05,Peru,Unhealthy,167
+10879,14903,2024-09-05,Philippines,Moderate,63
+10880,14904,2024-09-05,Poland,Moderate,93
+10881,14905,2024-09-05,Portugal,Good,43
+10882,14907,2024-09-05,Reunion,Good,17
+10883,14908,2024-09-05,Romania,Good,43
+10884,14909,2024-09-05,Russia,Moderate,67
+10885,14910,2024-09-05,San Marino,Moderate,53
+10886,14912,2024-09-05,Serbia,Moderate,83
+10887,14913,2024-09-05,Singapore,Moderate,80
+10888,14914,2024-09-05,Slovakia,Moderate,59
+10889,14915,2024-09-05,Slovenia,Moderate,62
+10890,14916,2024-09-05,South Africa,Unhealthy for Sensitive Groups,109
+10891,14917,2024-09-05,South Korea,Moderate,62
+10892,14918,2024-09-05,Spain,Moderate,54
+10893,14919,2024-09-05,Sri Lanka,Good,25
+10894,14920,2024-09-05,Sweden,Moderate,74
+10895,14921,2024-09-05,Switzerland,Good,50
+10896,14922,2024-09-05,Taiwan,Moderate,62
+10897,14923,2024-09-05,Tajikistan,Unhealthy,166
+10898,14924,2024-09-05,Thailand,Moderate,72
+10899,14926,2024-09-05,Trinidad and Tobago,Good,29
+10900,14927,2024-09-05,Turkey,Unhealthy for Sensitive Groups,109
+10901,14929,2024-09-05,Uganda,Moderate,100
+10902,14930,2024-09-05,Ukraine,Moderate,63
+10903,14931,2024-09-05,United Arab Emirates,Unhealthy for Sensitive Groups,105
+10904,14932,2024-09-05,United Kingdom of Great Britain and Northern Ireland,Moderate,78
+10905,14933,2024-09-05,United States of America,Unhealthy,167
+10906,14935,2024-09-05,Vatican,Moderate,59
+10907,14937,2024-09-05,Vietnam,Moderate,60
+10908,14940,2024-09-12,Andorra,Good,11
+10909,14941,2024-09-12,Argentina,Good,47
+10910,14942,2024-09-12,Armenia,Moderate,73
+10911,14943,2024-09-12,Australia,Good,39
+10912,14944,2024-09-12,Austria,Good,25
+10913,14945,2024-09-12,Azerbaijan,Moderate,63
+10914,14947,2024-09-12,Bangladesh,Unhealthy for Sensitive Groups,145
+10915,14948,2024-09-12,Belarus,Moderate,73
+10916,14949,2024-09-12,Belgium,Good,18
+10917,14953,2024-09-12,Bosnia and Herzegovina,Good,26
+10918,14954,2024-09-12,Brazil,Unhealthy,172
+10919,14955,2024-09-12,Brunei,Good,10
+10920,14956,2024-09-12,Bulgaria,Moderate,52
+10921,14958,2024-09-12,Canada,Moderate,69
+10922,14959,2024-09-12,Cape Verde,Good,28
+10923,14961,2024-09-12,Chile,Unhealthy for Sensitive Groups,130
+10924,14962,2024-09-12,China,Unhealthy for Sensitive Groups,132
+10925,14963,2024-09-12,Colombia,Moderate,73
+10926,14965,2024-09-12,Croatia,Good,35
+10927,14966,2024-09-12,Cyprus,Good,47
+10928,14967,2024-09-12,Czech Republic,Good,48
+10929,14968,2024-09-12,Denmark,Good,10
+10930,14969,2024-09-12,Dominican Republic,Good,16
+10931,14970,2024-09-12,Ecuador,Moderate,58
+10932,14973,2024-09-12,Estonia,Good,38
+10933,14974,2024-09-12,Ethiopia,Moderate,93
+10934,14975,2024-09-12,Finland,Moderate,54
+10935,14976,2024-09-12,France,Good,35
+10936,14977,2024-09-12,French Guiana,Good,42
+10937,14978,2024-09-12,Georgia,Moderate,54
+10938,14979,2024-09-12,Germany,Moderate,56
+10939,14980,2024-09-12,Ghana,Good,44
+10940,14982,2024-09-12,Greece,Good,48
+10941,14984,2024-09-12,Guadeloupe,Good,13
+10942,14985,2024-09-12,Guatemala,Unhealthy for Sensitive Groups,114
+10943,14987,2024-09-12,Hong Kong,Moderate,62
+10944,14989,2024-09-12,Iceland,Good,35
+10945,14990,2024-09-12,India,Unhealthy,154
+10946,14991,2024-09-12,Indonesia,Unhealthy for Sensitive Groups,119
+10947,14994,2024-09-12,Ireland,Good,22
+10948,14995,2024-09-12,Israel,Moderate,60
+10949,14996,2024-09-12,Italy,Good,48
+10950,14997,2024-09-12,Japan,Moderate,96
+10951,14998,2024-09-12,Jordan,Good,26
+10952,14999,2024-09-12,Kazakhstan,Good,49
+10953,15000,2024-09-12,Kenya,Moderate,53
+10954,15002,2024-09-12,Kuwait,Moderate,79
+10955,15003,2024-09-12,Kyrgyzstan,Good,24
+10956,15004,2024-09-12,Laos,Good,22
+10957,15005,2024-09-12,Latvia,Good,41
+10958,15007,2024-09-12,Liechtenstein,Good,8
+10959,15008,2024-09-12,Lithuania,Good,48
+10960,15010,2024-09-12,Macao,Good,34
+10961,15011,2024-09-12,Macedonia,Good,46
+10962,15012,2024-09-12,Madagascar,Moderate,94
+10963,15013,2024-09-12,Malaysia,Moderate,59
+10964,15014,2024-09-12,Malta,Good,19
+10965,15015,2024-09-12,Martinique,Good,16
+10966,15016,2024-09-12,Mexico,Moderate,94
+10967,15017,2024-09-12,Moldova,Good,16
+10968,15018,2024-09-12,Monaco,Good,20
+10969,15019,2024-09-12,Mongolia,Good,47
+10970,15020,2024-09-12,Montenegro,Good,10
+10971,15021,2024-09-12,Myanmar,Good,41
+10972,15022,2024-09-12,Nepal,Good,37
+10973,15023,2024-09-12,Netherlands,Moderate,52
+10974,15025,2024-09-12,New Zealand,Good,23
+10975,15026,2024-09-12,Nigeria,Good,46
+10976,15027,2024-09-12,Norway,Good,13
+10977,15028,2024-09-12,Pakistan,Unhealthy for Sensitive Groups,127
+10978,15029,2024-09-12,Palestinian Territory,Moderate,66
+10979,15030,2024-09-12,Peru,Unhealthy,167
+10980,15031,2024-09-12,Philippines,Good,39
+10981,15032,2024-09-12,Poland,Moderate,71
+10982,15033,2024-09-12,Portugal,Good,27
+10983,15035,2024-09-12,Reunion,Good,10
+10984,15036,2024-09-12,Romania,Moderate,63
+10985,15037,2024-09-12,Russia,Moderate,65
+10986,15038,2024-09-12,San Marino,Good,45
+10987,15040,2024-09-12,Serbia,Moderate,64
+10988,15041,2024-09-12,Singapore,Good,42
+10989,15042,2024-09-12,Slovakia,Good,32
+10990,15043,2024-09-12,Slovenia,Good,25
+10991,15044,2024-09-12,South Africa,Moderate,69
+10992,15045,2024-09-12,South Korea,Moderate,65
+10993,15046,2024-09-12,Spain,Moderate,60
+10994,15047,2024-09-12,Sri Lanka,Good,31
+10995,15048,2024-09-12,Sweden,Good,12
+10996,15049,2024-09-12,Switzerland,Good,28
+10997,15050,2024-09-12,Taiwan,Moderate,66
+10998,15051,2024-09-12,Tajikistan,Very Unhealthy,203
+10999,15052,2024-09-12,Thailand,Moderate,88
+11000,15053,2024-09-12,Trinidad and Tobago,Good,45
+11001,15054,2024-09-12,Turkey,Moderate,85
+11002,15056,2024-09-12,Uganda,Moderate,99
+11003,15057,2024-09-12,Ukraine,Good,44
+11004,15058,2024-09-12,United Arab Emirates,Unhealthy for Sensitive Groups,115
+11005,15059,2024-09-12,United Kingdom of Great Britain and Northern Ireland,Good,36
+11006,15060,2024-09-12,United States of America,Hazardous,328
+11007,15062,2024-09-12,Vatican,Good,25
+11008,15064,2024-09-12,Vietnam,Moderate,78
+11009,15067,2024-09-19,Andorra,Good,20
+11010,15068,2024-09-19,Argentina,Moderate,51
+11011,15069,2024-09-19,Armenia,Good,34
+11012,15070,2024-09-19,Australia,Good,46
+11013,15071,2024-09-19,Austria,Moderate,56
+11014,15072,2024-09-19,Azerbaijan,Good,48
+11015,15074,2024-09-19,Bangladesh,Unhealthy,161
+11016,15075,2024-09-19,Belarus,Moderate,62
+11017,15076,2024-09-19,Belgium,Unhealthy for Sensitive Groups,143
+11018,15080,2024-09-19,Bosnia and Herzegovina,Good,46
+11019,15081,2024-09-19,Brazil,Unhealthy,196
+11020,15082,2024-09-19,Brunei,Good,11
+11021,15083,2024-09-19,Bulgaria,Good,48
+11022,15085,2024-09-19,Canada,Moderate,73
+11023,15086,2024-09-19,Cape Verde,Good,31
+11024,15088,2024-09-19,Chile,Moderate,81
+11025,15089,2024-09-19,China,Unhealthy for Sensitive Groups,150
+11026,15090,2024-09-19,Colombia,Moderate,68
+11027,15092,2024-09-19,Croatia,Moderate,61
+11028,15093,2024-09-19,Cyprus,Good,36
+11029,15094,2024-09-19,Czech Republic,Moderate,79
+11030,15095,2024-09-19,Denmark,Good,24
+11031,15096,2024-09-19,Dominican Republic,Good,25
+11032,15097,2024-09-19,Ecuador,Moderate,52
+11033,15100,2024-09-19,Estonia,Good,16
+11034,15101,2024-09-19,Ethiopia,Good,25
+11035,15102,2024-09-19,Finland,Good,17
+11036,15103,2024-09-19,France,Unhealthy for Sensitive Groups,110
+11037,15104,2024-09-19,French Guiana,Good,30
+11038,15105,2024-09-19,Georgia,Good,42
+11039,15106,2024-09-19,Germany,Unhealthy,160
+11040,15107,2024-09-19,Ghana,Good,22
+11041,15109,2024-09-19,Greece,Moderate,60
+11042,15111,2024-09-19,Guadeloupe,Good,25
+11043,15112,2024-09-19,Guatemala,Moderate,61
+11044,15114,2024-09-19,Hong Kong,Good,44
+11045,15116,2024-09-19,Iceland,Good,21
+11046,15117,2024-09-19,India,Unhealthy,179
+11047,15118,2024-09-19,Indonesia,Unhealthy for Sensitive Groups,140
+11048,15121,2024-09-19,Ireland,Good,49
+11049,15122,2024-09-19,Israel,Good,44
+11050,15123,2024-09-19,Italy,Moderate,58
+11051,15125,2024-09-19,Japan,Moderate,76
+11052,15126,2024-09-19,Jordan,Good,14
+11053,15127,2024-09-19,Kazakhstan,Good,47
+11054,15128,2024-09-19,Kenya,Unhealthy for Sensitive Groups,103
+11055,15130,2024-09-19,Kuwait,Moderate,77
+11056,15131,2024-09-19,Kyrgyzstan,Good,36
+11057,15132,2024-09-19,Laos,Moderate,53
+11058,15133,2024-09-19,Latvia,Moderate,67
+11059,15135,2024-09-19,Liechtenstein,Good,7
+11060,15136,2024-09-19,Lithuania,Moderate,72
+11061,15138,2024-09-19,Macao,Good,50
+11062,15139,2024-09-19,Macedonia,Good,44
+11063,15140,2024-09-19,Madagascar,Moderate,77
+11064,15141,2024-09-19,Malaysia,Moderate,63
+11065,15142,2024-09-19,Malta,Good,19
+11066,15143,2024-09-19,Martinique,Good,41
+11067,15144,2024-09-19,Mexico,Moderate,91
+11068,15145,2024-09-19,Moldova,Good,11
+11069,15146,2024-09-19,Monaco,Good,6
+11070,15147,2024-09-19,Mongolia,Moderate,52
+11071,15148,2024-09-19,Montenegro,Good,28
+11072,15149,2024-09-19,Myanmar,Good,46
+11073,15150,2024-09-19,Nepal,Moderate,62
+11074,15151,2024-09-19,Netherlands,Unhealthy for Sensitive Groups,144
+11075,15153,2024-09-19,New Zealand,Good,18
+11076,15154,2024-09-19,Nigeria,Moderate,54
+11077,15155,2024-09-19,Norway,Good,22
+11078,15156,2024-09-19,Pakistan,Unhealthy for Sensitive Groups,126
+11079,15157,2024-09-19,Palestinian Territory,Moderate,57
+11080,15158,2024-09-19,Peru,Unhealthy for Sensitive Groups,137
+11081,15159,2024-09-19,Philippines,Moderate,56
+11082,15160,2024-09-19,Poland,Moderate,94
+11083,15161,2024-09-19,Portugal,Moderate,93
+11084,15163,2024-09-19,Reunion,Good,15
+11085,15164,2024-09-19,Romania,Moderate,56
+11086,15165,2024-09-19,Russia,Unhealthy for Sensitive Groups,110
+11087,15166,2024-09-19,San Marino,Good,33
+11088,15168,2024-09-19,Serbia,Moderate,73
+11089,15169,2024-09-19,Singapore,Moderate,72
+11090,15170,2024-09-19,Slovakia,Good,37
+11091,15171,2024-09-19,Slovenia,Moderate,56
+11092,15172,2024-09-19,South Africa,Unhealthy for Sensitive Groups,111
+11093,15173,2024-09-19,South Korea,Moderate,58
+11094,15174,2024-09-19,Spain,Moderate,71
+11095,15175,2024-09-19,Sri Lanka,Good,49
+11096,15176,2024-09-19,Sweden,Good,33
+11097,15177,2024-09-19,Switzerland,Good,35
+11098,15178,2024-09-19,Taiwan,Moderate,51
+11099,15179,2024-09-19,Tajikistan,Unhealthy for Sensitive Groups,104
+11100,15180,2024-09-19,Thailand,Moderate,89
+11101,15182,2024-09-19,Trinidad and Tobago,Good,34
+11102,15183,2024-09-19,Turkey,Moderate,69
+11103,15185,2024-09-19,Uganda,Moderate,86
+11104,15186,2024-09-19,Ukraine,Moderate,74
+11105,15187,2024-09-19,United Arab Emirates,Unhealthy for Sensitive Groups,101
+11106,15188,2024-09-19,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,127
+11107,15189,2024-09-19,United States of America,Moderate,89
+11108,15191,2024-09-19,Vatican,Good,25
+11109,15193,2024-09-19,Vietnam,Good,50
+11110,15197,2024-09-26,Andorra,Good,24
+11111,15198,2024-09-26,Argentina,Good,38
+11112,15199,2024-09-26,Armenia,Good,30
+11113,15200,2024-09-26,Australia,Moderate,61
+11114,15201,2024-09-26,Austria,Good,36
+11115,15202,2024-09-26,Azerbaijan,Good,30
+11116,15203,2024-09-26,Bangladesh,Unhealthy for Sensitive Groups,117
+11117,15204,2024-09-26,Belarus,Good,36
+11118,15205,2024-09-26,Belgium,Good,21
+11119,15209,2024-09-26,Bosnia and Herzegovina,Good,41
+11120,15210,2024-09-26,Brazil,Unhealthy,165
+11121,15211,2024-09-26,Brunei,Good,12
+11122,15212,2024-09-26,Bulgaria,Good,41
+11123,15214,2024-09-26,Canada,Good,41
+11124,15215,2024-09-26,Cape Verde,Moderate,67
+11125,15217,2024-09-26,Chile,Unhealthy for Sensitive Groups,146
+11126,15218,2024-09-26,China,Unhealthy,187
+11127,15219,2024-09-26,Colombia,Moderate,60
+11128,15221,2024-09-26,Croatia,Good,38
+11129,15222,2024-09-26,Cyprus,Good,41
+11130,15223,2024-09-26,Czech Republic,Good,37
+11131,15224,2024-09-26,Denmark,Good,21
+11132,15225,2024-09-26,Dominican Republic,Good,45
+11133,15226,2024-09-26,Ecuador,Moderate,69
+11134,15229,2024-09-26,Estonia,Good,25
+11135,15230,2024-09-26,Ethiopia,Good,25
+11136,15231,2024-09-26,Finland,Good,25
+11137,15232,2024-09-26,France,Moderate,61
+11138,15233,2024-09-26,French Guiana,Good,28
+11139,15234,2024-09-26,Georgia,Good,23
+11140,15235,2024-09-26,Germany,Moderate,61
+11141,15236,2024-09-26,Ghana,Moderate,59
+11142,15238,2024-09-26,Greece,Moderate,92
+11143,15240,2024-09-26,Guadeloupe,Good,16
+11144,15241,2024-09-26,Guatemala,Moderate,84
+11145,15243,2024-09-26,Hong Kong,Good,50
+11146,15245,2024-09-26,Iceland,Good,12
+11147,15246,2024-09-26,India,Very Unhealthy,234
+11148,15247,2024-09-26,Indonesia,Unhealthy for Sensitive Groups,143
+11149,15250,2024-09-26,Ireland,Good,20
+11150,15251,2024-09-26,Israel,Moderate,64
+11151,15252,2024-09-26,Italy,Moderate,67
+11152,15254,2024-09-26,Japan,Moderate,83
+11153,15255,2024-09-26,Jordan,Good,25
+11154,15256,2024-09-26,Kazakhstan,Moderate,55
+11155,15257,2024-09-26,Kenya,Moderate,88
+11156,15259,2024-09-26,Kuwait,Unhealthy for Sensitive Groups,120
+11157,15260,2024-09-26,Kyrgyzstan,Good,36
+11158,15261,2024-09-26,Laos,Moderate,55
+11159,15262,2024-09-26,Latvia,Good,19
+11160,15264,2024-09-26,Liechtenstein,Good,8
+11161,15265,2024-09-26,Lithuania,Moderate,60
+11162,15266,2024-09-26,Macao,Good,50
+11163,15267,2024-09-26,Macedonia,Good,50
+11164,15268,2024-09-26,Madagascar,Moderate,61
+11165,15269,2024-09-26,Malaysia,Moderate,56
+11166,15270,2024-09-26,Malta,Good,28
+11167,15271,2024-09-26,Martinique,Good,12
+11168,15272,2024-09-26,Mexico,Unhealthy for Sensitive Groups,106
+11169,15273,2024-09-26,Moldova,Good,10
+11170,15274,2024-09-26,Monaco,Good,34
+11171,15275,2024-09-26,Mongolia,Good,48
+11172,15276,2024-09-26,Montenegro,Good,42
+11173,15277,2024-09-26,Myanmar,Good,18
+11174,15278,2024-09-26,Nepal,Good,47
+11175,15279,2024-09-26,Netherlands,Moderate,59
+11176,15281,2024-09-26,New Zealand,Good,29
+11177,15282,2024-09-26,Nigeria,Moderate,72
+11178,15283,2024-09-26,Norway,Good,13
+11179,15284,2024-09-26,Pakistan,Unhealthy for Sensitive Groups,140
+11180,15285,2024-09-26,Palestinian Territory,Moderate,73
+11181,15286,2024-09-26,Peru,Unhealthy for Sensitive Groups,127
+11182,15287,2024-09-26,Philippines,Good,36
+11183,15288,2024-09-26,Poland,Moderate,54
+11184,15289,2024-09-26,Portugal,Good,21
+11185,15291,2024-09-26,Reunion,Good,17
+11186,15292,2024-09-26,Romania,Moderate,56
+11187,15293,2024-09-26,Russia,Moderate,78
+11188,15294,2024-09-26,San Marino,Good,41
+11189,15296,2024-09-26,Serbia,Moderate,67
+11190,15297,2024-09-26,Singapore,Good,35
+11191,15298,2024-09-26,Slovakia,Good,44
+11192,15299,2024-09-26,Slovenia,Good,32
+11193,15300,2024-09-26,South Africa,Moderate,81
+11194,15301,2024-09-26,South Korea,Moderate,64
+11195,15302,2024-09-26,Spain,Moderate,66
+11196,15303,2024-09-26,Sri Lanka,Moderate,65
+11197,15304,2024-09-26,Sweden,Good,25
+11198,15305,2024-09-26,Switzerland,Good,28
+11199,15306,2024-09-26,Taiwan,Good,47
+11200,15307,2024-09-26,Tajikistan,Unhealthy for Sensitive Groups,147
+11201,15308,2024-09-26,Thailand,Moderate,97
+11202,15309,2024-09-26,Trinidad and Tobago,Good,17
+11203,15310,2024-09-26,Turkey,Moderate,84
+11204,15312,2024-09-26,Uganda,Unhealthy for Sensitive Groups,143
+11205,15313,2024-09-26,Ukraine,Good,47
+11206,15314,2024-09-26,United Arab Emirates,Unhealthy for Sensitive Groups,129
+11207,15315,2024-09-26,United Kingdom of Great Britain and Northern Ireland,Moderate,76
+11208,15316,2024-09-26,United States of America,Unhealthy for Sensitive Groups,114
+11209,15318,2024-09-26,Vatican,Good,30
+11210,15320,2024-09-26,Vietnam,Moderate,87
+11211,15323,2024-10-03,Andorra,Good,13
+11212,15324,2024-10-03,Argentina,Good,39
+11213,15325,2024-10-03,Armenia,Good,46
+11214,15326,2024-10-03,Australia,Moderate,56
+11215,15327,2024-10-03,Austria,Good,24
+11216,15328,2024-10-03,Azerbaijan,Good,45
+11217,15330,2024-10-03,Bangladesh,Moderate,61
+11218,15331,2024-10-03,Belarus,Moderate,56
+11219,15332,2024-10-03,Belgium,Good,46
+11220,15333,2024-10-03,Bosnia and Herzegovina,Good,34
+11221,15334,2024-10-03,Brazil,Unhealthy for Sensitive Groups,134
+11222,15335,2024-10-03,Brunei,Good,13
+11223,15336,2024-10-03,Bulgaria,Good,41
+11224,15338,2024-10-03,Canada,Good,33
+11225,15339,2024-10-03,Cape Verde,Good,47
+11226,15341,2024-10-03,Chile,Unhealthy for Sensitive Groups,125
+11227,15342,2024-10-03,China,Unhealthy,151
+11228,15343,2024-10-03,Colombia,Moderate,58
+11229,15344,2024-10-03,Croatia,Good,28
+11230,15345,2024-10-03,Cyprus,Good,27
+11231,15346,2024-10-03,Czech Republic,Good,50
+11232,15347,2024-10-03,Denmark,Good,15
+11233,15348,2024-10-03,Dominican Republic,Good,12
+11234,15349,2024-10-03,Ecuador,Moderate,51
+11235,15351,2024-10-03,Estonia,Good,31
+11236,15352,2024-10-03,Ethiopia,Good,17
+11237,15353,2024-10-03,Finland,Good,17
+11238,15354,2024-10-03,France,Moderate,60
+11239,15355,2024-10-03,French Guiana,Good,23
+11240,15356,2024-10-03,Georgia,Good,31
+11241,15357,2024-10-03,Germany,Moderate,71
+11242,15358,2024-10-03,Ghana,Good,32
+11243,15360,2024-10-03,Greece,Good,43
+11244,15361,2024-10-03,Guadeloupe,Good,23
+11245,15362,2024-10-03,Guatemala,Good,38
+11246,15363,2024-10-03,Hong Kong,Moderate,59
+11247,15365,2024-10-03,Iceland,Good,15
+11248,15366,2024-10-03,India,Unhealthy,194
+11249,15367,2024-10-03,Indonesia,Unhealthy for Sensitive Groups,138
+11250,15370,2024-10-03,Ireland,Good,45
+11251,15371,2024-10-03,Israel,Good,42
+11252,15372,2024-10-03,Italy,Unhealthy for Sensitive Groups,113
+11253,15374,2024-10-03,Japan,Moderate,63
+11254,15375,2024-10-03,Jordan,Good,19
+11255,15376,2024-10-03,Kazakhstan,Good,43
+11256,15377,2024-10-03,Kenya,Good,41
+11257,15379,2024-10-03,Kuwait,Moderate,70
+11258,15380,2024-10-03,Kyrgyzstan,Good,27
+11259,15381,2024-10-03,Laos,Good,13
+11260,15382,2024-10-03,Latvia,Good,6
+11261,15384,2024-10-03,Liechtenstein,Good,5
+11262,15385,2024-10-03,Lithuania,Good,12
+11263,15387,2024-10-03,Macao,Moderate,68
+11264,15388,2024-10-03,Macedonia,Moderate,60
+11265,15389,2024-10-03,Madagascar,Moderate,74
+11266,15390,2024-10-03,Malaysia,Moderate,64
+11267,15391,2024-10-03,Malta,Good,23
+11268,15392,2024-10-03,Martinique,Good,18
+11269,15393,2024-10-03,Mexico,Moderate,77
+11270,15394,2024-10-03,Moldova,Good,16
+11271,15395,2024-10-03,Monaco,Good,17
+11272,15396,2024-10-03,Mongolia,Good,30
+11273,15397,2024-10-03,Montenegro,Good,30
+11274,15398,2024-10-03,Myanmar,Moderate,54
+11275,15399,2024-10-03,Nepal,Good,47
+11276,15400,2024-10-03,Netherlands,Good,41
+11277,15402,2024-10-03,New Zealand,Good,14
+11278,15403,2024-10-03,Nigeria,Good,47
+11279,15404,2024-10-03,Norway,Good,17
+11280,15405,2024-10-03,Pakistan,Unhealthy for Sensitive Groups,123
+11281,15406,2024-10-03,Palestinian Territory,Moderate,51
+11282,15407,2024-10-03,Peru,Moderate,71
+11283,15408,2024-10-03,Philippines,Moderate,85
+11284,15409,2024-10-03,Poland,Moderate,65
+11285,15410,2024-10-03,Portugal,Good,20
+11286,15411,2024-10-03,Reunion,Good,14
+11287,15412,2024-10-03,Romania,Good,45
+11288,15413,2024-10-03,Russia,Moderate,79
+11289,15414,2024-10-03,San Marino,Good,31
+11290,15415,2024-10-03,Serbia,Moderate,57
+11291,15416,2024-10-03,Singapore,Good,37
+11292,15417,2024-10-03,Slovakia,Good,33
+11293,15418,2024-10-03,Slovenia,Good,20
+11294,15419,2024-10-03,South Africa,Moderate,74
+11295,15420,2024-10-03,South Korea,Moderate,61
+11296,15421,2024-10-03,Spain,Moderate,61
+11297,15422,2024-10-03,Sri Lanka,Good,42
+11298,15423,2024-10-03,Sweden,Good,16
+11299,15424,2024-10-03,Switzerland,Good,26
+11300,15425,2024-10-03,Taiwan,Good,38
+11301,15426,2024-10-03,Tajikistan,Moderate,61
+11302,15427,2024-10-03,Thailand,Moderate,81
+11303,15428,2024-10-03,Trinidad and Tobago,Good,24
+11304,15429,2024-10-03,Turkey,Moderate,77
+11305,15431,2024-10-03,Uganda,Unhealthy,153
+11306,15432,2024-10-03,Ukraine,Moderate,94
+11307,15433,2024-10-03,United Arab Emirates,Moderate,77
+11308,15434,2024-10-03,United Kingdom of Great Britain and Northern Ireland,Good,47
+11309,15435,2024-10-03,United States of America,Unhealthy for Sensitive Groups,120
+11310,15437,2024-10-03,Vatican,Good,30
+11311,15439,2024-10-03,Vietnam,Moderate,57
+11312,15442,2024-10-10,Andorra,Good,8
+11313,15443,2024-10-10,Argentina,Good,14
+11314,15444,2024-10-10,Armenia,Moderate,52
+11315,15445,2024-10-10,Australia,Good,47
+11316,15446,2024-10-10,Austria,Good,29
+11317,15447,2024-10-10,Azerbaijan,Moderate,55
+11318,15449,2024-10-10,Bangladesh,Unhealthy,184
+11319,15450,2024-10-10,Belarus,Good,43
+11320,15451,2024-10-10,Belgium,Moderate,84
+11321,15455,2024-10-10,Bosnia and Herzegovina,Good,21
+11322,15456,2024-10-10,Brazil,Unhealthy for Sensitive Groups,136
+11323,15457,2024-10-10,Brunei,Good,10
+11324,15458,2024-10-10,Bulgaria,Good,45
+11325,15460,2024-10-10,Canada,Good,37
+11326,15461,2024-10-10,Cape Verde,Good,36
+11327,15463,2024-10-10,Chile,Moderate,73
+11328,15464,2024-10-10,China,Unhealthy,195
+11329,15465,2024-10-10,Colombia,Moderate,61
+11330,15467,2024-10-10,Croatia,Good,20
+11331,15468,2024-10-10,Cyprus,Good,46
+11332,15469,2024-10-10,Czech Republic,Good,25
+11333,15470,2024-10-10,Denmark,Good,9
+11334,15471,2024-10-10,Dominican Republic,Good,38
+11335,15472,2024-10-10,Ecuador,Good,38
+11336,15475,2024-10-10,Estonia,Good,15
+11337,15476,2024-10-10,Ethiopia,Moderate,65
+11338,15477,2024-10-10,Finland,Good,21
+11339,15478,2024-10-10,France,Good,50
+11340,15479,2024-10-10,French Guiana,Good,33
+11341,15480,2024-10-10,Georgia,Good,43
+11342,15481,2024-10-10,Germany,Moderate,80
+11343,15482,2024-10-10,Ghana,Moderate,76
+11344,15484,2024-10-10,Greece,Moderate,57
+11345,15486,2024-10-10,Guadeloupe,Good,16
+11346,15487,2024-10-10,Guatemala,Moderate,95
+11347,15489,2024-10-10,Hong Kong,Moderate,64
+11348,15491,2024-10-10,Iceland,Good,11
+11349,15492,2024-10-10,India,Unhealthy,183
+11350,15493,2024-10-10,Indonesia,Unhealthy for Sensitive Groups,141
+11351,15496,2024-10-10,Ireland,Good,20
+11352,15497,2024-10-10,Israel,Moderate,60
+11353,15498,2024-10-10,Italy,Moderate,68
+11354,15500,2024-10-10,Japan,Moderate,63
+11355,15501,2024-10-10,Jordan,Good,25
+11356,15502,2024-10-10,Kazakhstan,Moderate,66
+11357,15503,2024-10-10,Kenya,Moderate,93
+11358,15505,2024-10-10,Kuwait,Moderate,91
+11359,15506,2024-10-10,Kyrgyzstan,Good,30
+11360,15507,2024-10-10,Laos,Unhealthy for Sensitive Groups,104
+11361,15508,2024-10-10,Latvia,Good,43
+11362,15510,2024-10-10,Liechtenstein,Good,6
+11363,15511,2024-10-10,Lithuania,Good,45
+11364,15513,2024-10-10,Macao,Moderate,78
+11365,15514,2024-10-10,Macedonia,Moderate,58
+11366,15515,2024-10-10,Madagascar,Good,30
+11367,15516,2024-10-10,Malaysia,Moderate,64
+11368,15517,2024-10-10,Malta,Moderate,52
+11369,15518,2024-10-10,Martinique,Good,48
+11370,15519,2024-10-10,Mexico,Unhealthy for Sensitive Groups,121
+11371,15520,2024-10-10,Moldova,Good,7
+11372,15521,2024-10-10,Monaco,Good,44
+11373,15522,2024-10-10,Mongolia,Good,47
+11374,15523,2024-10-10,Montenegro,Good,40
+11375,15524,2024-10-10,Myanmar,Good,45
+11376,15525,2024-10-10,Nepal,Moderate,80
+11377,15526,2024-10-10,Netherlands,Moderate,94
+11378,15528,2024-10-10,New Zealand,Good,14
+11379,15529,2024-10-10,Nigeria,Good,48
+11380,15530,2024-10-10,Norway,Good,29
+11381,15531,2024-10-10,Pakistan,Unhealthy for Sensitive Groups,122
+11382,15532,2024-10-10,Palestinian Territory,Moderate,60
+11383,15533,2024-10-10,Peru,Moderate,97
+11384,15534,2024-10-10,Philippines,Moderate,85
+11385,15535,2024-10-10,Poland,Moderate,77
+11386,15536,2024-10-10,Portugal,Good,29
+11387,15538,2024-10-10,Reunion,Good,7
+11388,15539,2024-10-10,Romania,Good,50
+11389,15540,2024-10-10,Russia,Moderate,58
+11390,15541,2024-10-10,San Marino,Good,35
+11391,15542,2024-10-10,Serbia,Moderate,58
+11392,15543,2024-10-10,Singapore,Moderate,65
+11393,15544,2024-10-10,Slovakia,Good,32
+11394,15545,2024-10-10,Slovenia,Good,17
+11395,15546,2024-10-10,South Africa,Moderate,87
+11396,15547,2024-10-10,South Korea,Moderate,53
+11397,15548,2024-10-10,Spain,Good,49
+11398,15549,2024-10-10,Sri Lanka,Good,31
+11399,15550,2024-10-10,Sweden,Good,47
+11400,15551,2024-10-10,Switzerland,Good,22
+11401,15552,2024-10-10,Taiwan,Moderate,56
+11402,15553,2024-10-10,Tajikistan,Unhealthy for Sensitive Groups,106
+11403,15554,2024-10-10,Thailand,Unhealthy for Sensitive Groups,139
+11404,15556,2024-10-10,Trinidad and Tobago,Good,19
+11405,15557,2024-10-10,Turkey,Moderate,87
+11406,15559,2024-10-10,Uganda,Unhealthy for Sensitive Groups,109
+11407,15560,2024-10-10,Ukraine,Good,46
+11408,15561,2024-10-10,United Arab Emirates,Moderate,84
+11409,15562,2024-10-10,United Kingdom of Great Britain and Northern Ireland,Good,32
+11410,15563,2024-10-10,United States of America,Unhealthy for Sensitive Groups,133
+11411,15565,2024-10-10,Vatican,Good,38
+11412,15567,2024-10-10,Vietnam,Unhealthy for Sensitive Groups,111
+11413,15571,2024-10-17,Andorra,Good,22
+11414,15572,2024-10-17,Argentina,Good,20
+11415,15573,2024-10-17,Armenia,Good,40
+11416,15574,2024-10-17,Australia,Good,41
+11417,15575,2024-10-17,Austria,Good,45
+11418,15576,2024-10-17,Azerbaijan,Good,45
+11419,15578,2024-10-17,Bangladesh,Unhealthy,181
+11420,15579,2024-10-17,Belarus,Good,23
+11421,15580,2024-10-17,Belgium,Good,31
+11422,15581,2024-10-17,Bosnia and Herzegovina,Good,42
+11423,15582,2024-10-17,Brazil,Moderate,77
+11424,15583,2024-10-17,Brunei,Good,10
+11425,15584,2024-10-17,Bulgaria,Good,35
+11426,15586,2024-10-17,Canada,Good,43
+11427,15587,2024-10-17,Cape Verde,Good,28
+11428,15589,2024-10-17,Chile,Moderate,59
+11429,15590,2024-10-17,China,Unhealthy,181
+11430,15591,2024-10-17,Colombia,Moderate,55
+11431,15593,2024-10-17,Croatia,Good,47
+11432,15594,2024-10-17,Cyprus,Moderate,55
+11433,15595,2024-10-17,Czech Republic,Moderate,71
+11434,15596,2024-10-17,Denmark,Good,17
+11435,15597,2024-10-17,Dominican Republic,Good,31
+11436,15598,2024-10-17,Ecuador,Moderate,57
+11437,15600,2024-10-17,Estonia,Good,17
+11438,15601,2024-10-17,Ethiopia,Moderate,99
+11439,15602,2024-10-17,Finland,Good,16
+11440,15603,2024-10-17,France,Moderate,65
+11441,15604,2024-10-17,French Guiana,Good,23
+11442,15605,2024-10-17,Georgia,Good,42
+11443,15606,2024-10-17,Germany,Moderate,92
+11444,15607,2024-10-17,Ghana,Good,32
+11445,15609,2024-10-17,Greece,Good,38
+11446,15610,2024-10-17,Guadeloupe,Good,27
+11447,15611,2024-10-17,Guatemala,Moderate,61
+11448,15612,2024-10-17,Hong Kong,Good,50
+11449,15614,2024-10-17,Iceland,Good,19
+11450,15615,2024-10-17,India,Very Unhealthy,299
+11451,15616,2024-10-17,Indonesia,Unhealthy for Sensitive Groups,124
+11452,15619,2024-10-17,Ireland,Good,32
+11453,15620,2024-10-17,Israel,Moderate,57
+11454,15621,2024-10-17,Italy,Moderate,93
+11455,15623,2024-10-17,Japan,Moderate,82
+11456,15625,2024-10-17,Jordan,Good,19
+11457,15626,2024-10-17,Kazakhstan,Moderate,72
+11458,15627,2024-10-17,Kenya,Good,50
+11459,15629,2024-10-17,Kuwait,Unhealthy for Sensitive Groups,101
+11460,15630,2024-10-17,Kyrgyzstan,Good,21
+11461,15631,2024-10-17,Laos,Good,29
+11462,15632,2024-10-17,Latvia,Good,2
+11463,15634,2024-10-17,Liechtenstein,Good,23
+11464,15635,2024-10-17,Lithuania,Good,11
+11465,15637,2024-10-17,Macao,Moderate,53
+11466,15638,2024-10-17,Macedonia,Moderate,57
+11467,15639,2024-10-17,Madagascar,Unhealthy for Sensitive Groups,122
+11468,15640,2024-10-17,Malaysia,Moderate,54
+11469,15641,2024-10-17,Malta,Good,20
+11470,15642,2024-10-17,Martinique,Good,24
+11471,15643,2024-10-17,Mexico,Moderate,89
+11472,15644,2024-10-17,Moldova,Good,10
+11473,15645,2024-10-17,Monaco,Moderate,51
+11474,15646,2024-10-17,Mongolia,Moderate,65
+11475,15647,2024-10-17,Montenegro,Good,21
+11476,15648,2024-10-17,Myanmar,Moderate,58
+11477,15649,2024-10-17,Nepal,Unhealthy for Sensitive Groups,126
+11478,15650,2024-10-17,Netherlands,Good,38
+11479,15652,2024-10-17,New Zealand,Good,27
+11480,15653,2024-10-17,Nigeria,Good,47
+11481,15654,2024-10-17,Norway,Good,23
+11482,15655,2024-10-17,Pakistan,Unhealthy for Sensitive Groups,124
+11483,15656,2024-10-17,Palestinian Territory,Moderate,54
+11484,15657,2024-10-17,Peru,Moderate,73
+11485,15658,2024-10-17,Philippines,Moderate,69
+11486,15659,2024-10-17,Poland,Moderate,75
+11487,15660,2024-10-17,Portugal,Good,18
+11488,15661,2024-10-17,Reunion,Good,14
+11489,15662,2024-10-17,Romania,Moderate,53
+11490,15663,2024-10-17,Russia,Moderate,70
+11491,15664,2024-10-17,San Marino,Good,29
+11492,15665,2024-10-17,Serbia,Unhealthy for Sensitive Groups,108
+11493,15666,2024-10-17,Singapore,Moderate,74
+11494,15667,2024-10-17,Slovakia,Moderate,54
+11495,15668,2024-10-17,Slovenia,Moderate,56
+11496,15669,2024-10-17,South Africa,Moderate,73
+11497,15670,2024-10-17,South Korea,Moderate,92
+11498,15671,2024-10-17,Spain,Moderate,73
+11499,15672,2024-10-17,Sri Lanka,Moderate,74
+11500,15673,2024-10-17,Sweden,Good,35
+11501,15674,2024-10-17,Switzerland,Moderate,62
+11502,15675,2024-10-17,Taiwan,Moderate,81
+11503,15676,2024-10-17,Tajikistan,Moderate,91
+11504,15677,2024-10-17,Thailand,Unhealthy for Sensitive Groups,118
+11505,15678,2024-10-17,Trinidad and Tobago,Good,32
+11506,15679,2024-10-17,Turkey,Moderate,85
+11507,15681,2024-10-17,Uganda,Moderate,76
+11508,15682,2024-10-17,Ukraine,Good,25
+11509,15683,2024-10-17,United Arab Emirates,Moderate,67
+11510,15684,2024-10-17,United Kingdom of Great Britain and Northern Ireland,Moderate,65
+11511,15685,2024-10-17,United States of America,Unhealthy for Sensitive Groups,106
+11512,15687,2024-10-17,Vatican,Good,42
+11513,15689,2024-10-17,Vietnam,Moderate,66
+11514,15692,2024-10-24,Andorra,Good,15
+11515,15693,2024-10-24,Argentina,Good,23
+11516,15694,2024-10-24,Armenia,Good,38
+11517,15695,2024-10-24,Australia,Moderate,56
+11518,15696,2024-10-24,Austria,Moderate,76
+11519,15697,2024-10-24,Azerbaijan,Moderate,56
+11520,15699,2024-10-24,Bangladesh,Good,38
+11521,15700,2024-10-24,Belarus,Good,25
+11522,15701,2024-10-24,Belgium,Moderate,68
+11523,15702,2024-10-24,Bosnia and Herzegovina,Moderate,70
+11524,15703,2024-10-24,Brazil,Moderate,64
+11525,15704,2024-10-24,Brunei,Good,19
+11526,15705,2024-10-24,Bulgaria,Moderate,76
+11527,15707,2024-10-24,Canada,Good,50
+11528,15708,2024-10-24,Cape Verde,Moderate,53
+11529,15710,2024-10-24,Chile,Moderate,63
+11530,15711,2024-10-24,China,Unhealthy,171
+11531,15712,2024-10-24,Colombia,Moderate,59
+11532,15714,2024-10-24,Croatia,Moderate,84
+11533,15715,2024-10-24,Cyprus,Good,33
+11534,15716,2024-10-24,Czech Republic,Moderate,94
+11535,15717,2024-10-24,Denmark,Good,16
+11536,15718,2024-10-24,Dominican Republic,Good,17
+11537,15719,2024-10-24,Ecuador,Moderate,57
+11538,15721,2024-10-24,Estonia,Good,22
+11539,15722,2024-10-24,Ethiopia,Moderate,57
+11540,15723,2024-10-24,Finland,Good,18
+11541,15724,2024-10-24,France,Moderate,59
+11542,15725,2024-10-24,French Guiana,Good,7
+11543,15726,2024-10-24,Georgia,Good,28
+11544,15727,2024-10-24,Germany,Unhealthy for Sensitive Groups,124
+11545,15728,2024-10-24,Ghana,Good,29
+11546,15730,2024-10-24,Greece,Good,32
+11547,15731,2024-10-24,Guadeloupe,Good,20
+11548,15732,2024-10-24,Guatemala,Good,42
+11549,15733,2024-10-24,Hong Kong,Moderate,60
+11550,15735,2024-10-24,Iceland,Good,23
+11551,15736,2024-10-24,India,Very Unhealthy,275
+11552,15737,2024-10-24,Indonesia,Unhealthy for Sensitive Groups,120
+11553,15740,2024-10-24,Ireland,Good,26
+11554,15741,2024-10-24,Israel,Moderate,96
+11555,15742,2024-10-24,Italy,Moderate,88
+11556,15744,2024-10-24,Japan,Moderate,58
+11557,15746,2024-10-24,Jordan,Good,19
+11558,15747,2024-10-24,Kazakhstan,Moderate,67
+11559,15748,2024-10-24,Kenya,Good,30
+11560,15750,2024-10-24,Kuwait,Moderate,61
+11561,15751,2024-10-24,Kyrgyzstan,Moderate,60
+11562,15752,2024-10-24,Laos,Moderate,76
+11563,15753,2024-10-24,Latvia,Good,4
+11564,15755,2024-10-24,Liechtenstein,Good,8
+11565,15756,2024-10-24,Lithuania,Good,21
+11566,15758,2024-10-24,Macao,Moderate,68
+11567,15759,2024-10-24,Macedonia,Unhealthy for Sensitive Groups,112
+11568,15760,2024-10-24,Madagascar,Good,38
+11569,15761,2024-10-24,Malaysia,Moderate,65
+11570,15762,2024-10-24,Malta,Good,26
+11571,15763,2024-10-24,Martinique,Good,19
+11572,15764,2024-10-24,Mexico,Moderate,91
+11573,15765,2024-10-24,Moldova,Good,13
+11574,15766,2024-10-24,Monaco,Good,38
+11575,15767,2024-10-24,Mongolia,Moderate,62
+11576,15768,2024-10-24,Montenegro,Moderate,53
+11577,15769,2024-10-24,Myanmar,Good,42
+11578,15770,2024-10-24,Nepal,Moderate,68
+11579,15771,2024-10-24,Netherlands,Unhealthy for Sensitive Groups,136
+11580,15773,2024-10-24,New Zealand,Good,17
+11581,15774,2024-10-24,Nigeria,Moderate,58
+11582,15775,2024-10-24,Norway,Good,30
+11583,15776,2024-10-24,Pakistan,Unhealthy for Sensitive Groups,114
+11584,15777,2024-10-24,Palestinian Territory,Moderate,67
+11585,15778,2024-10-24,Peru,Moderate,62
+11586,15779,2024-10-24,Philippines,Good,31
+11587,15780,2024-10-24,Poland,Unhealthy for Sensitive Groups,143
+11588,15781,2024-10-24,Portugal,Good,46
+11589,15782,2024-10-24,Reunion,Good,17
+11590,15783,2024-10-24,Romania,Moderate,99
+11591,15784,2024-10-24,Russia,Moderate,60
+11592,15785,2024-10-24,San Marino,Good,27
+11593,15786,2024-10-24,Serbia,Unhealthy,156
+11594,15787,2024-10-24,Singapore,Moderate,89
+11595,15788,2024-10-24,Slovakia,Moderate,67
+11596,15789,2024-10-24,Slovenia,Moderate,78
+11597,15790,2024-10-24,South Africa,Moderate,88
+11598,15791,2024-10-24,South Korea,Moderate,68
+11599,15792,2024-10-24,Spain,Moderate,68
+11600,15793,2024-10-24,Sri Lanka,Moderate,86
+11601,15794,2024-10-24,Sweden,Good,32
+11602,15795,2024-10-24,Switzerland,Moderate,52
+11603,15796,2024-10-24,Taiwan,Moderate,52
+11604,15797,2024-10-24,Tajikistan,Unhealthy for Sensitive Groups,109
+11605,15798,2024-10-24,Thailand,Moderate,96
+11606,15799,2024-10-24,Trinidad and Tobago,Good,28
+11607,15800,2024-10-24,Turkey,Moderate,97
+11608,15802,2024-10-24,Uganda,Unhealthy for Sensitive Groups,127
+11609,15803,2024-10-24,Ukraine,Good,36
+11610,15804,2024-10-24,United Arab Emirates,Unhealthy for Sensitive Groups,108
+11611,15805,2024-10-24,United Kingdom of Great Britain and Northern Ireland,Moderate,55
+11612,15806,2024-10-24,United States of America,Unhealthy for Sensitive Groups,116
+11613,15808,2024-10-24,Vatican,Moderate,53
+11614,15810,2024-10-24,Vietnam,Moderate,65
+11615,15812,2024-10-31,Andorra,Good,37
+11616,15813,2024-10-31,Argentina,Good,19
+11617,15814,2024-10-31,Armenia,Moderate,90
+11618,15815,2024-10-31,Australia,Good,49
+11619,15816,2024-10-31,Austria,Moderate,61
+11620,15817,2024-10-31,Azerbaijan,Moderate,53
+11621,15819,2024-10-31,Bangladesh,Unhealthy,151
+11622,15820,2024-10-31,Belarus,Good,6
+11623,15821,2024-10-31,Belgium,Moderate,85
+11624,15822,2024-10-31,Bosnia and Herzegovina,Moderate,69
+11625,15823,2024-10-31,Brazil,Moderate,52
+11626,15824,2024-10-31,Brunei,Good,15
+11627,15825,2024-10-31,Bulgaria,Moderate,71
+11628,15827,2024-10-31,Canada,Moderate,74
+11629,15828,2024-10-31,Cape Verde,Good,26
+11630,15830,2024-10-31,Chile,Moderate,73
+11631,15831,2024-10-31,China,Very Unhealthy,246
+11632,15832,2024-10-31,Colombia,Moderate,63
+11633,15834,2024-10-31,Croatia,Moderate,67
+11634,15835,2024-10-31,Cyprus,Good,46
+11635,15836,2024-10-31,Czech Republic,Moderate,94
+11636,15837,2024-10-31,Denmark,Good,32
+11637,15838,2024-10-31,Dominican Republic,Good,31
+11638,15839,2024-10-31,Ecuador,Good,50
+11639,15841,2024-10-31,Estonia,Good,19
+11640,15842,2024-10-31,Ethiopia,Good,38
+11641,15843,2024-10-31,Finland,Good,15
+11642,15844,2024-10-31,France,Moderate,76
+11643,15845,2024-10-31,French Guiana,Good,13
+11644,15846,2024-10-31,Georgia,Moderate,62
+11645,15847,2024-10-31,Germany,Hazardous,341
+11646,15848,2024-10-31,Ghana,Moderate,55
+11647,15850,2024-10-31,Greece,Moderate,62
+11648,15851,2024-10-31,Guadeloupe,Good,31
+11649,15852,2024-10-31,Guatemala,Good,34
+11650,15853,2024-10-31,Hong Kong,Moderate,77
+11651,15855,2024-10-31,Iceland,Good,42
+11652,15856,2024-10-31,India,Hazardous,305
+11653,15857,2024-10-31,Indonesia,Unhealthy for Sensitive Groups,132
+11654,15860,2024-10-31,Ireland,Good,38
+11655,15861,2024-10-31,Israel,Moderate,74
+11656,15862,2024-10-31,Italy,Moderate,81
+11657,15864,2024-10-31,Japan,Moderate,66
+11658,15866,2024-10-31,Jordan,Good,21
+11659,15867,2024-10-31,Kazakhstan,Moderate,61
+11660,15868,2024-10-31,Kenya,Good,28
+11661,15870,2024-10-31,Kuwait,Moderate,71
+11662,15871,2024-10-31,Kyrgyzstan,Good,25
+11663,15872,2024-10-31,Laos,Moderate,67
+11664,15873,2024-10-31,Latvia,Good,2
+11665,15875,2024-10-31,Liechtenstein,Good,14
+11666,15876,2024-10-31,Lithuania,Good,14
+11667,15878,2024-10-31,Macao,Moderate,85
+11668,15879,2024-10-31,Macedonia,Moderate,92
+11669,15880,2024-10-31,Madagascar,Unhealthy for Sensitive Groups,142
+11670,15881,2024-10-31,Malaysia,Moderate,67
+11671,15882,2024-10-31,Malta,Moderate,51
+11672,15883,2024-10-31,Martinique,Good,23
+11673,15884,2024-10-31,Mexico,Unhealthy for Sensitive Groups,114
+11674,15885,2024-10-31,Moldova,Good,30
+11675,15886,2024-10-31,Monaco,Good,43
+11676,15887,2024-10-31,Mongolia,Moderate,71
+11677,15888,2024-10-31,Montenegro,Good,50
+11678,15889,2024-10-31,Myanmar,Moderate,71
+11679,15890,2024-10-31,Nepal,Moderate,98
+11680,15891,2024-10-31,Netherlands,Very Unhealthy,243
+11681,15893,2024-10-31,New Zealand,Good,18
+11682,15894,2024-10-31,Nigeria,Moderate,67
+11683,15895,2024-10-31,Norway,Good,29
+11684,15896,2024-10-31,Pakistan,Unhealthy for Sensitive Groups,119
+11685,15897,2024-10-31,Palestinian Territory,Moderate,72
+11686,15898,2024-10-31,Peru,Moderate,57
+11687,15899,2024-10-31,Philippines,Good,33
+11688,15900,2024-10-31,Poland,Moderate,80
+11689,15901,2024-10-31,Portugal,Good,23
+11690,15902,2024-10-31,Reunion,Good,16
+11691,15903,2024-10-31,Romania,Unhealthy for Sensitive Groups,130
+11692,15904,2024-10-31,Russia,Moderate,62
+11693,15905,2024-10-31,San Marino,Moderate,70
+11694,15906,2024-10-31,Serbia,Unhealthy for Sensitive Groups,137
+11695,15907,2024-10-31,Singapore,Unhealthy for Sensitive Groups,129
+11696,15908,2024-10-31,Slovakia,Moderate,87
+11697,15909,2024-10-31,Slovenia,Moderate,53
+11698,15910,2024-10-31,South Africa,Moderate,64
+11699,15911,2024-10-31,South Korea,Unhealthy for Sensitive Groups,110
+11700,15912,2024-10-31,Spain,Unhealthy for Sensitive Groups,118
+11701,15913,2024-10-31,Sri Lanka,Moderate,69
+11702,15914,2024-10-31,Sweden,Good,30
+11703,15915,2024-10-31,Switzerland,Moderate,56
+11704,15916,2024-10-31,Taiwan,Good,42
+11705,15917,2024-10-31,Tajikistan,Unhealthy for Sensitive Groups,127
+11706,15918,2024-10-31,Thailand,Unhealthy for Sensitive Groups,125
+11707,15919,2024-10-31,Trinidad and Tobago,Good,37
+11708,15920,2024-10-31,Turkey,Unhealthy for Sensitive Groups,133
+11709,15922,2024-10-31,Uganda,Unhealthy,161
+11710,15923,2024-10-31,Ukraine,Moderate,55
+11711,15924,2024-10-31,United Arab Emirates,Moderate,96
+11712,15925,2024-10-31,United Kingdom of Great Britain and Northern Ireland,Moderate,79
+11713,15926,2024-10-31,United States of America,Unhealthy for Sensitive Groups,112
+11714,15928,2024-10-31,Vatican,Moderate,57
+11715,15930,2024-10-31,Vietnam,Moderate,81
+11716,15932,2024-11-07,Andorra,Good,16
+11717,15933,2024-11-07,Argentina,Good,13
+11718,15934,2024-11-07,Armenia,Moderate,54
+11719,15935,2024-11-07,Australia,Moderate,67
+11720,15936,2024-11-07,Austria,Moderate,89
+11721,15937,2024-11-07,Azerbaijan,Good,44
+11722,15939,2024-11-07,Bangladesh,Unhealthy,197
+11723,15940,2024-11-07,Belarus,Moderate,52
+11724,15941,2024-11-07,Belgium,Unhealthy for Sensitive Groups,130
+11725,15942,2024-11-07,Bosnia and Herzegovina,Unhealthy for Sensitive Groups,105
+11726,15943,2024-11-07,Brazil,Good,49
+11727,15944,2024-11-07,Brunei,Good,10
+11728,15945,2024-11-07,Bulgaria,Moderate,69
+11729,15947,2024-11-07,Canada,Good,47
+11730,15948,2024-11-07,Cape Verde,Good,39
+11731,15950,2024-11-07,Chile,Moderate,80
+11732,15951,2024-11-07,China,Very Unhealthy,203
+11733,15952,2024-11-07,Colombia,Moderate,59
+11734,15954,2024-11-07,Croatia,Unhealthy for Sensitive Groups,124
+11735,15955,2024-11-07,Cyprus,Moderate,59
+11736,15956,2024-11-07,Czech Republic,Unhealthy for Sensitive Groups,145
+11737,15957,2024-11-07,Denmark,Good,12
+11738,15958,2024-11-07,Dominican Republic,Good,24
+11739,15959,2024-11-07,Ecuador,Moderate,56
+11740,15961,2024-11-07,Estonia,Good,10
+11741,15962,2024-11-07,Ethiopia,Moderate,80
+11742,15963,2024-11-07,Finland,Good,13
+11743,15964,2024-11-07,France,Unhealthy for Sensitive Groups,101
+11744,15965,2024-11-07,French Guiana,Good,14
+11745,15966,2024-11-07,Georgia,Good,44
+11746,15967,2024-11-07,Germany,Hazardous,318
+11747,15968,2024-11-07,Ghana,Moderate,83
+11748,15970,2024-11-07,Greece,Good,27
+11749,15971,2024-11-07,Guadeloupe,Good,24
+11750,15972,2024-11-07,Guatemala,Moderate,59
+11751,15973,2024-11-07,Hong Kong,Moderate,79
+11752,15975,2024-11-07,Iceland,Good,33
+11753,15976,2024-11-07,India,Hazardous,326
+11754,15977,2024-11-07,Indonesia,Unhealthy for Sensitive Groups,145
+11755,15980,2024-11-07,Ireland,Good,36
+11756,15981,2024-11-07,Israel,Moderate,89
+11757,15982,2024-11-07,Italy,Moderate,92
+11758,15983,2024-11-07,Japan,Moderate,57
+11759,15985,2024-11-07,Jordan,Good,27
+11760,15986,2024-11-07,Kazakhstan,Good,32
+11761,15987,2024-11-07,Kenya,Good,19
+11762,15989,2024-11-07,Kuwait,Moderate,66
+11763,15990,2024-11-07,Kyrgyzstan,Good,5
+11764,15991,2024-11-07,Laos,Unhealthy for Sensitive Groups,104
+11765,15992,2024-11-07,Latvia,Good,5
+11766,15994,2024-11-07,Liechtenstein,Good,25
+11767,15995,2024-11-07,Lithuania,Good,12
+11768,15997,2024-11-07,Macao,Moderate,85
+11769,15998,2024-11-07,Macedonia,Unhealthy for Sensitive Groups,148
+11770,15999,2024-11-07,Madagascar,Unhealthy for Sensitive Groups,119
+11771,16000,2024-11-07,Malaysia,Moderate,60
+11772,16001,2024-11-07,Malta,Good,26
+11773,16002,2024-11-07,Martinique,Good,20
+11774,16003,2024-11-07,Mexico,Unhealthy for Sensitive Groups,105
+11775,16004,2024-11-07,Moldova,Good,47
+11776,16005,2024-11-07,Monaco,Good,48
+11777,16006,2024-11-07,Mongolia,Moderate,97
+11778,16007,2024-11-07,Montenegro,Moderate,77
+11779,16008,2024-11-07,Myanmar,Good,47
+11780,16009,2024-11-07,Nepal,Moderate,76
+11781,16010,2024-11-07,Netherlands,Very Unhealthy,235
+11782,16012,2024-11-07,New Zealand,Good,24
+11783,16013,2024-11-07,Nigeria,Unhealthy for Sensitive Groups,125
+11784,16014,2024-11-07,Norway,Good,26
+11785,16015,2024-11-07,Pakistan,Unhealthy for Sensitive Groups,125
+11786,16016,2024-11-07,Palestinian Territory,Moderate,84
+11787,16017,2024-11-07,Peru,Moderate,51
+11788,16018,2024-11-07,Philippines,Moderate,74
+11789,16019,2024-11-07,Poland,Unhealthy,191
+11790,16020,2024-11-07,Portugal,Good,36
+11791,16021,2024-11-07,Reunion,Good,12
+11792,16022,2024-11-07,Romania,Moderate,70
+11793,16023,2024-11-07,Russia,Moderate,56
+11794,16024,2024-11-07,San Marino,Good,25
+11795,16025,2024-11-07,Serbia,Unhealthy,172
+11796,16026,2024-11-07,Singapore,Moderate,64
+11797,16027,2024-11-07,Slovakia,Unhealthy for Sensitive Groups,125
+11798,16028,2024-11-07,Slovenia,Moderate,94
+11799,16029,2024-11-07,South Africa,Moderate,66
+11800,16030,2024-11-07,South Korea,Moderate,84
+11801,16031,2024-11-07,Spain,Moderate,72
+11802,16032,2024-11-07,Sri Lanka,Unhealthy for Sensitive Groups,122
+11803,16033,2024-11-07,Sweden,Good,28
+11804,16034,2024-11-07,Switzerland,Moderate,61
+11805,16035,2024-11-07,Taiwan,Good,48
+11806,16036,2024-11-07,Tajikistan,Moderate,57
+11807,16037,2024-11-07,Thailand,Unhealthy for Sensitive Groups,110
+11808,16038,2024-11-07,Trinidad and Tobago,Good,36
+11809,16039,2024-11-07,Turkey,Unhealthy for Sensitive Groups,124
+11810,16041,2024-11-07,Uganda,Moderate,91
+11811,16042,2024-11-07,Ukraine,Moderate,70
+11812,16043,2024-11-07,United Arab Emirates,Unhealthy for Sensitive Groups,112
+11813,16044,2024-11-07,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,124
+11814,16045,2024-11-07,United States of America,Unhealthy for Sensitive Groups,126
+11815,16047,2024-11-07,Vatican,Moderate,78
+11816,16049,2024-11-07,Vietnam,Moderate,99
+11817,16051,2024-11-14,Andorra,Good,8
+11818,16052,2024-11-14,Argentina,Good,19
+11819,16053,2024-11-14,Armenia,Unhealthy for Sensitive Groups,116
+11820,16054,2024-11-14,Australia,Good,44
+11821,16055,2024-11-14,Austria,Moderate,57
+11822,16056,2024-11-14,Azerbaijan,Good,24
+11823,16058,2024-11-14,Bangladesh,Unhealthy,176
+11824,16059,2024-11-14,Belarus,Moderate,63
+11825,16060,2024-11-14,Belgium,Moderate,76
+11826,16061,2024-11-14,Bosnia and Herzegovina,Moderate,67
+11827,16062,2024-11-14,Brazil,Good,47
+11828,16063,2024-11-14,Brunei,Good,12
+11829,16064,2024-11-14,Bulgaria,Moderate,60
+11830,16066,2024-11-14,Canada,Moderate,51
+11831,16067,2024-11-14,Cape Verde,Good,45
+11832,16069,2024-11-14,Chile,Moderate,62
+11833,16070,2024-11-14,China,Very Unhealthy,254
+11834,16071,2024-11-14,Colombia,Good,49
+11835,16073,2024-11-14,Croatia,Good,50
+11836,16074,2024-11-14,Cyprus,Good,35
+11837,16075,2024-11-14,Czech Republic,Moderate,78
+11838,16076,2024-11-14,Denmark,Good,18
+11839,16077,2024-11-14,Dominican Republic,Good,17
+11840,16078,2024-11-14,Ecuador,Moderate,96
+11841,16080,2024-11-14,Estonia,Good,20
+11842,16081,2024-11-14,Ethiopia,Moderate,72
+11843,16082,2024-11-14,Finland,Good,14
+11844,16083,2024-11-14,France,Unhealthy for Sensitive Groups,117
+11845,16084,2024-11-14,French Guiana,Good,31
+11846,16085,2024-11-14,Georgia,Moderate,79
+11847,16086,2024-11-14,Germany,Very Unhealthy,282
+11848,16087,2024-11-14,Ghana,Moderate,84
+11849,16089,2024-11-14,Greece,Moderate,62
+11850,16090,2024-11-14,Guadeloupe,Good,44
+11851,16091,2024-11-14,Guatemala,Moderate,63
+11852,16092,2024-11-14,Hong Kong,Good,22
+11853,16094,2024-11-14,Iceland,Good,15
+11854,16095,2024-11-14,India,Hazardous,436
+11855,16096,2024-11-14,Indonesia,Unhealthy,161
+11856,16099,2024-11-14,Ireland,Moderate,55
+11857,16100,2024-11-14,Israel,Moderate,72
+11858,16101,2024-11-14,Italy,Moderate,100
+11859,16102,2024-11-14,Japan,Moderate,82
+11860,16104,2024-11-14,Jordan,Good,27
+11861,16105,2024-11-14,Kazakhstan,Good,37
+11862,16106,2024-11-14,Kenya,Good,49
+11863,16108,2024-11-14,Kuwait,Moderate,70
+11864,16109,2024-11-14,Kyrgyzstan,Good,46
+11865,16110,2024-11-14,Laos,Moderate,84
+11866,16111,2024-11-14,Latvia,Good,2
+11867,16113,2024-11-14,Liechtenstein,Good,14
+11868,16114,2024-11-14,Lithuania,Good,33
+11869,16116,2024-11-14,Macao,Good,42
+11870,16117,2024-11-14,Macedonia,Moderate,99
+11871,16118,2024-11-14,Madagascar,Unhealthy,155
+11872,16119,2024-11-14,Malaysia,Moderate,65
+11873,16120,2024-11-14,Malta,Good,19
+11874,16121,2024-11-14,Martinique,Moderate,57
+11875,16122,2024-11-14,Mexico,Moderate,95
+11876,16123,2024-11-14,Moldova,Good,19
+11877,16124,2024-11-14,Monaco,Good,44
+11878,16125,2024-11-14,Mongolia,Moderate,78
+11879,16126,2024-11-14,Montenegro,Moderate,62
+11880,16127,2024-11-14,Myanmar,Moderate,65
+11881,16128,2024-11-14,Nepal,Unhealthy for Sensitive Groups,142
+11882,16129,2024-11-14,Netherlands,Unhealthy,180
+11883,16131,2024-11-14,New Zealand,Good,24
+11884,16132,2024-11-14,Nigeria,Unhealthy for Sensitive Groups,120
+11885,16133,2024-11-14,Norway,Good,36
+11886,16134,2024-11-14,Pakistan,Unhealthy,171
+11887,16135,2024-11-14,Palestinian Territory,Moderate,59
+11888,16136,2024-11-14,Peru,Moderate,54
+11889,16137,2024-11-14,Philippines,Moderate,83
+11890,16138,2024-11-14,Poland,Unhealthy for Sensitive Groups,101
+11891,16139,2024-11-14,Portugal,Good,22
+11892,16140,2024-11-14,Reunion,Good,8
+11893,16141,2024-11-14,Romania,Moderate,93
+11894,16142,2024-11-14,Russia,Moderate,69
+11895,16143,2024-11-14,San Marino,Moderate,74
+11896,16144,2024-11-14,Serbia,Unhealthy for Sensitive Groups,124
+11897,16145,2024-11-14,Singapore,Moderate,82
+11898,16146,2024-11-14,Slovakia,Moderate,66
+11899,16147,2024-11-14,Slovenia,Good,47
+11900,16148,2024-11-14,South Africa,Moderate,62
+11901,16149,2024-11-14,South Korea,Moderate,89
+11902,16150,2024-11-14,Spain,Moderate,60
+11903,16151,2024-11-14,Sri Lanka,Moderate,98
+11904,16152,2024-11-14,Sweden,Good,27
+11905,16153,2024-11-14,Switzerland,Good,47
+11906,16154,2024-11-14,Taiwan,Moderate,87
+11907,16155,2024-11-14,Tajikistan,Moderate,65
+11908,16156,2024-11-14,Thailand,Unhealthy for Sensitive Groups,146
+11909,16157,2024-11-14,Trinidad and Tobago,Good,42
+11910,16158,2024-11-14,Turkey,Unhealthy,156
+11911,16160,2024-11-14,Uganda,Unhealthy for Sensitive Groups,129
+11912,16161,2024-11-14,Ukraine,Moderate,61
+11913,16162,2024-11-14,United Arab Emirates,Unhealthy for Sensitive Groups,110
+11914,16163,2024-11-14,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,118
+11915,16164,2024-11-14,United States of America,Unhealthy for Sensitive Groups,108
+11916,16166,2024-11-14,Vatican,Moderate,68
+11917,16168,2024-11-14,Vietnam,Moderate,86
+11918,16171,2024-11-21,Andorra,Good,20
+11919,16172,2024-11-21,Argentina,Good,22
+11920,16173,2024-11-21,Armenia,Unhealthy for Sensitive Groups,110
+11921,16174,2024-11-21,Australia,Moderate,58
+11922,16175,2024-11-21,Austria,Moderate,79
+11923,16176,2024-11-21,Azerbaijan,Moderate,52
+11924,16178,2024-11-21,Bangladesh,Hazardous,351
+11925,16179,2024-11-21,Belarus,Good,12
+11926,16180,2024-11-21,Belgium,Good,33
+11927,16181,2024-11-21,Bosnia and Herzegovina,Moderate,79
+11928,16182,2024-11-21,Brazil,Moderate,80
+11929,16183,2024-11-21,Brunei,Good,12
+11930,16184,2024-11-21,Bulgaria,Moderate,55
+11931,16185,2024-11-21,Canada,Good,43
+11932,16186,2024-11-21,Cape Verde,Good,39
+11933,16188,2024-11-21,Chile,Moderate,65
+11934,16189,2024-11-21,China,Unhealthy,184
+11935,16190,2024-11-21,Colombia,Moderate,61
+11936,16192,2024-11-21,Croatia,Unhealthy for Sensitive Groups,102
+11937,16193,2024-11-21,Cyprus,Moderate,55
+11938,16194,2024-11-21,Czech Republic,Moderate,75
+11939,16195,2024-11-21,Denmark,Good,17
+11940,16196,2024-11-21,Dominican Republic,Good,13
+11941,16197,2024-11-21,Ecuador,Moderate,99
+11942,16199,2024-11-21,Estonia,Good,17
+11943,16200,2024-11-21,Ethiopia,Moderate,61
+11944,16201,2024-11-21,Finland,Good,32
+11945,16202,2024-11-21,France,Moderate,77
+11946,16203,2024-11-21,French Guiana,Good,22
+11947,16204,2024-11-21,Georgia,Moderate,78
+11948,16205,2024-11-21,Germany,Moderate,75
+11949,16206,2024-11-21,Ghana,Moderate,67
+11950,16208,2024-11-21,Greece,Good,50
+11951,16209,2024-11-21,Guadeloupe,Good,12
+11952,16210,2024-11-21,Guatemala,Good,30
+11953,16211,2024-11-21,Hong Kong,Good,13
+11954,16213,2024-11-21,Iceland,Good,28
+11955,16214,2024-11-21,India,Hazardous,569
+11956,16215,2024-11-21,Indonesia,Unhealthy for Sensitive Groups,108
+11957,16218,2024-11-21,Ireland,Good,21
+11958,16219,2024-11-21,Israel,Good,49
+11959,16220,2024-11-21,Italy,Unhealthy,153
+11960,16221,2024-11-21,Japan,Moderate,67
+11961,16223,2024-11-21,Jordan,Good,19
+11962,16224,2024-11-21,Kazakhstan,Moderate,63
+11963,16225,2024-11-21,Kenya,Good,16
+11964,16227,2024-11-21,Kuwait,Moderate,86
+11965,16228,2024-11-21,Kyrgyzstan,Moderate,62
+11966,16229,2024-11-21,Laos,Moderate,73
+11967,16230,2024-11-21,Latvia,Good,1
+11968,16232,2024-11-21,Liechtenstein,Good,10
+11969,16233,2024-11-21,Lithuania,Good,19
+11970,16235,2024-11-21,Macao,Good,38
+11971,16236,2024-11-21,Macedonia,Unhealthy for Sensitive Groups,137
+11972,16237,2024-11-21,Madagascar,Unhealthy,157
+11973,16238,2024-11-21,Malaysia,Moderate,53
+11974,16239,2024-11-21,Malta,Good,30
+11975,16240,2024-11-21,Martinique,Good,25
+11976,16241,2024-11-21,Mexico,Unhealthy for Sensitive Groups,113
+11977,16242,2024-11-21,Moldova,Good,40
+11978,16243,2024-11-21,Monaco,Moderate,80
+11979,16244,2024-11-21,Mongolia,Moderate,91
+11980,16245,2024-11-21,Montenegro,Moderate,60
+11981,16246,2024-11-21,Myanmar,Moderate,72
+11982,16247,2024-11-21,Nepal,Moderate,99
+11983,16248,2024-11-21,Netherlands,Good,37
+11984,16250,2024-11-21,New Zealand,Good,21
+11985,16251,2024-11-21,Nigeria,Moderate,76
+11986,16252,2024-11-21,Norway,Moderate,53
+11987,16253,2024-11-21,Pakistan,Unhealthy for Sensitive Groups,148
+11988,16254,2024-11-21,Palestinian Territory,Good,33
+11989,16255,2024-11-21,Peru,Moderate,56
+11990,16256,2024-11-21,Philippines,Good,45
+11991,16257,2024-11-21,Poland,Moderate,79
+11992,16258,2024-11-21,Portugal,Good,25
+11993,16259,2024-11-21,Reunion,Good,15
+11994,16260,2024-11-21,Romania,Moderate,88
+11995,16261,2024-11-21,Russia,Moderate,92
+11996,16262,2024-11-21,San Marino,Moderate,51
+11997,16263,2024-11-21,Serbia,Unhealthy,153
+11998,16264,2024-11-21,Singapore,Good,37
+11999,16265,2024-11-21,Slovakia,Unhealthy for Sensitive Groups,119
+12000,16266,2024-11-21,Slovenia,Unhealthy for Sensitive Groups,122
+12001,16267,2024-11-21,South Africa,Moderate,67
+12002,16268,2024-11-21,South Korea,Unhealthy for Sensitive Groups,141
+12003,16269,2024-11-21,Spain,Moderate,71
+12004,16270,2024-11-21,Sri Lanka,Moderate,87
+12005,16271,2024-11-21,Sweden,Good,50
+12006,16272,2024-11-21,Switzerland,Good,26
+12007,16273,2024-11-21,Taiwan,Moderate,53
+12008,16274,2024-11-21,Tajikistan,Moderate,68
+12009,16275,2024-11-21,Thailand,Unhealthy for Sensitive Groups,105
+12010,16276,2024-11-21,Trinidad and Tobago,Good,16
+12011,16277,2024-11-21,Turkey,Unhealthy,161
+12012,16278,2024-11-21,Uganda,Unhealthy for Sensitive Groups,127
+12013,16279,2024-11-21,Ukraine,Good,49
+12014,16280,2024-11-21,United Arab Emirates,Moderate,98
+12015,16281,2024-11-21,United Kingdom of Great Britain and Northern Ireland,Moderate,63
+12016,16282,2024-11-21,United States of America,Moderate,82
+12017,16284,2024-11-21,Vatican,Moderate,72
+12018,16286,2024-11-21,Vietnam,Moderate,73
+12019,16289,2024-11-28,Andorra,Good,5
+12020,16290,2024-11-28,Argentina,Good,20
+12021,16291,2024-11-28,Armenia,Good,36
+12022,16292,2024-11-28,Australia,Good,43
+12023,16293,2024-11-28,Austria,Moderate,67
+12024,16294,2024-11-28,Azerbaijan,Good,29
+12025,16296,2024-11-28,Bangladesh,Unhealthy,171
+12026,16297,2024-11-28,Belarus,Moderate,53
+12027,16298,2024-11-28,Belgium,Good,26
+12028,16299,2024-11-28,Bosnia and Herzegovina,Unhealthy for Sensitive Groups,112
+12029,16300,2024-11-28,Brazil,Moderate,82
+12030,16301,2024-11-28,Brunei,Good,15
+12031,16302,2024-11-28,Bulgaria,Moderate,78
+12032,16304,2024-11-28,Canada,Moderate,57
+12033,16305,2024-11-28,Cape Verde,Moderate,54
+12034,16307,2024-11-28,Chile,Moderate,75
+12035,16308,2024-11-28,China,Unhealthy,155
+12036,16309,2024-11-28,Colombia,Moderate,65
+12037,16311,2024-11-28,Croatia,Moderate,91
+12038,16312,2024-11-28,Cyprus,Good,45
+12039,16313,2024-11-28,Czech Republic,Moderate,76
+12040,16314,2024-11-28,Denmark,Good,20
+12041,16315,2024-11-28,Dominican Republic,Good,24
+12042,16316,2024-11-28,Ecuador,Moderate,54
+12043,16318,2024-11-28,Estonia,Good,22
+12044,16319,2024-11-28,Ethiopia,Moderate,61
+12045,16320,2024-11-28,Finland,Good,19
+12046,16321,2024-11-28,France,Moderate,84
+12047,16322,2024-11-28,French Guiana,Good,15
+12048,16323,2024-11-28,Georgia,Good,27
+12049,16324,2024-11-28,Germany,Moderate,55
+12050,16325,2024-11-28,Ghana,Moderate,94
+12051,16327,2024-11-28,Greece,Moderate,99
+12052,16328,2024-11-28,Guadeloupe,Good,29
+12053,16329,2024-11-28,Guatemala,Good,34
+12054,16330,2024-11-28,Hong Kong,Good,46
+12055,16332,2024-11-28,Iceland,Good,30
+12056,16333,2024-11-28,India,Hazardous,469
+12057,16334,2024-11-28,Indonesia,Moderate,94
+12058,16337,2024-11-28,Ireland,Moderate,94
+12059,16338,2024-11-28,Israel,Moderate,51
+12060,16339,2024-11-28,Italy,Unhealthy for Sensitive Groups,150
+12061,16341,2024-11-28,Japan,Moderate,63
+12062,16343,2024-11-28,Jordan,Good,23
+12063,16344,2024-11-28,Kazakhstan,Moderate,100
+12064,16345,2024-11-28,Kenya,Good,37
+12065,16347,2024-11-28,Kuwait,Moderate,68
+12066,16348,2024-11-28,Kyrgyzstan,Good,35
+12067,16349,2024-11-28,Laos,Good,38
+12068,16350,2024-11-28,Latvia,Good,27
+12069,16352,2024-11-28,Liechtenstein,Good,27
+12070,16353,2024-11-28,Lithuania,Good,16
+12071,16355,2024-11-28,Macao,Moderate,55
+12072,16356,2024-11-28,Macedonia,Unhealthy,166
+12073,16357,2024-11-28,Madagascar,Moderate,61
+12074,16358,2024-11-28,Malaysia,Good,46
+12075,16359,2024-11-28,Malta,Good,35
+12076,16360,2024-11-28,Martinique,Good,17
+12077,16361,2024-11-28,Mexico,Unhealthy for Sensitive Groups,134
+12078,16362,2024-11-28,Moldova,Good,45
+12079,16363,2024-11-28,Monaco,Good,29
+12080,16364,2024-11-28,Mongolia,Good,33
+12081,16365,2024-11-28,Montenegro,Unhealthy for Sensitive Groups,102
+12082,16366,2024-11-28,Myanmar,Moderate,82
+12083,16367,2024-11-28,Nepal,Unhealthy for Sensitive Groups,120
+12084,16368,2024-11-28,Netherlands,Good,31
+12085,16370,2024-11-28,New Zealand,Good,30
+12086,16371,2024-11-28,Nigeria,Unhealthy for Sensitive Groups,106
+12087,16372,2024-11-28,Norway,Good,13
+12088,16373,2024-11-28,Pakistan,Unhealthy for Sensitive Groups,130
+12089,16374,2024-11-28,Palestinian Territory,Good,50
+12090,16375,2024-11-28,Peru,Moderate,76
+12091,16376,2024-11-28,Philippines,Good,47
+12092,16377,2024-11-28,Poland,Unhealthy for Sensitive Groups,129
+12093,16378,2024-11-28,Portugal,Good,28
+12094,16379,2024-11-28,Reunion,Good,16
+12095,16380,2024-11-28,Romania,Unhealthy for Sensitive Groups,139
+12096,16381,2024-11-28,Russia,Unhealthy for Sensitive Groups,115
+12097,16382,2024-11-28,San Marino,Unhealthy for Sensitive Groups,124
+12098,16384,2024-11-28,Serbia,Unhealthy,178
+12099,16385,2024-11-28,Singapore,Moderate,57
+12100,16386,2024-11-28,Slovakia,Unhealthy for Sensitive Groups,113
+12101,16387,2024-11-28,Slovenia,Good,48
+12102,16388,2024-11-28,South Africa,Moderate,58
+12103,16389,2024-11-28,South Korea,Moderate,60
+12104,16390,2024-11-28,Spain,Unhealthy for Sensitive Groups,112
+12105,16391,2024-11-28,Sri Lanka,Unhealthy for Sensitive Groups,118
+12106,16392,2024-11-28,Sweden,Good,20
+12107,16393,2024-11-28,Switzerland,Good,23
+12108,16394,2024-11-28,Taiwan,Moderate,56
+12109,16395,2024-11-28,Tajikistan,Moderate,57
+12110,16396,2024-11-28,Thailand,Moderate,91
+12111,16397,2024-11-28,Trinidad and Tobago,Good,26
+12112,16398,2024-11-28,Turkey,Unhealthy for Sensitive Groups,132
+12113,16400,2024-11-28,Uganda,Moderate,82
+12114,16401,2024-11-28,Ukraine,Moderate,77
+12115,16402,2024-11-28,United Arab Emirates,Moderate,76
+12116,16403,2024-11-28,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,105
+12117,16404,2024-11-28,United States of America,Moderate,88
+12118,16406,2024-11-28,Vatican,Moderate,78
+12119,16408,2024-11-28,Vietnam,Good,39
+12120,16411,2024-12-05,Andorra,Good,4
+12121,16412,2024-12-05,Argentina,Good,22
+12122,16413,2024-12-05,Armenia,Unhealthy for Sensitive Groups,119
+12123,16414,2024-12-05,Australia,Good,50
+12124,16415,2024-12-05,Austria,Moderate,51
+12125,16416,2024-12-05,Azerbaijan,Moderate,53
+12126,16418,2024-12-05,Bangladesh,Hazardous,388
+12127,16419,2024-12-05,Belarus,Good,14
+12128,16420,2024-12-05,Belgium,Moderate,84
+12129,16421,2024-12-05,Bosnia and Herzegovina,Moderate,69
+12130,16422,2024-12-05,Brazil,Good,33
+12131,16423,2024-12-05,Brunei,Good,14
+12132,16424,2024-12-05,Bulgaria,Moderate,68
+12133,16426,2024-12-05,Canada,Moderate,75
+12134,16427,2024-12-05,Cape Verde,Good,36
+12135,16429,2024-12-05,Chile,Moderate,59
+12136,16430,2024-12-05,China,Very Unhealthy,223
+12137,16431,2024-12-05,Colombia,Moderate,64
+12138,16433,2024-12-05,Croatia,Moderate,58
+12139,16434,2024-12-05,Cyprus,Moderate,63
+12140,16435,2024-12-05,Czech Republic,Unhealthy for Sensitive Groups,116
+12141,16436,2024-12-05,Denmark,Good,16
+12142,16437,2024-12-05,Dominican Republic,Moderate,59
+12143,16438,2024-12-05,Ecuador,Moderate,60
+12144,16440,2024-12-05,Estonia,Good,19
+12145,16441,2024-12-05,Ethiopia,Moderate,53
+12146,16442,2024-12-05,Finland,Good,21
+12147,16443,2024-12-05,France,Moderate,79
+12148,16444,2024-12-05,French Guiana,Good,41
+12149,16445,2024-12-05,Georgia,Good,39
+12150,16446,2024-12-05,Germany,Unhealthy for Sensitive Groups,121
+12151,16447,2024-12-05,Ghana,Moderate,75
+12152,16449,2024-12-05,Greece,Good,36
+12153,16450,2024-12-05,Guadeloupe,Good,32
+12154,16451,2024-12-05,Guatemala,Good,34
+12155,16452,2024-12-05,Hong Kong,Moderate,77
+12156,16454,2024-12-05,Iceland,Good,27
+12157,16455,2024-12-05,India,Very Unhealthy,231
+12158,16456,2024-12-05,Indonesia,Moderate,91
+12159,16459,2024-12-05,Ireland,Good,24
+12160,16460,2024-12-05,Israel,Moderate,79
+12161,16461,2024-12-05,Italy,Unhealthy for Sensitive Groups,141
+12162,16463,2024-12-05,Japan,Moderate,71
+12163,16465,2024-12-05,Jordan,Good,31
+12164,16466,2024-12-05,Kazakhstan,Moderate,75
+12165,16467,2024-12-05,Kenya,Good,39
+12166,16469,2024-12-05,Kuwait,Moderate,94
+12167,16470,2024-12-05,Kyrgyzstan,Good,34
+12168,16471,2024-12-05,Laos,Unhealthy for Sensitive Groups,104
+12169,16472,2024-12-05,Latvia,Good,4
+12170,16474,2024-12-05,Liechtenstein,Good,10
+12171,16475,2024-12-05,Lithuania,Good,20
+12172,16477,2024-12-05,Macao,Moderate,82
+12173,16478,2024-12-05,Macedonia,Unhealthy for Sensitive Groups,104
+12174,16479,2024-12-05,Madagascar,Moderate,55
+12175,16480,2024-12-05,Malaysia,Moderate,54
+12176,16481,2024-12-05,Malta,Good,32
+12177,16482,2024-12-05,Martinique,Good,43
+12178,16483,2024-12-05,Mexico,Unhealthy for Sensitive Groups,119
+12179,16484,2024-12-05,Moldova,Good,14
+12180,16485,2024-12-05,Monaco,Good,40
+12181,16486,2024-12-05,Mongolia,Unhealthy,166
+12182,16487,2024-12-05,Montenegro,Moderate,53
+12183,16488,2024-12-05,Myanmar,Unhealthy for Sensitive Groups,122
+12184,16489,2024-12-05,Nepal,Unhealthy for Sensitive Groups,123
+12185,16490,2024-12-05,Netherlands,Moderate,98
+12186,16492,2024-12-05,New Zealand,Good,29
+12187,16493,2024-12-05,Nigeria,Unhealthy for Sensitive Groups,107
+12188,16494,2024-12-05,Norway,Good,15
+12189,16495,2024-12-05,Pakistan,Unhealthy for Sensitive Groups,113
+12190,16496,2024-12-05,Palestinian Territory,Moderate,77
+12191,16497,2024-12-05,Peru,Moderate,53
+12192,16498,2024-12-05,Philippines,Moderate,60
+12193,16499,2024-12-05,Poland,Unhealthy,152
+12194,16500,2024-12-05,Portugal,Good,22
+12195,16501,2024-12-05,Reunion,Good,14
+12196,16502,2024-12-05,Romania,Moderate,72
+12197,16503,2024-12-05,Russia,Moderate,61
+12198,16504,2024-12-05,San Marino,Moderate,82
+12199,16505,2024-12-05,Serbia,Unhealthy for Sensitive Groups,137
+12200,16506,2024-12-05,Singapore,Good,49
+12201,16507,2024-12-05,Slovakia,Unhealthy for Sensitive Groups,102
+12202,16508,2024-12-05,Slovenia,Moderate,53
+12203,16509,2024-12-05,South Africa,Moderate,69
+12204,16510,2024-12-05,South Korea,Unhealthy for Sensitive Groups,101
+12205,16511,2024-12-05,Spain,Moderate,63
+12206,16512,2024-12-05,Sri Lanka,Unhealthy for Sensitive Groups,122
+12207,16513,2024-12-05,Sweden,Good,26
+12208,16514,2024-12-05,Switzerland,Good,50
+12209,16515,2024-12-05,Taiwan,Moderate,81
+12210,16516,2024-12-05,Tajikistan,Unhealthy for Sensitive Groups,139
+12211,16517,2024-12-05,Thailand,Unhealthy for Sensitive Groups,136
+12212,16519,2024-12-05,Trinidad and Tobago,Moderate,57
+12213,16520,2024-12-05,Turkey,Unhealthy,177
+12214,16522,2024-12-05,Uganda,Very Unhealthy,286
+12215,16523,2024-12-05,Ukraine,Moderate,54
+12216,16524,2024-12-05,United Arab Emirates,Moderate,60
+12217,16525,2024-12-05,United Kingdom of Great Britain and Northern Ireland,Moderate,54
+12218,16526,2024-12-05,United States of America,Unhealthy for Sensitive Groups,139
+12219,16528,2024-12-05,Vatican,Moderate,95
+12220,16530,2024-12-05,Vietnam,Moderate,53
+12221,16533,2024-12-12,Andorra,Good,7
+12222,16534,2024-12-12,Argentina,Good,18
+12223,16535,2024-12-12,Armenia,Unhealthy for Sensitive Groups,148
+12224,16536,2024-12-12,Australia,Moderate,52
+12225,16537,2024-12-12,Austria,Good,44
+12226,16538,2024-12-12,Azerbaijan,Unhealthy for Sensitive Groups,102
+12227,16540,2024-12-12,Bangladesh,Unhealthy,190
+12228,16541,2024-12-12,Belarus,Good,10
+12229,16542,2024-12-12,Belgium,Unhealthy for Sensitive Groups,119
+12230,16543,2024-12-12,Bosnia and Herzegovina,Good,46
+12231,16544,2024-12-12,Brazil,Good,41
+12232,16545,2024-12-12,Brunei,Good,11
+12233,16546,2024-12-12,Bulgaria,Moderate,58
+12234,16548,2024-12-12,Canada,Moderate,55
+12235,16549,2024-12-12,Cape Verde,Good,29
+12236,16551,2024-12-12,Chile,Moderate,60
+12237,16552,2024-12-12,China,Unhealthy,194
+12238,16553,2024-12-12,Colombia,Moderate,74
+12239,16555,2024-12-12,Croatia,Moderate,55
+12240,16556,2024-12-12,Cyprus,Good,47
+12241,16557,2024-12-12,Czech Republic,Moderate,84
+12242,16558,2024-12-12,Denmark,Good,24
+12243,16559,2024-12-12,Dominican Republic,Good,30
+12244,16560,2024-12-12,Ecuador,Good,41
+12245,16562,2024-12-12,Estonia,Good,24
+12246,16563,2024-12-12,Ethiopia,Moderate,61
+12247,16564,2024-12-12,Finland,Good,17
+12248,16565,2024-12-12,France,Unhealthy for Sensitive Groups,113
+12249,16566,2024-12-12,French Guiana,Good,22
+12250,16567,2024-12-12,Georgia,Unhealthy for Sensitive Groups,105
+12251,16568,2024-12-12,Germany,Unhealthy for Sensitive Groups,106
+12252,16569,2024-12-12,Ghana,Moderate,77
+12253,16571,2024-12-12,Greece,Moderate,58
+12254,16572,2024-12-12,Guadeloupe,Good,21
+12255,16573,2024-12-12,Guatemala,Good,21
+12256,16574,2024-12-12,Hong Kong,Moderate,53
+12257,16576,2024-12-12,Iceland,Good,27
+12258,16577,2024-12-12,India,Very Unhealthy,257
+12259,16578,2024-12-12,Indonesia,Moderate,66
+12260,16581,2024-12-12,Ireland,Moderate,55
+12261,16582,2024-12-12,Israel,Unhealthy for Sensitive Groups,104
+12262,16583,2024-12-12,Italy,Unhealthy for Sensitive Groups,104
+12263,16585,2024-12-12,Japan,Moderate,68
+12264,16587,2024-12-12,Jordan,Good,31
+12265,16588,2024-12-12,Kazakhstan,Moderate,75
+12266,16589,2024-12-12,Kenya,Good,49
+12267,16591,2024-12-12,Kuwait,Moderate,92
+12268,16592,2024-12-12,Kyrgyzstan,Good,34
+12269,16593,2024-12-12,Laos,Moderate,76
+12270,16594,2024-12-12,Latvia,Good,7
+12271,16596,2024-12-12,Liechtenstein,Good,17
+12272,16597,2024-12-12,Lithuania,Good,17
+12273,16599,2024-12-12,Macao,Moderate,68
+12274,16600,2024-12-12,Macedonia,Unhealthy for Sensitive Groups,128
+12275,16601,2024-12-12,Madagascar,Unhealthy for Sensitive Groups,117
+12276,16602,2024-12-12,Malaysia,Moderate,56
+12277,16603,2024-12-12,Malta,Good,18
+12278,16604,2024-12-12,Martinique,Good,21
+12279,16605,2024-12-12,Mexico,Moderate,93
+12280,16606,2024-12-12,Moldova,Good,8
+12281,16607,2024-12-12,Monaco,Good,21
+12282,16608,2024-12-12,Mongolia,Unhealthy for Sensitive Groups,146
+12283,16609,2024-12-12,Montenegro,Good,43
+12284,16610,2024-12-12,Myanmar,Moderate,88
+12285,16611,2024-12-12,Nepal,Unhealthy for Sensitive Groups,128
+12286,16612,2024-12-12,Netherlands,Moderate,96
+12287,16614,2024-12-12,New Zealand,Good,19
+12288,16615,2024-12-12,Nigeria,Moderate,94
+12289,16616,2024-12-12,Norway,Moderate,65
+12290,16617,2024-12-12,Pakistan,Unhealthy,161
+12291,16618,2024-12-12,Palestinian Territory,Unhealthy for Sensitive Groups,131
+12292,16619,2024-12-12,Peru,Moderate,53
+12293,16620,2024-12-12,Philippines,Good,40
+12294,16621,2024-12-12,Poland,Moderate,90
+12295,16622,2024-12-12,Portugal,Good,19
+12296,16623,2024-12-12,Reunion,Good,16
+12297,16624,2024-12-12,Romania,Moderate,76
+12298,16625,2024-12-12,Russia,Moderate,55
+12299,16626,2024-12-12,San Marino,Good,15
+12300,16627,2024-12-12,Serbia,Moderate,75
+12301,16628,2024-12-12,Singapore,Moderate,62
+12302,16629,2024-12-12,Slovakia,Moderate,76
+12303,16630,2024-12-12,Slovenia,Good,43
+12304,16631,2024-12-12,South Africa,Moderate,55
+12305,16632,2024-12-12,South Korea,Unhealthy for Sensitive Groups,144
+12306,16633,2024-12-12,Spain,Moderate,69
+12307,16634,2024-12-12,Sri Lanka,Moderate,53
+12308,16635,2024-12-12,Sweden,Good,24
+12309,16636,2024-12-12,Switzerland,Moderate,55
+12310,16637,2024-12-12,Taiwan,Moderate,51
+12311,16638,2024-12-12,Tajikistan,Unhealthy,175
+12312,16639,2024-12-12,Thailand,Unhealthy for Sensitive Groups,136
+12313,16641,2024-12-12,Trinidad and Tobago,Good,20
+12314,16642,2024-12-12,Turkey,Unhealthy,194
+12315,16644,2024-12-12,Uganda,Unhealthy,154
+12316,16645,2024-12-12,Ukraine,Good,43
+12317,16646,2024-12-12,United Arab Emirates,Moderate,77
+12318,16647,2024-12-12,United Kingdom of Great Britain and Northern Ireland,Moderate,63
+12319,16648,2024-12-12,United States of America,Unhealthy for Sensitive Groups,105
+12320,16650,2024-12-12,Vatican,Moderate,53
+12321,16652,2024-12-12,Vietnam,Moderate,52
+12322,16655,2024-12-19,Andorra,Good,13
+12323,16656,2024-12-19,Argentina,Good,16
+12324,16657,2024-12-19,Armenia,Good,38
+12325,16658,2024-12-19,Australia,Good,41
+12326,16659,2024-12-19,Austria,Moderate,82
+12327,16660,2024-12-19,Azerbaijan,Good,23
+12328,16662,2024-12-19,Bangladesh,Very Unhealthy,297
+12329,16663,2024-12-19,Belarus,Good,39
+12330,16664,2024-12-19,Belgium,Good,25
+12331,16665,2024-12-19,Bosnia and Herzegovina,Unhealthy for Sensitive Groups,122
+12332,16666,2024-12-19,Brazil,Moderate,59
+12333,16667,2024-12-19,Brunei,Good,17
+12334,16668,2024-12-19,Bulgaria,Moderate,70
+12335,16670,2024-12-19,Canada,Moderate,57
+12336,16671,2024-12-19,Cape Verde,Very Unhealthy,232
+12337,16673,2024-12-19,Chile,Moderate,54
+12338,16674,2024-12-19,China,Unhealthy,176
+12339,16675,2024-12-19,Colombia,Moderate,59
+12340,16677,2024-12-19,Croatia,Unhealthy for Sensitive Groups,129
+12341,16678,2024-12-19,Cyprus,Moderate,67
+12342,16679,2024-12-19,Czech Republic,Moderate,79
+12343,16680,2024-12-19,Denmark,Good,28
+12344,16681,2024-12-19,Dominican Republic,Good,15
+12345,16682,2024-12-19,Ecuador,Good,26
+12346,16684,2024-12-19,Estonia,Good,20
+12347,16685,2024-12-19,Ethiopia,Moderate,95
+12348,16686,2024-12-19,Finland,Good,15
+12349,16687,2024-12-19,France,Unhealthy for Sensitive Groups,120
+12350,16688,2024-12-19,French Guiana,Good,14
+12351,16689,2024-12-19,Georgia,Good,27
+12352,16690,2024-12-19,Germany,Moderate,67
+12353,16691,2024-12-19,Ghana,Unhealthy for Sensitive Groups,137
+12354,16693,2024-12-19,Greece,Unhealthy for Sensitive Groups,107
+12355,16694,2024-12-19,Guadeloupe,Good,20
+12356,16695,2024-12-19,Guatemala,Good,50
+12357,16696,2024-12-19,Hong Kong,Moderate,88
+12358,16698,2024-12-19,Iceland,Good,19
+12359,16699,2024-12-19,India,Hazardous,467
+12360,16700,2024-12-19,Indonesia,Moderate,70
+12361,16703,2024-12-19,Ireland,Good,34
+12362,16704,2024-12-19,Israel,Moderate,90
+12363,16705,2024-12-19,Italy,Unhealthy,152
+12364,16707,2024-12-19,Japan,Moderate,53
+12365,16709,2024-12-19,Jordan,Good,21
+12366,16710,2024-12-19,Kazakhstan,Unhealthy for Sensitive Groups,121
+12367,16711,2024-12-19,Kenya,Good,41
+12368,16713,2024-12-19,Kuwait,Moderate,72
+12369,16714,2024-12-19,Kyrgyzstan,Good,32
+12370,16715,2024-12-19,Laos,Unhealthy for Sensitive Groups,105
+12371,16716,2024-12-19,Latvia,Good,9
+12372,16718,2024-12-19,Liechtenstein,Good,27
+12373,16719,2024-12-19,Lithuania,Good,13
+12374,16721,2024-12-19,Macao,Moderate,97
+12375,16722,2024-12-19,Macedonia,Unhealthy,166
+12376,16723,2024-12-19,Madagascar,Moderate,82
+12377,16724,2024-12-19,Malaysia,Moderate,53
+12378,16725,2024-12-19,Malta,Good,19
+12379,16726,2024-12-19,Martinique,Good,22
+12380,16727,2024-12-19,Mexico,Unhealthy for Sensitive Groups,106
+12381,16728,2024-12-19,Moldova,Good,22
+12382,16729,2024-12-19,Monaco,Moderate,61
+12383,16730,2024-12-19,Mongolia,Moderate,94
+12384,16731,2024-12-19,Montenegro,Unhealthy for Sensitive Groups,102
+12385,16732,2024-12-19,Myanmar,Unhealthy for Sensitive Groups,103
+12386,16733,2024-12-19,Nepal,Unhealthy for Sensitive Groups,145
+12387,16734,2024-12-19,Netherlands,Moderate,53
+12388,16736,2024-12-19,New Zealand,Good,22
+12389,16737,2024-12-19,Nigeria,Unhealthy for Sensitive Groups,131
+12390,16738,2024-12-19,Norway,Good,31
+12391,16739,2024-12-19,Pakistan,Very Unhealthy,241
+12392,16740,2024-12-19,Palestinian Territory,Unhealthy for Sensitive Groups,119
+12393,16741,2024-12-19,Peru,Moderate,61
+12394,16742,2024-12-19,Philippines,Good,30
+12395,16743,2024-12-19,Poland,Moderate,57
+12396,16744,2024-12-19,Portugal,Moderate,61
+12397,16745,2024-12-19,Reunion,Good,17
+12398,16746,2024-12-19,Romania,Unhealthy for Sensitive Groups,129
+12399,16747,2024-12-19,Russia,Moderate,82
+12400,16748,2024-12-19,San Marino,Good,27
+12401,16750,2024-12-19,Serbia,Very Unhealthy,209
+12402,16751,2024-12-19,Singapore,Moderate,52
+12403,16752,2024-12-19,Slovakia,Moderate,92
+12404,16753,2024-12-19,Slovenia,Moderate,99
+12405,16754,2024-12-19,South Africa,Good,48
+12406,16755,2024-12-19,South Korea,Unhealthy for Sensitive Groups,114
+12407,16756,2024-12-19,Spain,Unhealthy for Sensitive Groups,141
+12408,16757,2024-12-19,Sri Lanka,Moderate,87
+12409,16758,2024-12-19,Sweden,Good,37
+12410,16759,2024-12-19,Switzerland,Moderate,52
+12411,16760,2024-12-19,Taiwan,Moderate,70
+12412,16761,2024-12-19,Tajikistan,Unhealthy for Sensitive Groups,121
+12413,16762,2024-12-19,Thailand,Unhealthy,156
+12414,16764,2024-12-19,Trinidad and Tobago,Good,36
+12415,16765,2024-12-19,Turkey,Unhealthy,198
+12416,16767,2024-12-19,Uganda,Unhealthy,156
+12417,16768,2024-12-19,Ukraine,Moderate,52
+12418,16769,2024-12-19,United Arab Emirates,Moderate,68
+12419,16770,2024-12-19,United Kingdom of Great Britain and Northern Ireland,Moderate,51
+12420,16771,2024-12-19,United States of America,Moderate,83
+12421,16773,2024-12-19,Vatican,Moderate,80
+12422,16774,2024-12-19,Vietnam,Moderate,73
+12423,16777,2024-12-26,Andorra,Good,10
+12424,16778,2024-12-26,Argentina,Good,10
+12425,16779,2024-12-26,Armenia,Unhealthy for Sensitive Groups,138
+12426,16780,2024-12-26,Australia,Good,47
+12427,16781,2024-12-26,Austria,Moderate,64
+12428,16782,2024-12-26,Azerbaijan,Moderate,77
+12429,16784,2024-12-26,Bangladesh,Very Unhealthy,221
+12430,16785,2024-12-26,Belarus,Good,45
+12431,16786,2024-12-26,Belgium,Moderate,69
+12432,16787,2024-12-26,Bosnia and Herzegovina,Good,40
+12433,16788,2024-12-26,Brazil,Good,42
+12434,16789,2024-12-26,Brunei,Good,13
+12435,16790,2024-12-26,Bulgaria,Good,27
+12436,16792,2024-12-26,Canada,Unhealthy for Sensitive Groups,103
+12437,16793,2024-12-26,Cape Verde,Good,24
+12438,16795,2024-12-26,Chile,Moderate,51
+12439,16796,2024-12-26,China,Very Unhealthy,218
+12440,16797,2024-12-26,Colombia,Moderate,75
+12441,16799,2024-12-26,Croatia,Good,43
+12442,16800,2024-12-26,Cyprus,Good,31
+12443,16801,2024-12-26,Czech Republic,Unhealthy for Sensitive Groups,150
+12444,16802,2024-12-26,Denmark,Good,19
+12445,16803,2024-12-26,Dominican Republic,Good,29
+12446,16804,2024-12-26,Ecuador,Moderate,54
+12447,16806,2024-12-26,Estonia,Good,17
+12448,16807,2024-12-26,Ethiopia,Moderate,76
+12449,16808,2024-12-26,Finland,Good,15
+12450,16809,2024-12-26,France,Moderate,97
+12451,16810,2024-12-26,French Guiana,Good,42
+12452,16811,2024-12-26,Georgia,Unhealthy for Sensitive Groups,108
+12453,16812,2024-12-26,Germany,Unhealthy for Sensitive Groups,117
+12454,16813,2024-12-26,Ghana,Unhealthy for Sensitive Groups,145
+12455,16815,2024-12-26,Greece,Good,28
+12456,16816,2024-12-26,Guadeloupe,Moderate,78
+12457,16817,2024-12-26,Guatemala,Moderate,82
+12458,16818,2024-12-26,Hong Kong,Moderate,81
+12459,16820,2024-12-26,Iceland,Moderate,53
+12460,16821,2024-12-26,India,Hazardous,459
+12461,16822,2024-12-26,Indonesia,Unhealthy for Sensitive Groups,102
+12462,16825,2024-12-26,Ireland,Good,24
+12463,16826,2024-12-26,Israel,Moderate,80
+12464,16827,2024-12-26,Italy,Moderate,75
+12465,16829,2024-12-26,Japan,Moderate,81
+12466,16831,2024-12-26,Jordan,Good,33
+12467,16832,2024-12-26,Kazakhstan,Unhealthy for Sensitive Groups,137
+12468,16833,2024-12-26,Kenya,Good,35
+12469,16834,2024-12-26,Kuwait,Moderate,98
+12470,16835,2024-12-26,Kyrgyzstan,Good,20
+12471,16836,2024-12-26,Laos,Unhealthy for Sensitive Groups,136
+12472,16837,2024-12-26,Latvia,Good,20
+12473,16839,2024-12-26,Liechtenstein,Good,8
+12474,16840,2024-12-26,Lithuania,Good,24
+12475,16842,2024-12-26,Macao,Unhealthy for Sensitive Groups,117
+12476,16843,2024-12-26,Macedonia,Good,37
+12477,16844,2024-12-26,Madagascar,Moderate,97
+12478,16845,2024-12-26,Malaysia,Moderate,67
+12479,16846,2024-12-26,Malta,Good,15
+12480,16847,2024-12-26,Martinique,Unhealthy for Sensitive Groups,116
+12481,16848,2024-12-26,Mexico,Unhealthy for Sensitive Groups,126
+12482,16849,2024-12-26,Moldova,Good,10
+12483,16850,2024-12-26,Monaco,Moderate,52
+12484,16851,2024-12-26,Mongolia,Moderate,58
+12485,16852,2024-12-26,Montenegro,Good,34
+12486,16853,2024-12-26,Myanmar,Moderate,91
+12487,16854,2024-12-26,Nepal,Unhealthy for Sensitive Groups,126
+12488,16855,2024-12-26,Netherlands,Moderate,94
+12489,16857,2024-12-26,New Zealand,Good,13
+12490,16858,2024-12-26,Nigeria,Unhealthy,155
+12491,16859,2024-12-26,Norway,Good,35
+12492,16860,2024-12-26,Pakistan,Very Unhealthy,220
+12493,16861,2024-12-26,Palestinian Territory,Moderate,86
+12494,16862,2024-12-26,Peru,Good,35
+12495,16863,2024-12-26,Philippines,Good,40
+12496,16864,2024-12-26,Poland,Unhealthy,165
+12497,16865,2024-12-26,Portugal,Good,20
+12498,16866,2024-12-26,Reunion,Good,14
+12499,16867,2024-12-26,Romania,Good,49
+12500,16868,2024-12-26,Russia,Moderate,84
+12501,16869,2024-12-26,San Marino,Moderate,61
+12502,16871,2024-12-26,Serbia,Moderate,97
+12503,16872,2024-12-26,Singapore,Moderate,63
+12504,16873,2024-12-26,Slovakia,Moderate,76
+12505,16874,2024-12-26,Slovenia,Moderate,56
+12506,16875,2024-12-26,South Africa,Moderate,55
+12507,16876,2024-12-26,South Korea,Unhealthy,156
+12508,16877,2024-12-26,Spain,Unhealthy for Sensitive Groups,106
+12509,16878,2024-12-26,Sri Lanka,Unhealthy for Sensitive Groups,135
+12510,16879,2024-12-26,Sweden,Good,29
+12511,16880,2024-12-26,Switzerland,Moderate,67
+12512,16881,2024-12-26,Taiwan,Moderate,57
+12513,16882,2024-12-26,Tajikistan,Moderate,93
+12514,16883,2024-12-26,Thailand,Unhealthy,160
+12515,16885,2024-12-26,Trinidad and Tobago,Moderate,70
+12516,16886,2024-12-26,Turkey,Very Unhealthy,207
+12517,16888,2024-12-26,Uganda,Unhealthy for Sensitive Groups,119
+12518,16889,2024-12-26,Ukraine,Good,34
+12519,16890,2024-12-26,United Arab Emirates,Unhealthy for Sensitive Groups,105
+12520,16891,2024-12-26,United Kingdom of Great Britain and Northern Ireland,Moderate,66
+12521,16892,2024-12-26,United States of America,Unhealthy for Sensitive Groups,109
+12522,16894,2024-12-26,Vatican,Good,23
+12523,16896,2024-12-26,Vietnam,Moderate,73
+12524,16899,2025-01-02,Andorra,Good,11
+12525,16900,2025-01-02,Argentina,Good,25
+12526,16901,2025-01-02,Armenia,Moderate,69
+12527,16902,2025-01-02,Australia,Good,41
+12528,16903,2025-01-02,Austria,Moderate,94
+12529,16904,2025-01-02,Azerbaijan,Good,46
+12530,16906,2025-01-02,Bangladesh,Very Unhealthy,234
+12531,16907,2025-01-02,Belarus,Good,21
+12532,16908,2025-01-02,Belgium,Good,31
+12533,16909,2025-01-02,Bosnia and Herzegovina,Unhealthy,158
+12534,16910,2025-01-02,Brazil,Moderate,66
+12535,16911,2025-01-02,Brunei,Good,14
+12536,16912,2025-01-02,Bulgaria,Unhealthy for Sensitive Groups,105
+12537,16914,2025-01-02,Canada,Good,47
+12538,16915,2025-01-02,Cape Verde,Moderate,52
+12539,16917,2025-01-02,Chile,Good,48
+12540,16918,2025-01-02,China,Very Unhealthy,232
+12541,16919,2025-01-02,Colombia,Moderate,78
+12542,16921,2025-01-02,Croatia,Unhealthy for Sensitive Groups,103
+12543,16922,2025-01-02,Cyprus,Good,42
+12544,16923,2025-01-02,Czech Republic,Moderate,91
+12545,16924,2025-01-02,Denmark,Good,20
+12546,16925,2025-01-02,Dominican Republic,Good,8
+12547,16926,2025-01-02,Ecuador,Good,32
+12548,16928,2025-01-02,Estonia,Good,19
+12549,16929,2025-01-02,Ethiopia,Moderate,55
+12550,16930,2025-01-02,Finland,Good,21
+12551,16931,2025-01-02,France,Unhealthy for Sensitive Groups,129
+12552,16932,2025-01-02,French Guiana,Good,36
+12553,16933,2025-01-02,Georgia,Moderate,58
+12554,16934,2025-01-02,Germany,Unhealthy for Sensitive Groups,108
+12555,16935,2025-01-02,Ghana,Moderate,82
+12556,16937,2025-01-02,Greece,Unhealthy for Sensitive Groups,124
+12557,16938,2025-01-02,Guadeloupe,Good,23
+12558,16939,2025-01-02,Guatemala,Moderate,53
+12559,16940,2025-01-02,Hong Kong,Unhealthy for Sensitive Groups,127
+12560,16942,2025-01-02,Iceland,Good,22
+12561,16943,2025-01-02,India,Very Unhealthy,202
+12562,16944,2025-01-02,Indonesia,Moderate,82
+12563,16947,2025-01-02,Ireland,Good,42
+12564,16948,2025-01-02,Israel,Moderate,89
+12565,16949,2025-01-02,Italy,Unhealthy,174
+12566,16951,2025-01-02,Japan,Moderate,71
+12567,16953,2025-01-02,Jordan,Good,37
+12568,16954,2025-01-02,Kazakhstan,Moderate,66
+12569,16955,2025-01-02,Kenya,Good,30
+12570,16957,2025-01-02,Kuwait,Moderate,51
+12571,16958,2025-01-02,Kyrgyzstan,Good,48
+12572,16959,2025-01-02,Laos,Moderate,80
+12573,16960,2025-01-02,Latvia,Good,3
+12574,16963,2025-01-02,Liechtenstein,Good,29
+12575,16964,2025-01-02,Lithuania,Good,18
+12576,16966,2025-01-02,Macao,Unhealthy,159
+12577,16967,2025-01-02,Macedonia,Unhealthy,171
+12578,16968,2025-01-02,Madagascar,Good,25
+12579,16969,2025-01-02,Malaysia,Moderate,62
+12580,16970,2025-01-02,Malta,Good,16
+12581,16971,2025-01-02,Martinique,Good,24
+12582,16972,2025-01-02,Mexico,Unhealthy for Sensitive Groups,126
+12583,16973,2025-01-02,Moldova,Good,15
+12584,16974,2025-01-02,Monaco,Moderate,60
+12585,16975,2025-01-02,Mongolia,Unhealthy for Sensitive Groups,112
+12586,16976,2025-01-02,Montenegro,Unhealthy for Sensitive Groups,106
+12587,16977,2025-01-02,Myanmar,Unhealthy for Sensitive Groups,128
+12588,16978,2025-01-02,Nepal,Unhealthy for Sensitive Groups,147
+12589,16979,2025-01-02,Netherlands,Good,40
+12590,16981,2025-01-02,New Zealand,Good,15
+12591,16982,2025-01-02,Nigeria,Unhealthy for Sensitive Groups,112
+12592,16983,2025-01-02,Norway,Good,13
+12593,16984,2025-01-02,Pakistan,Unhealthy,198
+12594,16985,2025-01-02,Palestinian Territory,Good,38
+12595,16986,2025-01-02,Peru,Moderate,56
+12596,16987,2025-01-02,Philippines,Moderate,51
+12597,16988,2025-01-02,Poland,Moderate,56
+12598,16989,2025-01-02,Portugal,Good,39
+12599,16990,2025-01-02,Reunion,Good,39
+12600,16991,2025-01-02,Romania,Unhealthy for Sensitive Groups,129
+12601,16992,2025-01-02,Russia,Moderate,52
+12602,16993,2025-01-02,San Marino,Unhealthy for Sensitive Groups,149
+12603,16995,2025-01-02,Serbia,Very Unhealthy,202
+12604,16996,2025-01-02,Singapore,Moderate,51
+12605,16997,2025-01-02,Slovakia,Moderate,100
+12606,16998,2025-01-02,Slovenia,Unhealthy for Sensitive Groups,102
+12607,16999,2025-01-02,South Africa,Moderate,53
+12608,17000,2025-01-02,South Korea,Unhealthy for Sensitive Groups,139
+12609,17001,2025-01-02,Spain,Unhealthy for Sensitive Groups,106
+12610,17002,2025-01-02,Sri Lanka,Unhealthy for Sensitive Groups,114
+12611,17003,2025-01-02,Sweden,Good,17
+12612,17004,2025-01-02,Switzerland,Moderate,55
+12613,17005,2025-01-02,Taiwan,Moderate,51
+12614,17006,2025-01-02,Tajikistan,Moderate,95
+12615,17007,2025-01-02,Thailand,Unhealthy,159
+12616,17009,2025-01-02,Trinidad and Tobago,Good,15
+12617,17010,2025-01-02,Turkey,Unhealthy,168
+12618,17012,2025-01-02,Uganda,Hazardous,306
+12619,17013,2025-01-02,Ukraine,Moderate,51
+12620,17014,2025-01-02,United Arab Emirates,Moderate,62
+12621,17015,2025-01-02,United Kingdom of Great Britain and Northern Ireland,Good,45
+12622,17016,2025-01-02,United States of America,Unhealthy for Sensitive Groups,134
+12623,17018,2025-01-02,Vatican,Unhealthy,151
+12624,17020,2025-01-02,Vietnam,Moderate,78
+12625,17023,2025-01-09,Andorra,Good,10
+12626,17024,2025-01-09,Argentina,Good,31
+12627,17025,2025-01-09,Armenia,Moderate,96
+12628,17026,2025-01-09,Australia,Good,46
+12629,17027,2025-01-09,Austria,Moderate,61
+12630,17028,2025-01-09,Azerbaijan,Moderate,77
+12631,17029,2025-01-09,Bangladesh,Unhealthy,188
+12632,17030,2025-01-09,Belarus,Good,49
+12633,17031,2025-01-09,Belgium,Moderate,59
+12634,17032,2025-01-09,Bosnia and Herzegovina,Moderate,69
+12635,17033,2025-01-09,Brazil,Good,40
+12636,17034,2025-01-09,Brunei,Good,16
+12637,17035,2025-01-09,Bulgaria,Moderate,94
+12638,17038,2025-01-09,Canada,Good,48
+12639,17039,2025-01-09,Cape Verde,Good,46
+12640,17041,2025-01-09,Chile,Good,44
+12641,17042,2025-01-09,China,Unhealthy,171
+12642,17043,2025-01-09,Colombia,Moderate,55
+12643,17045,2025-01-09,Croatia,Good,24
+12644,17046,2025-01-09,Cyprus,Unhealthy for Sensitive Groups,102
+12645,17047,2025-01-09,Czech Republic,Good,48
+12646,17048,2025-01-09,Denmark,Good,19
+12647,17049,2025-01-09,Dominican Republic,Good,25
+12648,17050,2025-01-09,Ecuador,Good,38
+12649,17052,2025-01-09,Estonia,Good,21
+12650,17053,2025-01-09,Ethiopia,Moderate,61
+12651,17054,2025-01-09,Finland,Good,30
+12652,17055,2025-01-09,France,Moderate,74
+12653,17056,2025-01-09,French Guiana,Good,40
+12654,17057,2025-01-09,Georgia,Moderate,99
+12655,17058,2025-01-09,Germany,Unhealthy for Sensitive Groups,112
+12656,17059,2025-01-09,Ghana,Unhealthy for Sensitive Groups,104
+12657,17061,2025-01-09,Greece,Moderate,96
+12658,17062,2025-01-09,Guadeloupe,Good,28
+12659,17063,2025-01-09,Guatemala,Good,25
+12660,17064,2025-01-09,Hong Kong,Unhealthy for Sensitive Groups,107
+12661,17066,2025-01-09,Iceland,Good,21
+12662,17067,2025-01-09,India,Hazardous,303
+12663,17068,2025-01-09,Indonesia,Moderate,88
+12664,17071,2025-01-09,Ireland,Moderate,97
+12665,17072,2025-01-09,Israel,Moderate,88
+12666,17073,2025-01-09,Italy,Unhealthy for Sensitive Groups,105
+12667,17075,2025-01-09,Japan,Moderate,70
+12668,17077,2025-01-09,Jordan,Good,27
+12669,17078,2025-01-09,Kazakhstan,Unhealthy for Sensitive Groups,114
+12670,17079,2025-01-09,Kenya,Moderate,70
+12671,17081,2025-01-09,Kuwait,Moderate,73
+12672,17082,2025-01-09,Kyrgyzstan,Good,17
+12673,17083,2025-01-09,Laos,Unhealthy,151
+12674,17084,2025-01-09,Latvia,Good,10
+12675,17086,2025-01-09,Liechtenstein,Good,28
+12676,17087,2025-01-09,Lithuania,Good,19
+12677,17089,2025-01-09,Macao,Unhealthy for Sensitive Groups,129
+12678,17090,2025-01-09,Macedonia,Unhealthy,151
+12679,17091,2025-01-09,Madagascar,Moderate,87
+12680,17092,2025-01-09,Malaysia,Moderate,64
+12681,17093,2025-01-09,Malta,Good,25
+12682,17094,2025-01-09,Martinique,Good,18
+12683,17095,2025-01-09,Mexico,Moderate,87
+12684,17096,2025-01-09,Moldova,Good,18
+12685,17097,2025-01-09,Monaco,Good,35
+12686,17098,2025-01-09,Mongolia,Unhealthy,165
+12687,17099,2025-01-09,Montenegro,Moderate,89
+12688,17100,2025-01-09,Myanmar,Unhealthy for Sensitive Groups,123
+12689,17101,2025-01-09,Nepal,Unhealthy for Sensitive Groups,149
+12690,17102,2025-01-09,Netherlands,Moderate,65
+12691,17104,2025-01-09,New Zealand,Good,13
+12692,17105,2025-01-09,Nigeria,Unhealthy for Sensitive Groups,135
+12693,17106,2025-01-09,Norway,Good,42
+12694,17107,2025-01-09,Pakistan,Unhealthy for Sensitive Groups,141
+12695,17108,2025-01-09,Palestinian Territory,Moderate,87
+12696,17109,2025-01-09,Peru,Moderate,55
+12697,17110,2025-01-09,Philippines,Moderate,86
+12698,17111,2025-01-09,Poland,Unhealthy for Sensitive Groups,108
+12699,17112,2025-01-09,Portugal,Good,32
+12700,17113,2025-01-09,Reunion,Good,12
+12701,17114,2025-01-09,Romania,Unhealthy for Sensitive Groups,128
+12702,17115,2025-01-09,Russia,Moderate,89
+12703,17116,2025-01-09,San Marino,Good,31
+12704,17118,2025-01-09,Serbia,Unhealthy,187
+12705,17119,2025-01-09,Singapore,Good,46
+12706,17120,2025-01-09,Slovakia,Moderate,81
+12707,17121,2025-01-09,Slovenia,Good,22
+12708,17122,2025-01-09,South Africa,Moderate,59
+12709,17123,2025-01-09,South Korea,Good,50
+12710,17124,2025-01-09,Spain,Moderate,64
+12711,17125,2025-01-09,Sri Lanka,Unhealthy for Sensitive Groups,122
+12712,17126,2025-01-09,Sweden,Good,17
+12713,17127,2025-01-09,Switzerland,Good,29
+12714,17128,2025-01-09,Taiwan,Moderate,71
+12715,17129,2025-01-09,Tajikistan,Unhealthy for Sensitive Groups,129
+12716,17130,2025-01-09,Thailand,Unhealthy,171
+12717,17132,2025-01-09,Trinidad and Tobago,Good,49
+12718,17133,2025-01-09,Turkey,Unhealthy,185
+12719,17135,2025-01-09,Uganda,Very Unhealthy,267
+12720,17136,2025-01-09,Ukraine,Good,43
+12721,17137,2025-01-09,United Arab Emirates,Moderate,95
+12722,17138,2025-01-09,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,116
+12723,17139,2025-01-09,United States of America,Unhealthy for Sensitive Groups,144
+12724,17141,2025-01-09,Vatican,Good,50
+12725,17142,2025-01-09,Vietnam,Unhealthy for Sensitive Groups,128
+12726,17145,2025-01-16,Andorra,Good,12
+12727,17146,2025-01-16,Argentina,Good,10
+12728,17147,2025-01-16,Armenia,Unhealthy for Sensitive Groups,115
+12729,17148,2025-01-16,Australia,Good,39
+12730,17149,2025-01-16,Austria,Moderate,69
+12731,17150,2025-01-16,Azerbaijan,Good,29
+12732,17152,2025-01-16,Bangladesh,Very Unhealthy,250
+12733,17153,2025-01-16,Belarus,Good,22
+12734,17154,2025-01-16,Belgium,Unhealthy for Sensitive Groups,131
+12735,17155,2025-01-16,Bosnia and Herzegovina,Moderate,95
+12736,17156,2025-01-16,Brazil,Moderate,61
+12737,17157,2025-01-16,Brunei,Good,10
+12738,17158,2025-01-16,Bulgaria,Moderate,98
+12739,17161,2025-01-16,Canada,Good,50
+12740,17162,2025-01-16,Cape Verde,Good,36
+12741,17164,2025-01-16,Chile,Moderate,51
+12742,17165,2025-01-16,China,Unhealthy,170
+12743,17166,2025-01-16,Colombia,Moderate,59
+12744,17168,2025-01-16,Croatia,Moderate,100
+12745,17169,2025-01-16,Cyprus,Moderate,51
+12746,17170,2025-01-16,Czech Republic,Unhealthy for Sensitive Groups,122
+12747,17171,2025-01-16,Denmark,Good,16
+12748,17172,2025-01-16,Dominican Republic,Good,22
+12749,17173,2025-01-16,Ecuador,Good,49
+12750,17175,2025-01-16,Estonia,Good,23
+12751,17176,2025-01-16,Ethiopia,Moderate,57
+12752,17177,2025-01-16,Finland,Good,16
+12753,17178,2025-01-16,France,Unhealthy for Sensitive Groups,149
+12754,17179,2025-01-16,French Guiana,Good,15
+12755,17180,2025-01-16,Georgia,Moderate,90
+12756,17181,2025-01-16,Germany,Unhealthy for Sensitive Groups,138
+12757,17182,2025-01-16,Ghana,Moderate,97
+12758,17184,2025-01-16,Greece,Good,47
+12759,17185,2025-01-16,Guadeloupe,Good,20
+12760,17186,2025-01-16,Guatemala,Good,38
+12761,17187,2025-01-16,Hong Kong,Unhealthy for Sensitive Groups,115
+12762,17189,2025-01-16,Iceland,Good,43
+12763,17190,2025-01-16,India,Very Unhealthy,271
+12764,17191,2025-01-16,Indonesia,Moderate,85
+12765,17194,2025-01-16,Ireland,Good,43
+12766,17195,2025-01-16,Israel,Moderate,98
+12767,17196,2025-01-16,Italy,Moderate,98
+12768,17198,2025-01-16,Japan,Moderate,65
+12769,17200,2025-01-16,Jordan,Good,36
+12770,17201,2025-01-16,Kazakhstan,Unhealthy for Sensitive Groups,137
+12771,17202,2025-01-16,Kenya,Good,34
+12772,17204,2025-01-16,Kuwait,Unhealthy for Sensitive Groups,125
+12773,17205,2025-01-16,Kyrgyzstan,Good,4
+12774,17206,2025-01-16,Laos,Unhealthy for Sensitive Groups,140
+12775,17207,2025-01-16,Latvia,Good,17
+12776,17208,2025-01-16,Liechtenstein,Good,31
+12777,17209,2025-01-16,Lithuania,Good,17
+12778,17211,2025-01-16,Macao,Unhealthy for Sensitive Groups,114
+12779,17212,2025-01-16,Macedonia,Unhealthy for Sensitive Groups,112
+12780,17213,2025-01-16,Madagascar,Moderate,61
+12781,17214,2025-01-16,Malaysia,Moderate,64
+12782,17215,2025-01-16,Malta,Good,33
+12783,17216,2025-01-16,Martinique,Good,22
+12784,17217,2025-01-16,Mexico,Unhealthy for Sensitive Groups,105
+12785,17218,2025-01-16,Moldova,Moderate,61
+12786,17219,2025-01-16,Monaco,Good,22
+12787,17220,2025-01-16,Mongolia,Unhealthy for Sensitive Groups,113
+12788,17221,2025-01-16,Montenegro,Good,50
+12789,17222,2025-01-16,Myanmar,Unhealthy for Sensitive Groups,113
+12790,17223,2025-01-16,Nepal,Unhealthy for Sensitive Groups,134
+12791,17224,2025-01-16,Netherlands,Unhealthy for Sensitive Groups,145
+12792,17226,2025-01-16,New Zealand,Good,28
+12793,17227,2025-01-16,Nigeria,Unhealthy,162
+12794,17228,2025-01-16,Norway,Good,45
+12795,17229,2025-01-16,Pakistan,Unhealthy,167
+12796,17230,2025-01-16,Palestinian Territory,Unhealthy for Sensitive Groups,110
+12797,17231,2025-01-16,Peru,Moderate,59
+12798,17232,2025-01-16,Philippines,Moderate,64
+12799,17233,2025-01-16,Poland,Unhealthy for Sensitive Groups,116
+12800,17234,2025-01-16,Portugal,Moderate,60
+12801,17235,2025-01-16,Reunion,Good,13
+12802,17236,2025-01-16,Romania,Moderate,97
+12803,17237,2025-01-16,Russia,Moderate,77
+12804,17238,2025-01-16,San Marino,Good,24
+12805,17240,2025-01-16,Serbia,Unhealthy,165
+12806,17241,2025-01-16,Singapore,Good,27
+12807,17242,2025-01-16,Slovakia,Unhealthy for Sensitive Groups,123
+12808,17243,2025-01-16,Slovenia,Moderate,72
+12809,17244,2025-01-16,South Africa,Good,43
+12810,17245,2025-01-16,South Korea,Moderate,73
+12811,17246,2025-01-16,Spain,Unhealthy for Sensitive Groups,149
+12812,17247,2025-01-16,Sri Lanka,Moderate,86
+12813,17248,2025-01-16,Sweden,Good,35
+12814,17249,2025-01-16,Switzerland,Moderate,68
+12815,17250,2025-01-16,Taiwan,Moderate,75
+12816,17251,2025-01-16,Tajikistan,Unhealthy,191
+12817,17252,2025-01-16,Thailand,Unhealthy for Sensitive Groups,150
+12818,17254,2025-01-16,Trinidad and Tobago,Good,44
+12819,17255,2025-01-16,Turkey,Unhealthy,163
+12820,17257,2025-01-16,Uganda,Very Unhealthy,299
+12821,17258,2025-01-16,Ukraine,Moderate,66
+12822,17259,2025-01-16,United Arab Emirates,Moderate,90
+12823,17260,2025-01-16,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,102
+12824,17261,2025-01-16,United States of America,Moderate,93
+12825,17263,2025-01-16,Vatican,Good,25
+12826,17264,2025-01-16,Vietnam,Unhealthy for Sensitive Groups,131
+12827,17267,2025-01-23,Andorra,Good,15
+12828,17268,2025-01-23,Argentina,Good,37
+12829,17269,2025-01-23,Armenia,Unhealthy for Sensitive Groups,106
+12830,17270,2025-01-23,Australia,Good,46
+12831,17271,2025-01-23,Austria,Moderate,57
+12832,17272,2025-01-23,Azerbaijan,Good,30
+12833,17274,2025-01-23,Bangladesh,Very Unhealthy,245
+12834,17275,2025-01-23,Belarus,Good,48
+12835,17276,2025-01-23,Belgium,Unhealthy for Sensitive Groups,101
+12836,17277,2025-01-23,Bosnia and Herzegovina,Unhealthy for Sensitive Groups,101
+12837,17278,2025-01-23,Brazil,Good,48
+12838,17279,2025-01-23,Brunei,Good,11
+12839,17280,2025-01-23,Bulgaria,Unhealthy for Sensitive Groups,126
+12840,17283,2025-01-23,Canada,Moderate,82
+12841,17284,2025-01-23,Cape Verde,Good,19
+12842,17286,2025-01-23,Chile,Good,48
+12843,17287,2025-01-23,China,Very Unhealthy,285
+12844,17288,2025-01-23,Colombia,Moderate,70
+12845,17290,2025-01-23,Croatia,Unhealthy for Sensitive Groups,127
+12846,17291,2025-01-23,Cyprus,Good,50
+12847,17292,2025-01-23,Czech Republic,Moderate,87
+12848,17293,2025-01-23,Denmark,Good,28
+12849,17294,2025-01-23,Dominican Republic,Good,19
+12850,17295,2025-01-23,Ecuador,Moderate,62
+12851,17297,2025-01-23,Estonia,Good,35
+12852,17298,2025-01-23,Ethiopia,Moderate,78
+12853,17299,2025-01-23,Finland,Good,28
+12854,17300,2025-01-23,France,Unhealthy for Sensitive Groups,111
+12855,17301,2025-01-23,French Guiana,Good,18
+12856,17302,2025-01-23,Georgia,Moderate,73
+12857,17303,2025-01-23,Germany,Unhealthy for Sensitive Groups,136
+12858,17304,2025-01-23,Ghana,Moderate,72
+12859,17306,2025-01-23,Greece,Moderate,100
+12860,17307,2025-01-23,Guadeloupe,Good,18
+12861,17308,2025-01-23,Guatemala,Good,13
+12862,17309,2025-01-23,Hong Kong,Moderate,70
+12863,17311,2025-01-23,Iceland,Good,20
+12864,17312,2025-01-23,India,Very Unhealthy,230
+12865,17313,2025-01-23,Indonesia,Unhealthy for Sensitive Groups,110
+12866,17316,2025-01-23,Ireland,Good,46
+12867,17317,2025-01-23,Israel,Moderate,69
+12868,17318,2025-01-23,Italy,Unhealthy for Sensitive Groups,105
+12869,17320,2025-01-23,Japan,Unhealthy for Sensitive Groups,112
+12870,17322,2025-01-23,Jordan,Good,25
+12871,17323,2025-01-23,Kazakhstan,Moderate,87
+12872,17324,2025-01-23,Kenya,Good,35
+12873,17326,2025-01-23,Kuwait,Moderate,81
+12874,17327,2025-01-23,Kyrgyzstan,Good,17
+12875,17328,2025-01-23,Laos,Unhealthy,160
+12876,17329,2025-01-23,Latvia,Good,25
+12877,17331,2025-01-23,Liechtenstein,Good,33
+12878,17332,2025-01-23,Lithuania,Good,12
+12879,17334,2025-01-23,Macao,Moderate,89
+12880,17335,2025-01-23,Macedonia,Unhealthy,157
+12881,17336,2025-01-23,Madagascar,Good,38
+12882,17337,2025-01-23,Malaysia,Moderate,71
+12883,17338,2025-01-23,Malta,Good,36
+12884,17339,2025-01-23,Martinique,Good,27
+12885,17340,2025-01-23,Mexico,Moderate,88
+12886,17341,2025-01-23,Moldova,Good,34
+12887,17342,2025-01-23,Monaco,Moderate,58
+12888,17343,2025-01-23,Mongolia,Unhealthy for Sensitive Groups,120
+12889,17344,2025-01-23,Montenegro,Moderate,88
+12890,17345,2025-01-23,Myanmar,Unhealthy,156
+12891,17346,2025-01-23,Nepal,Unhealthy for Sensitive Groups,115
+12892,17347,2025-01-23,Netherlands,Unhealthy for Sensitive Groups,104
+12893,17349,2025-01-23,New Zealand,Good,43
+12894,17350,2025-01-23,Nigeria,Unhealthy for Sensitive Groups,120
+12895,17351,2025-01-23,Norway,Good,24
+12896,17352,2025-01-23,Pakistan,Unhealthy for Sensitive Groups,117
+12897,17353,2025-01-23,Palestinian Territory,Moderate,65
+12898,17354,2025-01-23,Peru,Moderate,51
+12899,17355,2025-01-23,Philippines,Unhealthy for Sensitive Groups,114
+12900,17356,2025-01-23,Poland,Unhealthy,159
+12901,17357,2025-01-23,Portugal,Good,30
+12902,17358,2025-01-23,Reunion,Good,13
+12903,17359,2025-01-23,Romania,Unhealthy for Sensitive Groups,144
+12904,17360,2025-01-23,Russia,Moderate,71
+12905,17361,2025-01-23,San Marino,Good,17
+12906,17363,2025-01-23,Serbia,Very Unhealthy,230
+12907,17364,2025-01-23,Singapore,Moderate,60
+12908,17365,2025-01-23,Slovakia,Moderate,65
+12909,17366,2025-01-23,Slovenia,Moderate,58
+12910,17367,2025-01-23,South Africa,Moderate,63
+12911,17368,2025-01-23,South Korea,Unhealthy,165
+12912,17369,2025-01-23,Spain,Moderate,84
+12913,17370,2025-01-23,Sri Lanka,Unhealthy for Sensitive Groups,103
+12914,17371,2025-01-23,Sweden,Moderate,52
+12915,17372,2025-01-23,Switzerland,Moderate,68
+12916,17373,2025-01-23,Taiwan,Unhealthy for Sensitive Groups,119
+12917,17374,2025-01-23,Tajikistan,Moderate,55
+12918,17375,2025-01-23,Thailand,Very Unhealthy,205
+12919,17377,2025-01-23,Trinidad and Tobago,Good,34
+12920,17378,2025-01-23,Turkey,Unhealthy,174
+12921,17380,2025-01-23,Uganda,Very Unhealthy,230
+12922,17381,2025-01-23,Ukraine,Moderate,75
+12923,17382,2025-01-23,United Arab Emirates,Unhealthy for Sensitive Groups,122
+12924,17383,2025-01-23,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,115
+12925,17384,2025-01-23,United States of America,Unhealthy for Sensitive Groups,120
+12926,17386,2025-01-23,Vatican,Moderate,68
+12927,17387,2025-01-23,Vietnam,Unhealthy for Sensitive Groups,130
+12928,17390,2025-01-30,Andorra,Good,17
+12929,17391,2025-01-30,Argentina,Good,9
+12930,17392,2025-01-30,Armenia,Unhealthy for Sensitive Groups,103
+12931,17393,2025-01-30,Australia,Good,33
+12932,17394,2025-01-30,Austria,Moderate,53
+12933,17395,2025-01-30,Azerbaijan,Moderate,69
+12934,17397,2025-01-30,Bangladesh,Hazardous,532
+12935,17398,2025-01-30,Belarus,Good,46
+12936,17399,2025-01-30,Belgium,Moderate,56
+12937,17400,2025-01-30,Bosnia and Herzegovina,Moderate,95
+12938,17401,2025-01-30,Brazil,Good,44
+12939,17402,2025-01-30,Brunei,Good,10
+12940,17403,2025-01-30,Bulgaria,Unhealthy for Sensitive Groups,104
+12941,17406,2025-01-30,Canada,Moderate,64
+12942,17407,2025-01-30,Cape Verde,Moderate,59
+12943,17409,2025-01-30,Chile,Moderate,52
+12944,17410,2025-01-30,China,Very Unhealthy,275
+12945,17411,2025-01-30,Colombia,Moderate,53
+12946,17413,2025-01-30,Croatia,Moderate,86
+12947,17414,2025-01-30,Cyprus,Moderate,65
+12948,17415,2025-01-30,Czech Republic,Moderate,98
+12949,17416,2025-01-30,Denmark,Good,18
+12950,17417,2025-01-30,Dominican Republic,Moderate,56
+12951,17418,2025-01-30,Ecuador,Moderate,54
+12952,17420,2025-01-30,Estonia,Good,27
+12953,17421,2025-01-30,Ethiopia,Moderate,59
+12954,17422,2025-01-30,Finland,Good,18
+12955,17423,2025-01-30,France,Moderate,73
+12956,17424,2025-01-30,French Guiana,Good,47
+12957,17425,2025-01-30,Georgia,Unhealthy for Sensitive Groups,102
+12958,17426,2025-01-30,Germany,Moderate,80
+12959,17427,2025-01-30,Ghana,Moderate,84
+12960,17429,2025-01-30,Greece,Moderate,74
+12961,17430,2025-01-30,Guadeloupe,Good,44
+12962,17431,2025-01-30,Guatemala,Good,30
+12963,17432,2025-01-30,Hong Kong,Moderate,64
+12964,17434,2025-01-30,Iceland,Good,20
+12965,17435,2025-01-30,India,Hazardous,502
+12966,17436,2025-01-30,Indonesia,Moderate,68
+12967,17439,2025-01-30,Ireland,Good,37
+12968,17440,2025-01-30,Israel,Moderate,85
+12969,17441,2025-01-30,Italy,Unhealthy for Sensitive Groups,101
+12970,17443,2025-01-30,Japan,Moderate,69
+12971,17445,2025-01-30,Jordan,Good,30
+12972,17446,2025-01-30,Kazakhstan,Moderate,90
+12973,17447,2025-01-30,Kenya,Good,18
+12974,17449,2025-01-30,Kuwait,Moderate,71
+12975,17450,2025-01-30,Kyrgyzstan,Moderate,82
+12976,17451,2025-01-30,Laos,Unhealthy for Sensitive Groups,146
+12977,17452,2025-01-30,Latvia,Good,16
+12978,17454,2025-01-30,Liechtenstein,Good,33
+12979,17455,2025-01-30,Lithuania,Good,17
+12980,17457,2025-01-30,Macao,Moderate,72
+12981,17458,2025-01-30,Macedonia,Unhealthy for Sensitive Groups,149
+12982,17459,2025-01-30,Madagascar,Good,25
+12983,17460,2025-01-30,Malaysia,Moderate,59
+12984,17461,2025-01-30,Malta,Good,24
+12985,17462,2025-01-30,Martinique,Moderate,64
+12986,17463,2025-01-30,Mexico,Unhealthy for Sensitive Groups,119
+12987,17464,2025-01-30,Moldova,Good,45
+12988,17465,2025-01-30,Monaco,Good,25
+12989,17466,2025-01-30,Mongolia,Moderate,89
+12990,17467,2025-01-30,Montenegro,Good,16
+12991,17468,2025-01-30,Myanmar,Unhealthy for Sensitive Groups,143
+12992,17469,2025-01-30,Nepal,Unhealthy for Sensitive Groups,143
+12993,17470,2025-01-30,Netherlands,Moderate,53
+12994,17472,2025-01-30,New Zealand,Good,26
+12995,17473,2025-01-30,Nigeria,Moderate,91
+12996,17474,2025-01-30,Norway,Good,31
+12997,17475,2025-01-30,Pakistan,Unhealthy,175
+12998,17476,2025-01-30,Palestinian Territory,Unhealthy for Sensitive Groups,107
+12999,17477,2025-01-30,Peru,Unhealthy for Sensitive Groups,139
+13000,17478,2025-01-30,Philippines,Moderate,54
+13001,17479,2025-01-30,Poland,Moderate,60
+13002,17480,2025-01-30,Portugal,Good,27
+13003,17481,2025-01-30,Reunion,Good,16
+13004,17482,2025-01-30,Romania,Unhealthy for Sensitive Groups,139
+13005,17483,2025-01-30,Russia,Moderate,76
+13006,17484,2025-01-30,San Marino,Good,37
+13007,17486,2025-01-30,Serbia,Unhealthy,166
+13008,17487,2025-01-30,Singapore,Moderate,57
+13009,17488,2025-01-30,Slovakia,Moderate,77
+13010,17489,2025-01-30,Slovenia,Moderate,54
+13011,17490,2025-01-30,South Africa,Moderate,55
+13012,17491,2025-01-30,South Korea,Moderate,76
+13013,17492,2025-01-30,Spain,Moderate,59
+13014,17493,2025-01-30,Sri Lanka,Unhealthy for Sensitive Groups,128
+13015,17494,2025-01-30,Sweden,Good,23
+13016,17495,2025-01-30,Switzerland,Good,32
+13017,17496,2025-01-30,Taiwan,Moderate,65
+13018,17497,2025-01-30,Tajikistan,Unhealthy for Sensitive Groups,131
+13019,17498,2025-01-30,Thailand,Unhealthy,164
+13020,17500,2025-01-30,Trinidad and Tobago,Good,33
+13021,17501,2025-01-30,Turkey,Unhealthy,166
+13022,17503,2025-01-30,Uganda,Unhealthy,180
+13023,17504,2025-01-30,Ukraine,Moderate,96
+13024,17505,2025-01-30,United Arab Emirates,Moderate,66
+13025,17506,2025-01-30,United Kingdom of Great Britain and Northern Ireland,Good,47
+13026,17507,2025-01-30,United States of America,Unhealthy for Sensitive Groups,129
+13027,17509,2025-01-30,Vatican,Good,38
+13028,17510,2025-01-30,Vietnam,Unhealthy for Sensitive Groups,105
+13029,17513,2025-02-06,Andorra,Good,10
+13030,17514,2025-02-06,Argentina,Good,16
+13031,17515,2025-02-06,Armenia,Moderate,80
+13032,17516,2025-02-06,Australia,Moderate,71
+13033,17517,2025-02-06,Austria,Moderate,76
+13034,17518,2025-02-06,Azerbaijan,Good,37
+13035,17520,2025-02-06,Bangladesh,Hazardous,411
+13036,17521,2025-02-06,Belarus,Good,35
+13037,17522,2025-02-06,Belgium,Unhealthy for Sensitive Groups,122
+13038,17523,2025-02-06,Bosnia and Herzegovina,Moderate,99
+13039,17524,2025-02-06,Brazil,Moderate,58
+13040,17525,2025-02-06,Brunei,Good,13
+13041,17526,2025-02-06,Bulgaria,Moderate,56
+13042,17528,2025-02-06,Canada,Moderate,55
+13043,17529,2025-02-06,Cape Verde,Moderate,55
+13044,17531,2025-02-06,Chile,Moderate,63
+13045,17532,2025-02-06,China,Unhealthy,176
+13046,17533,2025-02-06,Colombia,Moderate,78
+13047,17535,2025-02-06,Croatia,Unhealthy for Sensitive Groups,113
+13048,17536,2025-02-06,Cyprus,Good,27
+13049,17537,2025-02-06,Czech Republic,Unhealthy for Sensitive Groups,127
+13050,17538,2025-02-06,Denmark,Good,17
+13051,17539,2025-02-06,Dominican Republic,Good,14
+13052,17540,2025-02-06,Ecuador,Moderate,79
+13053,17542,2025-02-06,Estonia,Good,29
+13054,17543,2025-02-06,Ethiopia,Moderate,89
+13055,17544,2025-02-06,Finland,Moderate,52
+13056,17545,2025-02-06,France,Unhealthy for Sensitive Groups,130
+13057,17546,2025-02-06,French Guiana,Good,20
+13058,17547,2025-02-06,Georgia,Moderate,68
+13059,17548,2025-02-06,Germany,Very Unhealthy,268
+13060,17549,2025-02-06,Ghana,Moderate,88
+13061,17551,2025-02-06,Greece,Moderate,57
+13062,17552,2025-02-06,Guadeloupe,Good,13
+13063,17553,2025-02-06,Guatemala,Good,46
+13064,17554,2025-02-06,Hong Kong,Moderate,75
+13065,17556,2025-02-06,Iceland,Moderate,59
+13066,17557,2025-02-06,India,Very Unhealthy,261
+13067,17558,2025-02-06,Indonesia,Moderate,82
+13068,17561,2025-02-06,Ireland,Moderate,66
+13069,17562,2025-02-06,Israel,Moderate,63
+13070,17563,2025-02-06,Italy,Unhealthy for Sensitive Groups,113
+13071,17565,2025-02-06,Japan,Moderate,61
+13072,17567,2025-02-06,Jordan,Good,11
+13073,17568,2025-02-06,Kazakhstan,Unhealthy for Sensitive Groups,132
+13074,17569,2025-02-06,Kenya,Moderate,84
+13075,17571,2025-02-06,Kuwait,Unhealthy for Sensitive Groups,114
+13076,17572,2025-02-06,Kyrgyzstan,Good,36
+13077,17573,2025-02-06,Laos,Unhealthy for Sensitive Groups,142
+13078,17574,2025-02-06,Latvia,Good,17
+13079,17576,2025-02-06,Liechtenstein,Good,15
+13080,17577,2025-02-06,Lithuania,Good,10
+13081,17579,2025-02-06,Macao,Moderate,99
+13082,17580,2025-02-06,Macedonia,Unhealthy for Sensitive Groups,128
+13083,17581,2025-02-06,Madagascar,Good,34
+13084,17582,2025-02-06,Malaysia,Moderate,79
+13085,17583,2025-02-06,Malta,Good,38
+13086,17584,2025-02-06,Martinique,Good,19
+13087,17585,2025-02-06,Mexico,Unhealthy for Sensitive Groups,107
+13088,17586,2025-02-06,Moldova,Good,19
+13089,17587,2025-02-06,Monaco,Moderate,51
+13090,17588,2025-02-06,Mongolia,Moderate,77
+13091,17589,2025-02-06,Montenegro,Moderate,70
+13092,17590,2025-02-06,Myanmar,Unhealthy,190
+13093,17591,2025-02-06,Nepal,Unhealthy for Sensitive Groups,143
+13094,17592,2025-02-06,Netherlands,Unhealthy for Sensitive Groups,129
+13095,17594,2025-02-06,New Zealand,Good,30
+13096,17595,2025-02-06,Nigeria,Moderate,87
+13097,17596,2025-02-06,Norway,Good,27
+13098,17597,2025-02-06,Pakistan,Unhealthy for Sensitive Groups,128
+13099,17598,2025-02-06,Palestinian Territory,Moderate,69
+13100,17599,2025-02-06,Peru,Moderate,57
+13101,17600,2025-02-06,Philippines,Moderate,61
+13102,17601,2025-02-06,Poland,Unhealthy,157
+13103,17602,2025-02-06,Portugal,Good,45
+13104,17603,2025-02-06,Reunion,Good,8
+13105,17604,2025-02-06,Romania,Moderate,72
+13106,17605,2025-02-06,Russia,Moderate,80
+13107,17606,2025-02-06,San Marino,Moderate,70
+13108,17608,2025-02-06,Serbia,Unhealthy,157
+13109,17609,2025-02-06,Singapore,Moderate,64
+13110,17610,2025-02-06,Slovakia,Unhealthy for Sensitive Groups,102
+13111,17611,2025-02-06,Slovenia,Moderate,98
+13112,17612,2025-02-06,South Africa,Moderate,64
+13113,17613,2025-02-06,South Korea,Moderate,71
+13114,17614,2025-02-06,Spain,Unhealthy for Sensitive Groups,124
+13115,17615,2025-02-06,Sri Lanka,Unhealthy,166
+13116,17616,2025-02-06,Sweden,Good,24
+13117,17617,2025-02-06,Switzerland,Moderate,90
+13118,17618,2025-02-06,Taiwan,Unhealthy for Sensitive Groups,107
+13119,17619,2025-02-06,Tajikistan,Unhealthy,153
+13120,17620,2025-02-06,Thailand,Unhealthy,165
+13121,17622,2025-02-06,Trinidad and Tobago,Good,35
+13122,17623,2025-02-06,Turkey,Unhealthy for Sensitive Groups,120
+13123,17625,2025-02-06,Uganda,Very Unhealthy,208
+13124,17626,2025-02-06,Ukraine,Moderate,65
+13125,17627,2025-02-06,United Arab Emirates,Moderate,85
+13126,17628,2025-02-06,United Kingdom of Great Britain and Northern Ireland,Moderate,87
+13127,17629,2025-02-06,United States of America,Unhealthy for Sensitive Groups,109
+13128,17631,2025-02-06,Vatican,Moderate,61
+13129,17632,2025-02-06,Vietnam,Unhealthy for Sensitive Groups,102
+13130,17634,2025-02-13,Andorra,Good,7
+13131,17635,2025-02-13,Argentina,Good,15
+13132,17636,2025-02-13,Armenia,Unhealthy for Sensitive Groups,109
+13133,17637,2025-02-13,Australia,Good,43
+13134,17638,2025-02-13,Austria,Unhealthy for Sensitive Groups,115
+13135,17639,2025-02-13,Azerbaijan,Moderate,57
+13136,17641,2025-02-13,Bangladesh,Unhealthy,156
+13137,17642,2025-02-13,Belarus,Good,45
+13138,17643,2025-02-13,Belgium,Unhealthy for Sensitive Groups,102
+13139,17644,2025-02-13,Bosnia and Herzegovina,Unhealthy for Sensitive Groups,140
+13140,17645,2025-02-13,Brazil,Moderate,63
+13141,17646,2025-02-13,Brunei,Good,17
+13142,17647,2025-02-13,Bulgaria,Moderate,88
+13143,17650,2025-02-13,Canada,Moderate,76
+13144,17651,2025-02-13,Cape Verde,Good,50
+13145,17653,2025-02-13,Chile,Moderate,82
+13146,17654,2025-02-13,China,Unhealthy,196
+13147,17655,2025-02-13,Colombia,Moderate,63
+13148,17657,2025-02-13,Croatia,Moderate,95
+13149,17658,2025-02-13,Cyprus,Good,40
+13150,17659,2025-02-13,Czech Republic,Unhealthy for Sensitive Groups,104
+13151,17660,2025-02-13,Denmark,Good,16
+13152,17661,2025-02-13,Dominican Republic,Good,22
+13153,17662,2025-02-13,Ecuador,Moderate,54
+13154,17664,2025-02-13,Estonia,Good,44
+13155,17665,2025-02-13,Ethiopia,Good,46
+13156,17666,2025-02-13,Finland,Good,16
+13157,17667,2025-02-13,France,Unhealthy for Sensitive Groups,105
+13158,17668,2025-02-13,French Guiana,Good,35
+13159,17669,2025-02-13,Georgia,Moderate,95
+13160,17670,2025-02-13,Germany,Unhealthy,163
+13161,17671,2025-02-13,Ghana,Moderate,76
+13162,17673,2025-02-13,Greece,Moderate,72
+13163,17674,2025-02-13,Guadeloupe,Good,25
+13164,17675,2025-02-13,Guatemala,Moderate,82
+13165,17676,2025-02-13,Hong Kong,Unhealthy for Sensitive Groups,109
+13166,17678,2025-02-13,Iceland,Good,24
+13167,17679,2025-02-13,India,Unhealthy,176
+13168,17680,2025-02-13,Indonesia,Unhealthy for Sensitive Groups,131
+13169,17683,2025-02-13,Ireland,Moderate,58
+13170,17684,2025-02-13,Israel,Moderate,54
+13171,17685,2025-02-13,Italy,Unhealthy,151
+13172,17687,2025-02-13,Japan,Unhealthy for Sensitive Groups,136
+13173,17689,2025-02-13,Jordan,Good,15
+13174,17690,2025-02-13,Kazakhstan,Unhealthy for Sensitive Groups,102
+13175,17691,2025-02-13,Kenya,Moderate,85
+13176,17693,2025-02-13,Kuwait,Moderate,70
+13177,17694,2025-02-13,Kyrgyzstan,Moderate,85
+13178,17695,2025-02-13,Laos,Unhealthy for Sensitive Groups,125
+13179,17696,2025-02-13,Latvia,Good,19
+13180,17698,2025-02-13,Liechtenstein,Good,16
+13181,17699,2025-02-13,Lithuania,Good,27
+13182,17701,2025-02-13,Macao,Moderate,93
+13183,17702,2025-02-13,Macedonia,Unhealthy for Sensitive Groups,111
+13184,17703,2025-02-13,Madagascar,Good,42
+13185,17704,2025-02-13,Malaysia,Moderate,74
+13186,17705,2025-02-13,Malta,Good,46
+13187,17706,2025-02-13,Martinique,Good,41
+13188,17707,2025-02-13,Mexico,Unhealthy for Sensitive Groups,101
+13189,17708,2025-02-13,Moldova,Moderate,51
+13190,17709,2025-02-13,Monaco,Good,22
+13191,17710,2025-02-13,Mongolia,Unhealthy for Sensitive Groups,137
+13192,17711,2025-02-13,Montenegro,Unhealthy for Sensitive Groups,108
+13193,17712,2025-02-13,Myanmar,Unhealthy for Sensitive Groups,143
+13194,17713,2025-02-13,Nepal,Unhealthy,157
+13195,17714,2025-02-13,Netherlands,Unhealthy,160
+13196,17716,2025-02-13,New Zealand,Good,23
+13197,17717,2025-02-13,Nigeria,Moderate,97
+13198,17718,2025-02-13,Norway,Good,45
+13199,17719,2025-02-13,Pakistan,Unhealthy for Sensitive Groups,114
+13200,17720,2025-02-13,Palestinian Territory,Good,45
+13201,17721,2025-02-13,Peru,Moderate,95
+13202,17722,2025-02-13,Philippines,Unhealthy for Sensitive Groups,107
+13203,17723,2025-02-13,Poland,Unhealthy,159
+13204,17724,2025-02-13,Portugal,Good,25
+13205,17725,2025-02-13,Reunion,Good,9
+13206,17726,2025-02-13,Romania,Unhealthy for Sensitive Groups,150
+13207,17727,2025-02-13,Russia,Moderate,62
+13208,17728,2025-02-13,San Marino,Unhealthy for Sensitive Groups,114
+13209,17730,2025-02-13,Serbia,Unhealthy for Sensitive Groups,142
+13210,17731,2025-02-13,Singapore,Moderate,56
+13211,17732,2025-02-13,Slovakia,Moderate,97
+13212,17733,2025-02-13,Slovenia,Unhealthy for Sensitive Groups,128
+13213,17734,2025-02-13,South Africa,Good,41
+13214,17735,2025-02-13,South Korea,Moderate,69
+13215,17736,2025-02-13,Spain,Moderate,84
+13216,17737,2025-02-13,Sri Lanka,Unhealthy for Sensitive Groups,119
+13217,17738,2025-02-13,Sweden,Good,37
+13218,17739,2025-02-13,Switzerland,Moderate,58
+13219,17740,2025-02-13,Taiwan,Good,39
+13220,17741,2025-02-13,Tajikistan,Unhealthy,163
+13221,17742,2025-02-13,Thailand,Unhealthy,171
+13222,17744,2025-02-13,Trinidad and Tobago,Good,45
+13223,17745,2025-02-13,Turkey,Unhealthy for Sensitive Groups,143
+13224,17747,2025-02-13,Uganda,Unhealthy,178
+13225,17748,2025-02-13,Ukraine,Unhealthy for Sensitive Groups,118
+13226,17749,2025-02-13,United Arab Emirates,Moderate,86
+13227,17750,2025-02-13,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,135
+13228,17751,2025-02-13,United States of America,Moderate,77
+13229,17753,2025-02-13,Vatican,Moderate,72
+13230,17754,2025-02-13,Vietnam,Unhealthy for Sensitive Groups,103
+13231,17756,2025-02-20,Andorra,Good,13
+13232,17757,2025-02-20,Argentina,Good,26
+13233,17758,2025-02-20,Armenia,Good,29
+13234,17759,2025-02-20,Australia,Good,38
+13235,17760,2025-02-20,Austria,Moderate,75
+13236,17761,2025-02-20,Azerbaijan,Good,21
+13237,17763,2025-02-20,Bangladesh,Very Unhealthy,264
+13238,17764,2025-02-20,Belarus,Good,42
+13239,17765,2025-02-20,Belgium,Unhealthy for Sensitive Groups,120
+13240,17766,2025-02-20,Bosnia and Herzegovina,Unhealthy for Sensitive Groups,102
+13241,17767,2025-02-20,Brazil,Moderate,64
+13242,17768,2025-02-20,Brunei,Good,10
+13243,17769,2025-02-20,Bulgaria,Moderate,73
+13244,17772,2025-02-20,Canada,Good,45
+13245,17773,2025-02-20,Cape Verde,Good,33
+13246,17775,2025-02-20,Chile,Moderate,61
+13247,17776,2025-02-20,China,Unhealthy,173
+13248,17777,2025-02-20,Colombia,Moderate,73
+13249,17779,2025-02-20,Croatia,Unhealthy for Sensitive Groups,108
+13250,17780,2025-02-20,Cyprus,Good,33
+13251,17781,2025-02-20,Czech Republic,Unhealthy for Sensitive Groups,146
+13252,17782,2025-02-20,Denmark,Good,20
+13253,17783,2025-02-20,Dominican Republic,Good,34
+13254,17784,2025-02-20,Ecuador,Good,42
+13255,17786,2025-02-20,Estonia,Good,32
+13256,17787,2025-02-20,Ethiopia,Moderate,65
+13257,17788,2025-02-20,Finland,Good,48
+13258,17789,2025-02-20,France,Unhealthy for Sensitive Groups,132
+13259,17790,2025-02-20,French Guiana,Good,33
+13260,17791,2025-02-20,Georgia,Moderate,60
+13261,17792,2025-02-20,Germany,Moderate,100
+13262,17793,2025-02-20,Ghana,Moderate,70
+13263,17795,2025-02-20,Greece,Moderate,52
+13264,17796,2025-02-20,Guadeloupe,Good,18
+13265,17797,2025-02-20,Guatemala,Moderate,88
+13266,17798,2025-02-20,Hong Kong,Moderate,70
+13267,17800,2025-02-20,Iceland,Good,27
+13268,17801,2025-02-20,India,Unhealthy,196
+13269,17802,2025-02-20,Indonesia,Unhealthy for Sensitive Groups,107
+13270,17805,2025-02-20,Ireland,Good,46
+13271,17806,2025-02-20,Israel,Moderate,62
+13272,17807,2025-02-20,Italy,Moderate,96
+13273,17809,2025-02-20,Japan,Moderate,65
+13274,17811,2025-02-20,Jordan,Good,19
+13275,17812,2025-02-20,Kazakhstan,Unhealthy,162
+13276,17813,2025-02-20,Kenya,Unhealthy for Sensitive Groups,145
+13277,17815,2025-02-20,Kuwait,Moderate,59
+13278,17816,2025-02-20,Kyrgyzstan,Moderate,67
+13279,17817,2025-02-20,Laos,Unhealthy for Sensitive Groups,142
+13280,17818,2025-02-20,Latvia,Good,1
+13281,17820,2025-02-20,Liechtenstein,Good,28
+13282,17821,2025-02-20,Lithuania,Good,15
+13283,17823,2025-02-20,Macao,Moderate,76
+13284,17824,2025-02-20,Macedonia,Unhealthy for Sensitive Groups,120
+13285,17825,2025-02-20,Madagascar,Moderate,59
+13286,17826,2025-02-20,Malaysia,Moderate,60
+13287,17827,2025-02-20,Malta,Good,36
+13288,17828,2025-02-20,Martinique,Good,29
+13289,17829,2025-02-20,Mexico,Unhealthy for Sensitive Groups,115
+13290,17830,2025-02-20,Moldova,Good,48
+13291,17831,2025-02-20,Monaco,Moderate,62
+13292,17832,2025-02-20,Mongolia,Moderate,99
+13293,17833,2025-02-20,Montenegro,Moderate,61
+13294,17834,2025-02-20,Myanmar,Unhealthy for Sensitive Groups,134
+13295,17835,2025-02-20,Nepal,Unhealthy,163
+13296,17836,2025-02-20,Netherlands,Unhealthy for Sensitive Groups,112
+13297,17838,2025-02-20,New Zealand,Good,13
+13298,17839,2025-02-20,Nigeria,Unhealthy,158
+13299,17840,2025-02-20,Norway,Moderate,52
+13300,17841,2025-02-20,Pakistan,Moderate,64
+13301,17842,2025-02-20,Palestinian Territory,Moderate,85
+13302,17843,2025-02-20,Peru,Moderate,59
+13303,17844,2025-02-20,Philippines,Moderate,74
+13304,17845,2025-02-20,Poland,Unhealthy,200
+13305,17846,2025-02-20,Portugal,Moderate,51
+13306,17847,2025-02-20,Reunion,Good,10
+13307,17848,2025-02-20,Romania,Unhealthy for Sensitive Groups,117
+13308,17849,2025-02-20,Russia,Unhealthy for Sensitive Groups,102
+13309,17850,2025-02-20,San Marino,Good,26
+13310,17852,2025-02-20,Serbia,Unhealthy,181
+13311,17853,2025-02-20,Singapore,Moderate,52
+13312,17854,2025-02-20,Slovakia,Unhealthy for Sensitive Groups,121
+13313,17855,2025-02-20,Slovenia,Unhealthy for Sensitive Groups,105
+13314,17856,2025-02-20,South Africa,Good,41
+13315,17857,2025-02-20,South Korea,Moderate,57
+13316,17858,2025-02-20,Spain,Unhealthy for Sensitive Groups,102
+13317,17859,2025-02-20,Sri Lanka,Unhealthy,158
+13318,17860,2025-02-20,Sweden,Good,31
+13319,17861,2025-02-20,Switzerland,Unhealthy for Sensitive Groups,107
+13320,17862,2025-02-20,Taiwan,Unhealthy for Sensitive Groups,106
+13321,17863,2025-02-20,Tajikistan,Unhealthy for Sensitive Groups,122
+13322,17864,2025-02-20,Thailand,Unhealthy for Sensitive Groups,137
+13323,17866,2025-02-20,Trinidad and Tobago,Good,47
+13324,17867,2025-02-20,Turkey,Moderate,81
+13325,17869,2025-02-20,Uganda,Very Unhealthy,235
+13326,17870,2025-02-20,Ukraine,Moderate,66
+13327,17871,2025-02-20,United Arab Emirates,Moderate,56
+13328,17872,2025-02-20,United Kingdom of Great Britain and Northern Ireland,Unhealthy for Sensitive Groups,139
+13329,17873,2025-02-20,United States of America,Moderate,98
+13330,17875,2025-02-20,Vatican,Moderate,65
+13331,17876,2025-02-20,Vietnam,Moderate,94
