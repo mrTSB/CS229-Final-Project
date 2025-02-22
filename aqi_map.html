@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0cb5738d81043be38657c8fd2324a304 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0cb5738d81043be38657c8fd2324a304" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0cb5738d81043be38657c8fd2324a304 = L.map(
+                "map_0cb5738d81043be38657c8fd2324a304",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_787d7bc08a60745115e102f64b1693a6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_787d7bc08a60745115e102f64b1693a6.addTo(map_0cb5738d81043be38657c8fd2324a304);
+        
+    
+            var marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_4cd06c41394ec29429230f23916f85ed = L.marker(
+                [37.0902, -95.7129],
+                {
+}
+            ).addTo(marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f);
+        
+    
+            var icon_e36f2c79131c99a7d44c3e7f0d3a6035 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4cd06c41394ec29429230f23916f85ed.setIcon(icon_e36f2c79131c99a7d44c3e7f0d3a6035);
+        
+    
+        var popup_189680468ad663a6f383a5fc02358b7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6301492cf1677324062f51a2379cc1a = $(`<div id="html_d6301492cf1677324062f51a2379cc1a" style="width: 100.0%; height: 100.0%;">USA: AQI 50</div>`)[0];
+                popup_189680468ad663a6f383a5fc02358b7d.setContent(html_d6301492cf1677324062f51a2379cc1a);
+            
+        
+
+        marker_4cd06c41394ec29429230f23916f85ed.bindPopup(popup_189680468ad663a6f383a5fc02358b7d)
+        ;
+
+        
+    
+    
+            var marker_9ace52ec9ef9620d078312332a672aac = L.marker(
+                [20.5937, 78.9629],
+                {
+}
+            ).addTo(marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f);
+        
+    
+            var icon_0e2573ff771b218fd3777ef97e9cb75d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ace52ec9ef9620d078312332a672aac.setIcon(icon_0e2573ff771b218fd3777ef97e9cb75d);
+        
+    
+        var popup_9be3ff29a4e9e438e33006ed7cf6be9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcff0876539f4971a88efebfe76b9f9d = $(`<div id="html_bcff0876539f4971a88efebfe76b9f9d" style="width: 100.0%; height: 100.0%;">India: AQI 150</div>`)[0];
+                popup_9be3ff29a4e9e438e33006ed7cf6be9e.setContent(html_bcff0876539f4971a88efebfe76b9f9d);
+            
+        
+
+        marker_9ace52ec9ef9620d078312332a672aac.bindPopup(popup_9be3ff29a4e9e438e33006ed7cf6be9e)
+        ;
+
+        
+    
+    
+            var marker_c83706b62c24faac1c21504fd2e460da = L.marker(
+                [35.8617, 104.1954],
+                {
+}
+            ).addTo(marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f);
+        
+    
+            var icon_29bf4ab78443cbc6db9259d4330f5c63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c83706b62c24faac1c21504fd2e460da.setIcon(icon_29bf4ab78443cbc6db9259d4330f5c63);
+        
+    
+        var popup_af6c8563f723fbd27312cda37470cb74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb1064c9e042d3ca7fbfaa6a2d07769e = $(`<div id="html_bb1064c9e042d3ca7fbfaa6a2d07769e" style="width: 100.0%; height: 100.0%;">China: AQI 200</div>`)[0];
+                popup_af6c8563f723fbd27312cda37470cb74.setContent(html_bb1064c9e042d3ca7fbfaa6a2d07769e);
+            
+        
+
+        marker_c83706b62c24faac1c21504fd2e460da.bindPopup(popup_af6c8563f723fbd27312cda37470cb74)
+        ;
+
+        
+    
+    
+            var marker_c90cd302f5fabd3c6765d7d5d514f4ed = L.marker(
+                [-14.235, -51.9253],
+                {
+}
+            ).addTo(marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f);
+        
+    
+            var icon_c9ab86b75133afaed43921ed912a9868 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c90cd302f5fabd3c6765d7d5d514f4ed.setIcon(icon_c9ab86b75133afaed43921ed912a9868);
+        
+    
+        var popup_fd4779c923471871794630233e29c807 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb167d15ee450d2482460ff1e4ef10f0 = $(`<div id="html_fb167d15ee450d2482460ff1e4ef10f0" style="width: 100.0%; height: 100.0%;">Brazil: AQI 100</div>`)[0];
+                popup_fd4779c923471871794630233e29c807.setContent(html_fb167d15ee450d2482460ff1e4ef10f0);
+            
+        
+
+        marker_c90cd302f5fabd3c6765d7d5d514f4ed.bindPopup(popup_fd4779c923471871794630233e29c807)
+        ;
+
+        
+    
+    
+            var marker_552f8162cdfbf8097b87fa299a44a60c = L.marker(
+                [51.1657, 10.4515],
+                {
+}
+            ).addTo(marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f);
+        
+    
+            var icon_e4ee7a34708690e4dec2908c7c677ae7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_552f8162cdfbf8097b87fa299a44a60c.setIcon(icon_e4ee7a34708690e4dec2908c7c677ae7);
+        
+    
+        var popup_f1993313f3b4da2fb02d6cfff9bfca1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd88c1700159d27622a6bcbe5668d303 = $(`<div id="html_cd88c1700159d27622a6bcbe5668d303" style="width: 100.0%; height: 100.0%;">Germany: AQI 75</div>`)[0];
+                popup_f1993313f3b4da2fb02d6cfff9bfca1d.setContent(html_cd88c1700159d27622a6bcbe5668d303);
+            
+        
+
+        marker_552f8162cdfbf8097b87fa299a44a60c.bindPopup(popup_f1993313f3b4da2fb02d6cfff9bfca1d)
+        ;
+
+        
+    
+    
+            marker_cluster_4fcb4a105dfaf1d9d41458bcab11226f.addTo(map_0cb5738d81043be38657c8fd2324a304);
+        
+</script>
+</html>
