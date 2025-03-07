@@ -5,3 +5,4 @@ venv/
 EDGAR/data/
 EDGAR/extracted/
 EDGAR/processed/
+*.npy
