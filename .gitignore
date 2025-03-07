@@ -1,2 +1,7 @@
 *.env
 super_emissions_tensor.npy
+venv/
+.venv/
+EDGAR/data/
+EDGAR/extracted/
+EDGAR/processed/
