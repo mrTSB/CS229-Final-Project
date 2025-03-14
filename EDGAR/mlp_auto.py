@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 """
-DeepRSM/ConvLSTM Training Script for CTM Data
+EmissionNetV4 - Improved Transformer-Based Emission Prediction with Advanced Training Pipeline
 
-- Reads kernelized_tensor.npy with shape (5,2,288,600,1200).
-- Downsamples to 150×300, applies log1p.
-- Builds rolling-window sequences (context_window=24).
-- Splits into train/val/test sets with a 24-timestep overlap at the boundaries.
-- Trains a ConvLSTM model to predict the 5th channel.
-- Uses a dynamic LR schedule (linear warmup 20%, then cosine half-wave).
-- Plots train/val MSE + LR schedule.
-- Evaluates on the validation and test sets.
+- Model: Integrates an initial convolution, residual blocks, and a multi-head Transformer decoder.
+- Uses mixed precision training with automatic loss scaling.
+- Training uses DataLoader, dynamic LR scheduling (linear warmup then cosine decay), and loss tracking.
+- Evaluation and plotting of training curves, predictions, and an autoregressive test evaluation are included.
 """
 
 import os
@@ -21,11 +17,15 @@ import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error
-from matplotlib.colors import LogNorm, LinearSegmentedColormap
 from torch.utils.data import DataLoader, TensorDataset
+from torch.amp import autocast, GradScaler
+from matplotlib.colors import LogNorm, LinearSegmentedColormap
+
+# Optionally, set an environment variable to help with fragmentation.
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 # ----------------------------------------------------------------------------
-# 1) Reproducibility: Set seeds and configure CuDNN for determinism
+# 1) Reproducibility
 # ----------------------------------------------------------------------------
 SEED = 42
 random.seed(SEED)
@@ -42,61 +42,49 @@ def worker_init_fn(worker_id):
     random.seed(SEED + worker_id)
 
 # ----------------------------------------------------------------------------
-# Hyperparameters
+# 2) Hyperparameters
 # ----------------------------------------------------------------------------
-base_lr         = 3e-3
+base_lr         = 3e-3  
 weight_decay    = 1e-4
-num_epochs      = 50
-batch_size      = 32
+num_epochs      = 5000
+batch_size      = 8
 context_window  = 24
-forecast_horizon= 1
+forecast_horizon= 1      # used in sliding-window creation
+target_h, target_w = 150, 300
+output_channels = 5  
 warmup_ratio    = 0.2
-target_h, target_w = 150, 300   # Downsampled resolution
-output_channels = 5            # Channels in the downsampled data
 
-# ----------------------------------------------------------------------------
-# Device Configuration
-# ----------------------------------------------------------------------------
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 torch.cuda.empty_cache()
-
-# Current directory for saving outputs
 current_dir = os.getcwd()
 
 # ----------------------------------------------------------------------------
-# Load Memory-Mapped Tensor
+# 3) Load Dataset and Downsample
 # ----------------------------------------------------------------------------
 super_tensor_file = os.path.join(current_dir, "kernelized_tensor.npy")
+if not os.path.exists(super_tensor_file):
+    raise FileNotFoundError(f"kernelized_tensor.npy not found in {current_dir}.")
+
+# Load memory-mapped tensor (shape: (5,2,288,600,1200))
 kernelized_tensor = np.memmap(super_tensor_file, dtype="float32", mode="r", 
                               shape=(5, 2, 288, 600, 1200))
-print("Loaded data shape:", kernelized_tensor.shape)
-
-# ----------------------------------------------------------------------------
-# Data Preprocessing (Downsample to target_h x target_w)
-# ----------------------------------------------------------------------------
-orig_h, orig_w = 600, 1200
-factor_h = orig_h // target_h
-factor_w = orig_w // target_w
-assert target_h * factor_h == orig_h, "target_h does not evenly divide original height"
-assert target_w * factor_w == orig_w, "target_w does not evenly divide original width"
-
 num_time = 288
-data_emissions = kernelized_tensor[:, 0, :, :, :]  # "emi"
-emissions_data = np.transpose(data_emissions, (1, 0, 2, 3)).astype(np.float32)  # (288,5,600,1200)
-Y_full = np.transpose(emissions_data, (0, 2, 3, 1))  # (288,600,1200,5)
+data_emissions = kernelized_tensor[:, 0, :, :, :]
+emissions_data = np.transpose(data_emissions, (1, 0, 2, 3)).astype(np.float32)
+Y_full = np.transpose(emissions_data, (0, 2, 3, 1))  # shape: (288,600,1200,5)
 
+# Downsample spatially from (600,1200) to (150,300)
 Y_low = np.empty((num_time, target_h, target_w, output_channels), dtype=np.float32)
+factor_h, factor_w = 600 // target_h, 1200 // target_w
 for i in range(num_time):
     Y_low[i] = Y_full[i].reshape(target_h, factor_h, target_w, factor_w, output_channels).mean(axis=(1,3))
-
-# Apply log1p transformation
-Y_low_log = np.log1p(Y_low)  # shape: (288, target_h, target_w, 5)
+Y_low_log = np.log1p(Y_low)
 
 # ----------------------------------------------------------------------------
-# Create sliding windows from a given segment
+# 4) Create Sliding Windows (with forecast_horizon = 1)
 # ----------------------------------------------------------------------------
-def create_sequences(data, window_size):
+def create_sequences(data, window_size, forecast_horizon):
     T = data.shape[0]
     X_list, y_list = [], []
     for i in range(T - window_size - forecast_horizon + 1):
@@ -106,158 +94,104 @@ def create_sequences(data, window_size):
         y_list.append(y_seq[0])
     return np.array(X_list, dtype=np.float32), np.array(y_list, dtype=np.float32)
 
-# ----------------------------------------------------------------------------
-# Partition the full time series into training, validation, and test segments
-# with overlap for context.
-# ----------------------------------------------------------------------------
 T_total = Y_low_log.shape[0]
 train_size = int(0.8 * T_total)
 val_size   = int(0.1 * T_total)
 test_size  = T_total - train_size - val_size
 
-# Training windows: indices [0, train_size)
+# Create train, validation, and test segments ensuring overlapping windows for continuity.
 train_segment = Y_low_log[:train_size]
-X_train, Y_train_seq = create_sequences(train_segment, context_window)
-X_train_raw = X_train
-Y_train_raw = Y_train_seq[..., 4:]  # shape: (N_train, target_h, target_w, 1)
+X_train_raw, Y_train_seq = create_sequences(train_segment, context_window, forecast_horizon)
+Y_train_raw = Y_train_seq[..., 4:]  # using channel index 4
 
-# Validation windows: indices [train_size - context_window, train_size + val_size)
 val_segment = Y_low_log[train_size - context_window : train_size + val_size]
-X_val_full, Y_val_full = create_sequences(val_segment, context_window)
-X_val_raw = X_val_full
-Y_val_raw = Y_val_full[..., 4:]
+X_val_raw, Y_val_seq = create_sequences(val_segment, context_window, forecast_horizon)
+Y_val_raw = Y_val_seq[..., 4:]
+
+# For autoregressive evaluation later we also save the entire test segment:
+test_segment = Y_low_log[train_size + val_size - context_window : T_total]
+X_test_raw, Y_test_seq = create_sequences(test_segment, context_window, forecast_horizon)
+Y_test_raw = Y_test_seq[..., 4:]
 
 print("Training windows: X_train:", X_train_raw.shape, "Y_train:", Y_train_raw.shape)
 print("Validation windows: X_val:", X_val_raw.shape, "Y_val:", Y_val_raw.shape)
-
-# Test windows: indices [train_size + val_size - context_window, T_total)
-test_segment = Y_low_log[train_size + val_size - context_window : T_total]
-X_test_full, Y_test_full = create_sequences(test_segment, context_window)
-X_test_raw = X_test_full
-Y_test_raw = Y_test_full[..., 4:]
 print("Test windows: X_test:", X_test_raw.shape, "Y_test:", Y_test_raw.shape)
 
 # ----------------------------------------------------------------------------
-# Normalize Data (using training set statistics)
+# 5) Normalize Data (using training set statistics)
 # ----------------------------------------------------------------------------
 X_train_mean = np.mean(X_train_raw, axis=(0,1,2,3), keepdims=True)
 X_train_std  = np.std(X_train_raw, axis=(0,1,2,3), keepdims=True)
 Y_train_mean = np.mean(Y_train_raw, axis=(0,1,2,3), keepdims=True)
 Y_train_std  = np.std(Y_train_raw, axis=(0,1,2,3), keepdims=True)
 
-X_train_norm = (X_train_raw - X_train_mean) / X_train_std
-Y_train_norm = (Y_train_raw - Y_train_mean) / Y_train_std
-X_val_norm   = (X_val_raw   - X_train_mean) / X_train_std
-Y_val_norm   = (Y_val_raw   - Y_train_mean) / Y_train_std
-X_test_norm  = (X_test_raw  - X_train_mean) / X_train_std
-Y_test_norm  = (Y_test_raw  - Y_train_mean) / Y_train_std
-
-# Convert to tensors and adjust dimensions.
-# For ConvLSTM: (batch, seq_len, channels, H, W)
-X_train_norm = X_train_norm.transpose(0,1,4,2,3)  # shape: (N_train, context_window, 5, target_h, target_w)
-Y_train_norm = Y_train_norm.transpose(0,3,1,2)        # shape: (N_train, 1, target_h, target_w)
-train_dataset = TensorDataset(
-    torch.tensor(X_train_norm, dtype=torch.float32, device=device),
-    torch.tensor(Y_train_norm, dtype=torch.float32, device=device)
-)
-train_loader = DataLoader(
-    train_dataset,
-    batch_size=batch_size,
-    shuffle=True,
-    worker_init_fn=worker_init_fn
-)
-
-X_val_tensor = torch.tensor(X_val_norm.transpose(0,1,4,2,3), dtype=torch.float32, device=device)
-Y_val_tensor = torch.tensor(Y_val_norm.transpose(0,3,1,2), dtype=torch.float32, device=device)
-X_test_tensor = torch.tensor(X_test_norm.transpose(0,1,4,2,3), dtype=torch.float32, device=device)
-Y_test_tensor = torch.tensor(Y_test_norm.transpose(0,3,1,2), dtype=torch.float32, device=device)
+X_train_norm = (X_train_raw - X_train_mean) / (X_train_std + 1e-8)
+Y_train_norm = (Y_train_raw - Y_train_mean) / (Y_train_std + 1e-8)
+X_val_norm   = (X_val_raw - X_train_mean) / (X_train_std + 1e-8)
+Y_val_norm   = (Y_val_raw - Y_train_mean) / (Y_train_std + 1e-8)
+X_test_norm  = (X_test_raw - X_train_mean) / (X_train_std + 1e-8)
+Y_test_norm  = (Y_test_raw - Y_train_mean) / (Y_train_std + 1e-8)
 
 # ----------------------------------------------------------------------------
-# Define the ConvLSTM Model with dynamic padding for variable kernel sizes
+# 6) Reshape Data for MLP Processing
 # ----------------------------------------------------------------------------
-class ConvLSTMCell(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None):
-        super(ConvLSTMCell, self).__init__()
-        self.hidden_channels = hidden_channels
-        # If padding is not provided, compute "same" padding automatically.
-        if padding is None:
-            if isinstance(kernel_size, int):
-                padding = kernel_size // 2
-            else:
-                padding = tuple(k // 2 for k in kernel_size)
-        self.conv = nn.Conv2d(
-            input_channels + hidden_channels,
-            4 * hidden_channels,
-            kernel_size=kernel_size,
-            padding=padding
-        )
-    def forward(self, input_tensor, cur_state):
-        h_cur, c_cur = cur_state
-        combined = torch.cat([input_tensor, h_cur], dim=1)
-        conv_output = self.conv(combined)
-        cc_i, cc_f, cc_o, cc_g = torch.split(conv_output, self.hidden_channels, dim=1)
-        i = torch.sigmoid(cc_i)
-        f = torch.sigmoid(cc_f)
-        o = torch.sigmoid(cc_o)
-        g = torch.tanh(cc_g)
-        c_next = f * c_cur + i * g
-        h_next = o * torch.tanh(c_next)
-        return h_next, c_next
-    def init_hidden(self, batch_size, shape):
-        height, width = shape
-        return (
-            torch.zeros(batch_size, self.hidden_channels, height, width, device=self.conv.weight.device),
-            torch.zeros(batch_size, self.hidden_channels, height, width, device=self.conv.weight.device)
-        )
+# Our sliding window outputs:
+#   X: (N, context_window, H, W, channels)
+#   Y: (N, H, W, 1)
+# For the MLP, we need:
+#   X: (N, context_window, channels, H, W)
+#   Y: (N, 1, H, W)
+X_train_norm = X_train_norm.transpose(0, 1, 4, 2, 3)  # (N,24,5,150,300)
+X_val_norm   = X_val_norm.transpose(0, 1, 4, 2, 3)
+X_test_norm  = X_test_norm.transpose(0, 1, 4, 2, 3)
+Y_train_norm = Y_train_norm.transpose(0, 3, 1, 2)      # (N,1,150,300)
+Y_val_norm   = Y_val_norm.transpose(0, 3, 1, 2)
+Y_test_norm  = Y_test_norm.transpose(0, 3, 1, 2)
 
-class ConvLSTM(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None):
-        super(ConvLSTM, self).__init__()
-        self.cell = ConvLSTMCell(input_channels, hidden_channels, kernel_size, padding)
-    def forward(self, input_tensor):
-        batch_size, seq_len, channels, H, W = input_tensor.shape
-        h, c = self.cell.init_hidden(batch_size, (H, W))
-        for t in range(seq_len):
-            h, c = self.cell(input_tensor[:, t], (h, c))
-        return h
+print("After transpose, X_train_norm shape:", X_train_norm.shape)
+print("After transpose, Y_train_norm shape:", Y_train_norm.shape)
 
-class ConvLSTMModel(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None, dropout_p=0.1):
-        super(ConvLSTMModel, self).__init__()
-        # Use dynamic padding in ConvLSTMCell if not provided.
-        self.convlstm = ConvLSTM(input_channels, hidden_channels, kernel_size, padding)
-        # Extra convolutional layers with automatic "same" padding.
-        self.conv1 = nn.Conv2d(hidden_channels, 32, kernel_size=5, padding=5//2)
-        self.relu1 = nn.ReLU()
-        self.conv2 = nn.Conv2d(32, 32, kernel_size=5, padding=5//2)
-        self.relu2 = nn.ReLU()
-        self.conv3 = nn.Conv2d(32, 16, kernel_size=3, padding=3//2)
-        self.relu3 = nn.ReLU()
-        self.conv4 = nn.Conv2d(16, 8, kernel_size=3, padding=3//2)
-        self.relu4 = nn.ReLU()
-        self.conv5 = nn.Conv2d(8, 1, kernel_size=3, padding=3//2)
-        self.dropout = nn.Dropout2d(p=dropout_p)
+# Convert to tensors.
+X_train_tensor = torch.tensor(X_train_norm, dtype=torch.float32, device=device)
+Y_train_tensor = torch.tensor(Y_train_norm, dtype=torch.float32, device=device)
+train_dataset = TensorDataset(X_train_tensor, Y_train_tensor)
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, worker_init_fn=worker_init_fn)
+
+X_val_tensor = torch.tensor(X_val_norm, dtype=torch.float32, device=device)
+Y_val_tensor = torch.tensor(Y_val_norm, dtype=torch.float32, device=device)
+X_test_tensor = torch.tensor(X_test_norm, dtype=torch.float32, device=device)
+Y_test_tensor = torch.tensor(Y_test_norm, dtype=torch.float32, device=device)
+
+# ----------------------------------------------------------------------------
+# 7) Define Improved MLP Baseline Model (Per-Pixel) - MLP Baseline remains unchanged
+# ----------------------------------------------------------------------------
+class MLPModel(nn.Module):
+    def __init__(self, in_dim, hidden_dim=256, num_hidden=2, out_dim=1):
+        super(MLPModel, self).__init__()
+        layers = []
+        layers.append(nn.Linear(in_dim, hidden_dim))
+        layers.append(nn.ReLU())
+        for _ in range(num_hidden - 1):
+            layers.append(nn.Linear(hidden_dim, hidden_dim))
+            layers.append(nn.ReLU())
+        layers.append(nn.Linear(hidden_dim, out_dim))
+        self.model = nn.Sequential(*layers)
     def forward(self, x):
-        h = self.convlstm(x)  # shape: (batch, hidden_channels, H, W)
-        out = self.relu1(self.conv1(h))
-        out = self.dropout(out)
-        out = self.relu2(self.conv2(out))
-        out = self.relu3(self.conv3(out))
-        out = self.relu4(self.conv4(out))
-        out = self.conv5(out)
+        # x shape: (batch, context_window, channels, H, W)
+        N, T, C, H, W = x.size()
+        x = x.permute(0, 3, 4, 1, 2)  # (N, H, W, T, C)
+        x = x.reshape(N, H, W, T * C)  # (N, H, W, T*C)
+        x = x.reshape(-1, T * C)       # (N*H*W, T*C)
+        out = self.model(x)
+        out = out.reshape(N, H, W, -1).permute(0, 3, 1, 2)
         return out
 
-# Increase ConvLSTM capacity: hidden_channels from 8 to 16.
-model = ConvLSTMModel(
-    input_channels=5,
-    hidden_channels=16,
-    kernel_size=3,  # This kernel size applies to the ConvLSTMCell.
-    padding=None,   # Automatically compute "same" padding.
-    dropout_p=0.1
-).to(device)
+# For our data, per-pixel input dimension = context_window * channels = 24 * 5 = 120.
+input_dim = context_window * 5
+model = MLPModel(in_dim=input_dim, hidden_dim=256, num_hidden=2, out_dim=1).to(device)
 
 def init_weights(m):
-    if isinstance(m, nn.Conv2d):
+    if isinstance(m, nn.Linear):
         nn.init.xavier_uniform_(m.weight)
         if m.bias is not None:
             nn.init.zeros_(m.bias)
@@ -314,7 +248,7 @@ for epoch in range(num_epochs):
         print(f"Epoch {epoch+1}/{num_epochs}, LR={current_lr:.2e}, Train MSE={epoch_loss_accum:.6f}, Val MSE={val_loss:.6f}")
 
 # ----------------------------------------------------------------------------
-# Test Evaluation (using windows created earlier)
+# Test Evaluation
 # ----------------------------------------------------------------------------
 model.eval()
 with torch.no_grad():
@@ -352,7 +286,8 @@ plt.ylabel('LR')
 plt.title('Dynamic Learning Rate')
 plt.legend()
 plt.tight_layout()
-plt.savefig(os.path.join(current_dir, f"train_val_log_mse_and_lr_{base_lr}_{batch_size}_{num_epochs}.png"), dpi=300)
+loss_plot_path = os.path.join(current_dir, f"{__file__}_train_val_log_mse_and_lr_{base_lr}_{batch_size}_{num_epochs}.png")
+plt.savefig(loss_plot_path, dpi=300)
 plt.show()
 
 # ----------------------------------------------------------------------------
@@ -416,19 +351,19 @@ plt.show()
 print(autoregress_losses)
 
 # ----------------------------------------------------------------------------
-# Example Custom Colormap for Plotting Predictions
+# Plot Predictions (Optional)
 # ----------------------------------------------------------------------------
 custom_multi_color = LinearSegmentedColormap.from_list(
     "custom_teal_yellow_8",
     [
-        "#002b36",  # Dark teal
+        "#002b36",
         "#0a484c",
         "#136664",
         "#1f847c",
         "#2ba294",
         "#49bfac",
         "#72dbbf",
-        "#f0f921"   # Bright yellow
+        "#f0f921"
     ]
 )
 
@@ -444,16 +379,16 @@ def plot_emission_comparison(tensor_gt, tensor_pred, idx, extent, cmap=custom_mu
     norm = LogNorm(vmin=pred_min, vmax=pred_max, clip=True)
     fig, axs = plt.subplots(1, 2, figsize=(12, 6))
     im0 = axs[0].imshow(gt_img_clamped, cmap=cmap, interpolation='nearest', extent=extent, norm=norm)
-    fig.colorbar(im0, ax=axs[0], label="Log-Scaled Emissions (Pred-based)")
+    fig.colorbar(im0, ax=axs[0], label="Log-Scaled Emissions")
     axs[0].set_title(f"Ground Truth (Test idx {idx})")
-    axs[0].set_xlabel("Longitude Grid Points")
-    axs[0].set_ylabel("Latitude Grid Points")
+    axs[0].set_xlabel("Longitude")
+    axs[0].set_ylabel("Latitude")
     axs[0].invert_yaxis()
     im1 = axs[1].imshow(pred_img_clamped, cmap=cmap, interpolation='nearest', extent=extent, norm=norm)
-    fig.colorbar(im1, ax=axs[1], label="Log-Scaled Emissions (Pred-based)")
+    fig.colorbar(im1, ax=axs[1], label="Log-Scaled Emissions")
     axs[1].set_title(f"Prediction (Test idx {idx})")
-    axs[1].set_xlabel("Longitude Grid Points")
-    axs[1].set_ylabel("Latitude Grid Points")
+    axs[1].set_xlabel("Longitude")
+    axs[1].set_ylabel("Latitude")
     axs[1].invert_yaxis()
     plt.tight_layout()
     return fig
@@ -462,9 +397,14 @@ extent = [0, target_w, 0, target_h]
 N_test = Y_test_true_final.shape[0]
 for i in range(N_test):
     fig = plot_emission_comparison(Y_test_true_final, Y_test_pred_final, i, extent)
-    fig.savefig(os.path.join(current_dir, f"{__file__}_test_sample_{i}_{base_lr}_{batch_size}_{num_epochs}.png"), dpi=300)
+    fig_path = os.path.join(current_dir, f"{__file__}_test_sample_{i}_{base_lr}_{batch_size}_{num_epochs}.png")
+    fig.savefig(fig_path, dpi=300)
     plt.close(fig)
 
+# ----------------------------------------------------------------------------
+# Save Model and Final Logs
+# ----------------------------------------------------------------------------
+torch.save(model.state_dict(), "emissionnet_v4.pth")
 print("Training, validation, and test evaluation complete.")
 print("Final Train MSE:", train_mses[-1])
 print("Final Val MSE:", val_mses[-1])

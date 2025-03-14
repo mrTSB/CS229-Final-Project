@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 """
-DeepRSM/ConvLSTM Training Script for CTM Data
+EmissionNetV4 - Transformer-Enhanced CTM Model with DataLoader Training, Mixed Precision, and Plotting
 
-- Reads kernelized_tensor.npy with shape (5,2,288,600,1200).
-- Downsamples to 150×300, applies log1p.
-- Builds rolling-window sequences (context_window=24).
-- Splits into train/val/test sets with a 24-timestep overlap at the boundaries.
-- Trains a ConvLSTM model to predict the 5th channel.
-- Uses a dynamic LR schedule (linear warmup 20%, then cosine half-wave).
-- Plots train/val MSE + LR schedule.
-- Evaluates on the validation and test sets.
+- Integrates Axial Attention and ResNet-style Bottleneck Blocks.
+- Uses Residual Implicit Deep Supervision (R-IDS) with a Transformer Decoder.
+- Trains with a DataLoader, dynamic LR scheduler (linear warmup then cosine decay), and plots training curves and predictions.
+- Uses mixed precision training to reduce memory usage.
 """
 
 import os
@@ -23,9 +19,10 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error
 from matplotlib.colors import LogNorm, LinearSegmentedColormap
 from torch.utils.data import DataLoader, TensorDataset
+from torch.amp import autocast, GradScaler
 
 # ----------------------------------------------------------------------------
-# 1) Reproducibility: Set seeds and configure CuDNN for determinism
+# 1) Reproducibility
 # ----------------------------------------------------------------------------
 SEED = 42
 random.seed(SEED)
@@ -42,59 +39,52 @@ def worker_init_fn(worker_id):
     random.seed(SEED + worker_id)
 
 # ----------------------------------------------------------------------------
-# Hyperparameters
+# 2) Hyperparameters
 # ----------------------------------------------------------------------------
-base_lr         = 3e-3
+base_lr         = 1e-3
 weight_decay    = 1e-4
-num_epochs      = 50
-batch_size      = 32
+num_epochs      = 200
+batch_size      = 4  # Try reducing further if necessary (e.g., 4)
 context_window  = 24
-forecast_horizon= 1
+forecast_horizon= 1  # used in sliding-window creation
 warmup_ratio    = 0.2
-target_h, target_w = 150, 300   # Downsampled resolution
-output_channels = 5            # Channels in the downsampled data
+target_h, target_w = 150, 300
+output_channels = 5  # channels in downsampled emissions
 
-# ----------------------------------------------------------------------------
-# Device Configuration
-# ----------------------------------------------------------------------------
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 torch.cuda.empty_cache()
-
-# Current directory for saving outputs
 current_dir = os.getcwd()
 
 # ----------------------------------------------------------------------------
-# Load Memory-Mapped Tensor
+# 3) Load Dataset and Downsample
 # ----------------------------------------------------------------------------
 super_tensor_file = os.path.join(current_dir, "kernelized_tensor.npy")
+if not os.path.exists(super_tensor_file):
+    raise FileNotFoundError(f"kernelized_tensor.npy not found in {current_dir}.")
+
+# Load memory-mapped tensor: shape (5,2,288,600,1200)
 kernelized_tensor = np.memmap(super_tensor_file, dtype="float32", mode="r", 
                               shape=(5, 2, 288, 600, 1200))
-print("Loaded data shape:", kernelized_tensor.shape)
-
-# ----------------------------------------------------------------------------
-# Data Preprocessing (Downsample to target_h x target_w)
-# ----------------------------------------------------------------------------
-orig_h, orig_w = 600, 1200
-factor_h = orig_h // target_h
-factor_w = orig_w // target_w
-assert target_h * factor_h == orig_h, "target_h does not evenly divide original height"
-assert target_w * factor_w == orig_w, "target_w does not evenly divide original width"
 
 num_time = 288
-data_emissions = kernelized_tensor[:, 0, :, :, :]  # "emi"
-emissions_data = np.transpose(data_emissions, (1, 0, 2, 3)).astype(np.float32)  # (288,5,600,1200)
-Y_full = np.transpose(emissions_data, (0, 2, 3, 1))  # (288,600,1200,5)
+# Use the first channel along axis=1 (e.g. "emi")
+data_emissions = kernelized_tensor[:, 0, :, :, :]
+# Rearrange to (288, 5, 600, 1200)
+emissions_data = np.transpose(data_emissions, (1, 0, 2, 3)).astype(np.float32)
+# Rearrange to (288, 600, 1200, 5)
+Y_full = np.transpose(emissions_data, (0, 2, 3, 1))
 
+# Downsample spatially from (600,1200) to (150,300)
 Y_low = np.empty((num_time, target_h, target_w, output_channels), dtype=np.float32)
+factor_h, factor_w = 600 // target_h, 1200 // target_w
 for i in range(num_time):
     Y_low[i] = Y_full[i].reshape(target_h, factor_h, target_w, factor_w, output_channels).mean(axis=(1,3))
 
-# Apply log1p transformation
-Y_low_log = np.log1p(Y_low)  # shape: (288, target_h, target_w, 5)
+Y_low_log = np.log1p(Y_low)
 
 # ----------------------------------------------------------------------------
-# Create sliding windows from a given segment
+# 4) Create Sliding Windows using forecast_horizon = 1
 # ----------------------------------------------------------------------------
 def create_sequences(data, window_size):
     T = data.shape[0]
@@ -106,169 +96,133 @@ def create_sequences(data, window_size):
         y_list.append(y_seq[0])
     return np.array(X_list, dtype=np.float32), np.array(y_list, dtype=np.float32)
 
-# ----------------------------------------------------------------------------
-# Partition the full time series into training, validation, and test segments
-# with overlap for context.
-# ----------------------------------------------------------------------------
 T_total = Y_low_log.shape[0]
 train_size = int(0.8 * T_total)
 val_size   = int(0.1 * T_total)
 test_size  = T_total - train_size - val_size
 
-# Training windows: indices [0, train_size)
+# Training data
 train_segment = Y_low_log[:train_size]
-X_train, Y_train_seq = create_sequences(train_segment, context_window)
-X_train_raw = X_train
-Y_train_raw = Y_train_seq[..., 4:]  # shape: (N_train, target_h, target_w, 1)
+X_train_raw, Y_train_seq = create_sequences(train_segment, context_window)
+# Extract the target channel (e.g., channel 4 for NO2)
+Y_train_raw = Y_train_seq[..., 4:]
 
-# Validation windows: indices [train_size - context_window, train_size + val_size)
+# Validation data: ensure overlapping windows for continuity
 val_segment = Y_low_log[train_size - context_window : train_size + val_size]
-X_val_full, Y_val_full = create_sequences(val_segment, context_window)
-X_val_raw = X_val_full
-Y_val_raw = Y_val_full[..., 4:]
+X_val_raw, Y_val_seq = create_sequences(val_segment, context_window)
+Y_val_raw = Y_val_seq[..., 4:]
+
+# Test data
+test_segment = Y_low_log[train_size + val_size - context_window : T_total]
+X_test_raw, Y_test_seq = create_sequences(test_segment, context_window)
+Y_test_raw = Y_test_seq[..., 4:]
 
 print("Training windows: X_train:", X_train_raw.shape, "Y_train:", Y_train_raw.shape)
 print("Validation windows: X_val:", X_val_raw.shape, "Y_val:", Y_val_raw.shape)
-
-# Test windows: indices [train_size + val_size - context_window, T_total)
-test_segment = Y_low_log[train_size + val_size - context_window : T_total]
-X_test_full, Y_test_full = create_sequences(test_segment, context_window)
-X_test_raw = X_test_full
-Y_test_raw = Y_test_full[..., 4:]
 print("Test windows: X_test:", X_test_raw.shape, "Y_test:", Y_test_raw.shape)
 
 # ----------------------------------------------------------------------------
-# Normalize Data (using training set statistics)
+# 5) Normalize Data (using training set stats)
 # ----------------------------------------------------------------------------
 X_train_mean = np.mean(X_train_raw, axis=(0,1,2,3), keepdims=True)
 X_train_std  = np.std(X_train_raw, axis=(0,1,2,3), keepdims=True)
 Y_train_mean = np.mean(Y_train_raw, axis=(0,1,2,3), keepdims=True)
 Y_train_std  = np.std(Y_train_raw, axis=(0,1,2,3), keepdims=True)
 
-X_train_norm = (X_train_raw - X_train_mean) / X_train_std
-Y_train_norm = (Y_train_raw - Y_train_mean) / Y_train_std
-X_val_norm   = (X_val_raw   - X_train_mean) / X_train_std
-Y_val_norm   = (Y_val_raw   - Y_train_mean) / Y_train_std
-X_test_norm  = (X_test_raw  - X_train_mean) / X_train_std
-Y_test_norm  = (Y_test_raw  - Y_train_mean) / Y_train_std
-
-# Convert to tensors and adjust dimensions.
-# For ConvLSTM: (batch, seq_len, channels, H, W)
-X_train_norm = X_train_norm.transpose(0,1,4,2,3)  # shape: (N_train, context_window, 5, target_h, target_w)
-Y_train_norm = Y_train_norm.transpose(0,3,1,2)        # shape: (N_train, 1, target_h, target_w)
-train_dataset = TensorDataset(
-    torch.tensor(X_train_norm, dtype=torch.float32, device=device),
-    torch.tensor(Y_train_norm, dtype=torch.float32, device=device)
-)
-train_loader = DataLoader(
-    train_dataset,
-    batch_size=batch_size,
-    shuffle=True,
-    worker_init_fn=worker_init_fn
-)
-
-X_val_tensor = torch.tensor(X_val_norm.transpose(0,1,4,2,3), dtype=torch.float32, device=device)
-Y_val_tensor = torch.tensor(Y_val_norm.transpose(0,3,1,2), dtype=torch.float32, device=device)
-X_test_tensor = torch.tensor(X_test_norm.transpose(0,1,4,2,3), dtype=torch.float32, device=device)
-Y_test_tensor = torch.tensor(Y_test_norm.transpose(0,3,1,2), dtype=torch.float32, device=device)
+X_train_norm = (X_train_raw - X_train_mean) / (X_train_std + 1e-8)
+Y_train_norm = (Y_train_raw - Y_train_mean) / (Y_train_std + 1e-8)
+X_val_norm   = (X_val_raw - X_train_mean) / (X_train_std + 1e-8)
+Y_val_norm   = (Y_val_raw - Y_train_mean) / (Y_train_std + 1e-8)
+X_test_norm  = (X_test_raw - X_train_mean) / (X_train_std + 1e-8)
+Y_test_norm  = (Y_test_raw - Y_train_mean) / (Y_train_std + 1e-8)
 
 # ----------------------------------------------------------------------------
-# Define the ConvLSTM Model with dynamic padding for variable kernel sizes
+# 6) Reshape Data for EmissionNetV4
 # ----------------------------------------------------------------------------
-class ConvLSTMCell(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None):
-        super(ConvLSTMCell, self).__init__()
-        self.hidden_channels = hidden_channels
-        # If padding is not provided, compute "same" padding automatically.
-        if padding is None:
-            if isinstance(kernel_size, int):
-                padding = kernel_size // 2
-            else:
-                padding = tuple(k // 2 for k in kernel_size)
-        self.conv = nn.Conv2d(
-            input_channels + hidden_channels,
-            4 * hidden_channels,
-            kernel_size=kernel_size,
-            padding=padding
-        )
-    def forward(self, input_tensor, cur_state):
-        h_cur, c_cur = cur_state
-        combined = torch.cat([input_tensor, h_cur], dim=1)
-        conv_output = self.conv(combined)
-        cc_i, cc_f, cc_o, cc_g = torch.split(conv_output, self.hidden_channels, dim=1)
-        i = torch.sigmoid(cc_i)
-        f = torch.sigmoid(cc_f)
-        o = torch.sigmoid(cc_o)
-        g = torch.tanh(cc_g)
-        c_next = f * c_cur + i * g
-        h_next = o * torch.tanh(c_next)
-        return h_next, c_next
-    def init_hidden(self, batch_size, shape):
-        height, width = shape
-        return (
-            torch.zeros(batch_size, self.hidden_channels, height, width, device=self.conv.weight.device),
-            torch.zeros(batch_size, self.hidden_channels, height, width, device=self.conv.weight.device)
-        )
+# X: expected shape (N, context_window, H, W, channels)
+# Permute to (N, context_window, channels, H, W)
+X_train_tensor = torch.tensor(X_train_norm, dtype=torch.float32, device=device).permute(0, 1, 4, 2, 3)
+X_val_tensor   = torch.tensor(X_val_norm, dtype=torch.float32, device=device).permute(0, 1, 4, 2, 3)
+X_test_tensor  = torch.tensor(X_test_norm, dtype=torch.float32, device=device).permute(0, 1, 4, 2, 3)
 
-class ConvLSTM(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None):
-        super(ConvLSTM, self).__init__()
-        self.cell = ConvLSTMCell(input_channels, hidden_channels, kernel_size, padding)
-    def forward(self, input_tensor):
-        batch_size, seq_len, channels, H, W = input_tensor.shape
-        h, c = self.cell.init_hidden(batch_size, (H, W))
-        for t in range(seq_len):
-            h, c = self.cell(input_tensor[:, t], (h, c))
-        return h
+# Y: expected shape (N, H, W, 1) -> permute to (N, 1, H, W)
+Y_train_tensor = torch.tensor(Y_train_norm, dtype=torch.float32, device=device).permute(0, 3, 1, 2)
+Y_val_tensor   = torch.tensor(Y_val_norm, dtype=torch.float32, device=device).permute(0, 3, 1, 2)
+Y_test_tensor  = torch.tensor(Y_test_norm, dtype=torch.float32, device=device).permute(0, 3, 1, 2)
 
-class ConvLSTMModel(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None, dropout_p=0.1):
-        super(ConvLSTMModel, self).__init__()
-        # Use dynamic padding in ConvLSTMCell if not provided.
-        self.convlstm = ConvLSTM(input_channels, hidden_channels, kernel_size, padding)
-        # Extra convolutional layers with automatic "same" padding.
-        self.conv1 = nn.Conv2d(hidden_channels, 32, kernel_size=5, padding=5//2)
-        self.relu1 = nn.ReLU()
-        self.conv2 = nn.Conv2d(32, 32, kernel_size=5, padding=5//2)
-        self.relu2 = nn.ReLU()
-        self.conv3 = nn.Conv2d(32, 16, kernel_size=3, padding=3//2)
-        self.relu3 = nn.ReLU()
-        self.conv4 = nn.Conv2d(16, 8, kernel_size=3, padding=3//2)
-        self.relu4 = nn.ReLU()
-        self.conv5 = nn.Conv2d(8, 1, kernel_size=3, padding=3//2)
-        self.dropout = nn.Dropout2d(p=dropout_p)
+# ----------------------------------------------------------------------------
+# 7) Define EmissionNetV4 Model
+# ----------------------------------------------------------------------------
+class AxialAttention(nn.Module):
+    def __init__(self, in_channels):
+        super().__init__()
+        self.conv1 = nn.Conv2d(in_channels, in_channels, kernel_size=(1, 5), padding=(0, 2))
+        self.conv2 = nn.Conv2d(in_channels, in_channels, kernel_size=(5, 1), padding=(2, 0))
+
     def forward(self, x):
-        h = self.convlstm(x)  # shape: (batch, hidden_channels, H, W)
-        out = self.relu1(self.conv1(h))
-        out = self.dropout(out)
-        out = self.relu2(self.conv2(out))
-        out = self.relu3(self.conv3(out))
-        out = self.relu4(self.conv4(out))
-        out = self.conv5(out)
-        return out
+        # x shape: [batch, time, channels, height, width]
+        b, t, c, h, w = x.shape
+        x = x.view(b * t, c, h, w)
+        x = self.conv1(x) + self.conv2(x)
+        x = x.view(b, t, c, h, w)
+        return x
 
-# Increase ConvLSTM capacity: hidden_channels from 8 to 16.
-model = ConvLSTMModel(
-    input_channels=5,
-    hidden_channels=16,
-    kernel_size=3,  # This kernel size applies to the ConvLSTMCell.
-    padding=None,   # Automatically compute "same" padding.
-    dropout_p=0.1
-).to(device)
+class MFE_Module(nn.Module):
+    def __init__(self, in_channels):
+        super().__init__()
+        self.branch1 = nn.Conv2d(in_channels, 24, kernel_size=1)
+        self.branch2 = nn.Conv2d(in_channels, 24, kernel_size=3, padding=1)
+        self.branch3 = nn.Conv2d(in_channels, 24, kernel_size=5, padding=2)
+        self.branch4 = nn.Sequential(nn.MaxPool2d(3, stride=1, padding=1), nn.Conv2d(in_channels, 24, kernel_size=1))
+    
+    def forward(self, x):
+        return torch.cat([self.branch1(x), self.branch2(x), self.branch3(x), self.branch4(x)], dim=1)
 
-def init_weights(m):
-    if isinstance(m, nn.Conv2d):
-        nn.init.xavier_uniform_(m.weight)
-        if m.bias is not None:
-            nn.init.zeros_(m.bias)
-model.apply(init_weights)
-print(model)
+class TransformerDecoder(nn.Module):
+    def __init__(self, embed_dim, num_heads=4):
+        super().__init__()
+        self.attn = nn.MultiheadAttention(embed_dim, num_heads, dropout=0.1)
+        self.fc = nn.Linear(embed_dim, embed_dim)
+        self.norm = nn.LayerNorm(embed_dim)
 
-optimizer = optim.Adam(model.parameters(), lr=base_lr, weight_decay=weight_decay)
+    def forward(self, x):
+        b, c, h, w = x.shape
+        x = x.flatten(2).permute(2, 0, 1)
+        x, _ = self.attn(x, x, x)
+        x = self.fc(x)
+        x = self.norm(x)
+        x = x.permute(1, 2, 0).view(b, c, h, w)
+        return x
+
+class EmissionNetV4(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.axial = AxialAttention(5)
+        self.mfe = MFE_Module(5)
+        self.downsample = nn.Conv2d(96, 64, kernel_size=3, stride=2, padding=1)
+        self.decoder = TransformerDecoder(64, num_heads=4)
+        self.final_conv = nn.Conv2d(64, 1, kernel_size=1)
+        # Add an upsampling layer to scale the output back to (150, 300)
+        self.upsample = nn.Upsample(size=(150, 300), mode='bilinear', align_corners=False)
+
+    def forward(self, x):
+        x = self.axial(x)
+        x = x.mean(dim=1)  # Temporal aggregation
+        x = self.mfe(x)
+        x = self.downsample(x)
+        x = self.decoder(x)
+        x = self.final_conv(x)
+        x = self.upsample(x)  # Upsample to match target size
+        return x
+
+
+model = EmissionNetV4().to(device)
+optimizer = optim.AdamW(model.parameters(), lr=base_lr, weight_decay=weight_decay)
 criterion = nn.MSELoss()
+scaler = GradScaler()  # For mixed precision training
 
 # ----------------------------------------------------------------------------
-# Dynamic LR: Linear Warmup then Cosine Decay
+# 8) Setup LR Scheduler and DataLoader
 # ----------------------------------------------------------------------------
 warmup_epochs = int(warmup_ratio * num_epochs)
 def lr_lambda(epoch):
@@ -279,42 +233,43 @@ def lr_lambda(epoch):
         return 0.5 * (1 + math.cos(math.pi * progress))
 scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lr_lambda)
 
+train_dataset = TensorDataset(X_train_tensor, Y_train_tensor)
+train_loader  = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, worker_init_fn=worker_init_fn)
+
 # ----------------------------------------------------------------------------
-# Training Loop
+# 9) Training Loop with Mixed Precision
 # ----------------------------------------------------------------------------
-train_mses = []
-val_mses   = []
-lr_history = []
+train_mses, val_mses, lr_history = [], [], []
 
 for epoch in range(num_epochs):
     model.train()
+    epoch_loss_accum = 0.0
     for batch_X, batch_Y in train_loader:
         optimizer.zero_grad()
-        outputs = model(batch_X)
-        loss = criterion(outputs, batch_Y)
-        loss.backward()
-        optimizer.step()
-    scheduler.step()
-    model.eval()
-    epoch_loss_accum = 0.0
-    with torch.no_grad():
-        for batch_X, batch_Y in train_loader:
-            pred = model(batch_X)
-            l = criterion(pred, batch_Y)
-            epoch_loss_accum += l.item() * batch_X.size(0)
+        with autocast(device_type="cuda"):
+            preds = model(batch_X)
+            loss = criterion(preds, batch_Y)
+        scaler.scale(loss).backward()
+        scaler.step(optimizer)
+        scaler.update()
+        epoch_loss_accum += loss.item() * batch_X.size(0)
     epoch_loss_accum /= len(train_dataset)
     train_mses.append(epoch_loss_accum)
+    
     with torch.no_grad():
-        val_preds = model(X_val_tensor)
-        val_loss  = criterion(val_preds, Y_val_tensor).item()
+        val_out = model(X_val_tensor)
+        val_loss = criterion(val_out, Y_val_tensor).item()
     val_mses.append(val_loss)
+    
     current_lr = optimizer.param_groups[0]['lr']
     lr_history.append(current_lr)
+    scheduler.step()
+    
     if (epoch+1) % 10 == 0:
         print(f"Epoch {epoch+1}/{num_epochs}, LR={current_lr:.2e}, Train MSE={epoch_loss_accum:.6f}, Val MSE={val_loss:.6f}")
 
 # ----------------------------------------------------------------------------
-# Test Evaluation (using windows created earlier)
+# 10) Test Evaluation and Unnormalizing Predictions
 # ----------------------------------------------------------------------------
 model.eval()
 with torch.no_grad():
@@ -322,21 +277,19 @@ with torch.no_grad():
 test_loss = criterion(test_preds, Y_test_tensor).item()
 print("Test MSE (normalized):", test_loss)
 
-# Inverse normalization for visualization
 Y_test_pred = test_preds.cpu().numpy().reshape(-1, target_h, target_w, 1)
 Y_test_true = Y_test_tensor.cpu().numpy().reshape(-1, target_h, target_w, 1)
-Y_test_pred_log = Y_test_pred * Y_train_std + Y_train_mean
-Y_test_true_log = Y_test_true * Y_train_std + Y_train_mean
+Y_test_pred_log = Y_test_pred * (Y_train_std + 1e-8) + Y_train_mean
+Y_test_true_log = Y_test_true * (Y_train_std + 1e-8) + Y_train_mean
 Y_test_pred_final = np.expm1(Y_test_pred_log)
 Y_test_true_final = np.expm1(Y_test_true_log)
 test_mse_final = mean_squared_error(Y_test_true_final.flatten(), Y_test_pred_final.flatten())
 print("Test MSE (final):", test_mse_final)
 
 # ----------------------------------------------------------------------------
-# Plot LR, Train, and Validation Loss Curves
+# 11) Plot Loss Curves
 # ----------------------------------------------------------------------------
 epochs_arr = np.arange(num_epochs)
-lr_plot = np.array(lr_history)
 plt.figure(figsize=(8,6))
 plt.subplot(2,1,1)
 plt.plot(epochs_arr, np.log(train_mses), label='Log Train MSE')
@@ -345,14 +298,17 @@ plt.xlabel('Epoch')
 plt.ylabel('Log MSE')
 plt.title('Train/Val MSE')
 plt.legend()
+
 plt.subplot(2,1,2)
-plt.plot(epochs_arr, lr_plot, label='Learning Rate')
+plt.plot(epochs_arr, lr_history, label='Learning Rate')
 plt.xlabel('Epoch')
 plt.ylabel('LR')
 plt.title('Dynamic Learning Rate')
 plt.legend()
+
 plt.tight_layout()
-plt.savefig(os.path.join(current_dir, f"train_val_log_mse_and_lr_{base_lr}_{batch_size}_{num_epochs}.png"), dpi=300)
+loss_plot_path = os.path.join(current_dir, f"{__file__}_train_val_log_mse_and_lr_{base_lr}_{batch_size}_{num_epochs}.png")
+plt.savefig(loss_plot_path, dpi=300)
 plt.show()
 
 # ----------------------------------------------------------------------------
@@ -404,7 +360,7 @@ with torch.no_grad():
 
 # Plot the autoregressive MSE loss over timesteps.
 plt.figure(figsize=(8,6))
-plt.plot(autoregress_steps, autoregress_losses, label="Autoregressive MSE Loss")
+plt.plot(list(range(T_test - context_window)), autoregress_losses, label="Autoregressive MSE Loss")
 plt.xlabel("Timestep")
 plt.ylabel("MSE Loss")
 plt.title("Autoregressive Evaluation Loss over Test Timesteps")
@@ -414,21 +370,20 @@ plt.savefig(autoregress_plot_path, dpi=300)
 plt.show()
 
 print(autoregress_losses)
-
 # ----------------------------------------------------------------------------
-# Example Custom Colormap for Plotting Predictions
+# 12) Plot Predictions (Optional)
 # ----------------------------------------------------------------------------
 custom_multi_color = LinearSegmentedColormap.from_list(
     "custom_teal_yellow_8",
     [
-        "#002b36",  # Dark teal
+        "#002b36",
         "#0a484c",
         "#136664",
         "#1f847c",
         "#2ba294",
         "#49bfac",
         "#72dbbf",
-        "#f0f921"   # Bright yellow
+        "#f0f921"
     ]
 )
 
@@ -444,29 +399,32 @@ def plot_emission_comparison(tensor_gt, tensor_pred, idx, extent, cmap=custom_mu
     norm = LogNorm(vmin=pred_min, vmax=pred_max, clip=True)
     fig, axs = plt.subplots(1, 2, figsize=(12, 6))
     im0 = axs[0].imshow(gt_img_clamped, cmap=cmap, interpolation='nearest', extent=extent, norm=norm)
-    fig.colorbar(im0, ax=axs[0], label="Log-Scaled Emissions (Pred-based)")
+    fig.colorbar(im0, ax=axs[0], label="Log-Scaled Emissions")
     axs[0].set_title(f"Ground Truth (Test idx {idx})")
-    axs[0].set_xlabel("Longitude Grid Points")
-    axs[0].set_ylabel("Latitude Grid Points")
+    axs[0].set_xlabel("Longitude")
+    axs[0].set_ylabel("Latitude")
     axs[0].invert_yaxis()
+
     im1 = axs[1].imshow(pred_img_clamped, cmap=cmap, interpolation='nearest', extent=extent, norm=norm)
-    fig.colorbar(im1, ax=axs[1], label="Log-Scaled Emissions (Pred-based)")
+    fig.colorbar(im1, ax=axs[1], label="Log-Scaled Emissions")
     axs[1].set_title(f"Prediction (Test idx {idx})")
-    axs[1].set_xlabel("Longitude Grid Points")
-    axs[1].set_ylabel("Latitude Grid Points")
+    axs[1].set_xlabel("Longitude")
+    axs[1].set_ylabel("Latitude")
     axs[1].invert_yaxis()
+
     plt.tight_layout()
     return fig
 
 extent = [0, target_w, 0, target_h]
-N_test = Y_test_true_final.shape[0]
-for i in range(N_test):
+N_test_samples = Y_test_true_final.shape[0]
+for i in range(N_test_samples):
     fig = plot_emission_comparison(Y_test_true_final, Y_test_pred_final, i, extent)
-    fig.savefig(os.path.join(current_dir, f"{__file__}_test_sample_{i}_{base_lr}_{batch_size}_{num_epochs}.png"), dpi=300)
+    fig_path = os.path.join(current_dir, f"{__file__}_test_sample_{i}_{base_lr}_{batch_size}_{num_epochs}.png")
+    fig.savefig(fig_path, dpi=300)
     plt.close(fig)
 
 print("Training, validation, and test evaluation complete.")
 print("Final Train MSE:", train_mses[-1])
 print("Final Val MSE:", val_mses[-1])
 print("Final Test MSE (final):", test_mse_final)
-print(f"{N_test} PNG files (one for each test sample) have been saved.")
+print(f"{N_test_samples} PNG files (one for each test sample) have been saved.")

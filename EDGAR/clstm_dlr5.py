@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-DeepRSM/ConvLSTM Training Script for CTM Data
+DeepRSM/GranularConvLSTM Training Script for CTM Data
 
 - Reads kernelized_tensor.npy with shape (5,2,288,600,1200).
 - Downsamples to 150×300, applies log1p.
 - Builds rolling-window sequences (context_window=24).
 - Splits into train/val/test sets with a 24-timestep overlap at the boundaries.
-- Trains a ConvLSTM model to predict the 5th channel.
+- Trains a GranularConvLSTM model to predict the 5th channel.
 - Uses a dynamic LR schedule (linear warmup 20%, then cosine half-wave).
 - Plots train/val MSE + LR schedule.
 - Evaluates on the validation and test sets.
@@ -173,13 +173,13 @@ X_test_tensor = torch.tensor(X_test_norm.transpose(0,1,4,2,3), dtype=torch.float
 Y_test_tensor = torch.tensor(Y_test_norm.transpose(0,3,1,2), dtype=torch.float32, device=device)
 
 # ----------------------------------------------------------------------------
-# Define the ConvLSTM Model with dynamic padding for variable kernel sizes
+# Define the GranularConvLSTM Model with increased depth and parameter capacity.
 # ----------------------------------------------------------------------------
 class ConvLSTMCell(nn.Module):
     def __init__(self, input_channels, hidden_channels, kernel_size, padding=None):
         super(ConvLSTMCell, self).__init__()
         self.hidden_channels = hidden_channels
-        # If padding is not provided, compute "same" padding automatically.
+        # Automatically compute "same" padding if not provided.
         if padding is None:
             if isinstance(kernel_size, int):
                 padding = kernel_size // 2
@@ -221,38 +221,56 @@ class ConvLSTM(nn.Module):
             h, c = self.cell(input_tensor[:, t], (h, c))
         return h
 
-class ConvLSTMModel(nn.Module):
-    def __init__(self, input_channels, hidden_channels, kernel_size, padding=None, dropout_p=0.1):
-        super(ConvLSTMModel, self).__init__()
-        # Use dynamic padding in ConvLSTMCell if not provided.
-        self.convlstm = ConvLSTM(input_channels, hidden_channels, kernel_size, padding)
-        # Extra convolutional layers with automatic "same" padding.
-        self.conv1 = nn.Conv2d(hidden_channels, 32, kernel_size=5, padding=5//2)
+class GranularConvLSTMModel(nn.Module):
+    def __init__(self, input_channels, hidden_channels, kernel_size, num_layers=2, padding=None, dropout_p=0.1):
+        super(GranularConvLSTMModel, self).__init__()
+        # Stack multiple ConvLSTM layers for enhanced spatiotemporal modeling.
+        self.num_layers = num_layers
+        self.convlstm_layers = nn.ModuleList([
+            ConvLSTM(input_channels if i == 0 else hidden_channels,
+                     hidden_channels,
+                     kernel_size,
+                     padding)
+            for i in range(num_layers)
+        ])
+        # Additional convolutional refinement layers.
+        self.conv1 = nn.Conv2d(hidden_channels, 64, kernel_size=5, padding=5//2)
         self.relu1 = nn.ReLU()
-        self.conv2 = nn.Conv2d(32, 32, kernel_size=5, padding=5//2)
+        self.conv2 = nn.Conv2d(64, 64, kernel_size=5, padding=5//2)
         self.relu2 = nn.ReLU()
-        self.conv3 = nn.Conv2d(32, 16, kernel_size=3, padding=3//2)
+        self.conv3 = nn.Conv2d(64, 32, kernel_size=3, padding=3//2)
         self.relu3 = nn.ReLU()
-        self.conv4 = nn.Conv2d(16, 8, kernel_size=3, padding=3//2)
+        self.conv4 = nn.Conv2d(32, 16, kernel_size=3, padding=3//2)
         self.relu4 = nn.ReLU()
-        self.conv5 = nn.Conv2d(8, 1, kernel_size=3, padding=3//2)
+        self.conv5 = nn.Conv2d(16, 8, kernel_size=3, padding=3//2)
+        self.relu5 = nn.ReLU()
+        self.conv6 = nn.Conv2d(8, 1, kernel_size=3, padding=3//2)
         self.dropout = nn.Dropout2d(p=dropout_p)
     def forward(self, x):
-        h = self.convlstm(x)  # shape: (batch, hidden_channels, H, W)
+        # Sequentially process through stacked ConvLSTM layers.
+        h = x
+        for layer in self.convlstm_layers:
+            h = layer(h)  # Output shape: (batch, hidden_channels, H, W)
+            # Unsqueeze to add a temporal dimension for the next layer if needed.
+            h = h.unsqueeze(1)
+        # After the last ConvLSTM layer, squeeze out the temporal dimension.
+        h = h.squeeze(1)
         out = self.relu1(self.conv1(h))
         out = self.dropout(out)
         out = self.relu2(self.conv2(out))
         out = self.relu3(self.conv3(out))
         out = self.relu4(self.conv4(out))
-        out = self.conv5(out)
+        out = self.relu5(self.conv5(out))
+        out = self.conv6(out)
         return out
 
-# Increase ConvLSTM capacity: hidden_channels from 8 to 16.
-model = ConvLSTMModel(
+# Instantiate the model with increased capacity.
+model = GranularConvLSTMModel(
     input_channels=5,
-    hidden_channels=16,
-    kernel_size=3,  # This kernel size applies to the ConvLSTMCell.
-    padding=None,   # Automatically compute "same" padding.
+    hidden_channels=32,    # Increased hidden channels for richer representation.
+    kernel_size=3,         # ConvLSTM kernel size.
+    num_layers=3,          # Stack 3 ConvLSTM layers.
+    padding=None,          # Automatically compute same padding.
     dropout_p=0.1
 ).to(device)
 
