@@ -1,0 +1,43 @@
+name: cs229new
+channels:
+  - defaults
+  - conda-forge  # Better ML package support
+
+dependencies:
+  - python=3.9  # Ensuring compatibility
+  - pip=24.2
+
+  # --------------------------
+  # Core Scientific Libraries
+  # --------------------------
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - h5py  # Needed for large-scale ML datasets
+  - xarray  # Needed for large numerical datasets
+
+  # --------------------------
+  # Machine Learning Frameworks
+  # --------------------------
+  - tensorflow=2.13.0  # TensorFlow-based model
+  - torch  # PyTorch support
+  - torchvision
+  - torchaudio
+
+  # --------------------------
+  # Utility Libraries
+  # --------------------------
+  - pip:
+      - joblib  # Parallel computing for ML
+      - tqdm  # Progress bars in ML loops
+      - seaborn  # Statistical visualization
+      - netCDF4  # Handling scientific data formats
+      - psutil  # Monitoring system resources
+      - memory_profiler  # Memory usage tracking
+      - ipykernel  # Jupyter support
+      - jupyter_client  # Jupyter Kernel
+      - jupyter_core  # Jupyter Core dependencies
+      - traitlets  # Configuration for Jupyter & ML
+      - protobuf  # TensorFlow model serialization
